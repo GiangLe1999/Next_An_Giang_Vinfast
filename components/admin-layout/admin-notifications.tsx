@@ -120,24 +120,14 @@ const AdminNotifications = () => {
           <div className="max-h-[50vh] overflow-y-auto mb-3 no-scrollbar">
             {data &&
               data.length > 0 &&
-              data.map(
-                ({
-                  _id,
-                  read,
-                  ...rest
-                }: {
-                  _id: string;
-                  detail: any;
-                  read: boolean;
-                }) => (
-                  <AdminNotification
-                    key={_id}
-                    detail={rest}
-                    read={read}
-                    notiId={_id}
-                  />
-                )
-              )}
+              data.map(({ _id, read, ...rest }: any) => (
+                <AdminNotification
+                  key={_id}
+                  read={read}
+                  notiId={_id}
+                  detail={rest}
+                />
+              ))}
           </div>
 
           <div
