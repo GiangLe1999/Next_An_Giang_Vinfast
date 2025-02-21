@@ -35,7 +35,9 @@ const AdminSidebar: FC<Props> = ({ isExpand }) => {
           src="/images/logo-vinfast.png"
           alt="Mazda logo"
           priority
-          className={`h-10 mx-auto my-6 ${isExpand ? "w-[200px]" : "w-[60px]"}`}
+          className="mx-auto my-6"
+          width={isExpand ? 200 : 60}
+          height={60}
         />
 
         <ProfileAccordion isExpand={isExpand} />

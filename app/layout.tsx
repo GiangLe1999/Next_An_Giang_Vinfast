@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/contexts/providers";
 import ToastProvider from "@/components/contexts/toast-provider";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const myFont = localFont({
+  src: [
+    {
+      path: "../public/assets/fonts/mazdatypeviet-regular.woff",
+      weight: "400",
+      style: "regular",
+    },
+    {
+      path: "../public/assets/fonts/mazdatypeviet-medium.woff",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "../public/assets/fonts/mazdatypeviet-bold.woff",
+      weight: "700",
+      style: "bold",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -27,9 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+        <body className={`${myFont.className} antialiased`}>
           {children}
           <ToastProvider />
         </body>

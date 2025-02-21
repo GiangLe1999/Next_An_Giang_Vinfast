@@ -8,7 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { linkConstants } from "@/data/constants";
 import AdminNotification from "./admin-notification";
-import { getRecentlyNotifications } from "@/querries/notification.querry";
+import { getRecentlyNotifications } from "@/queries/notification.query";
 import { updateNotificationsStatus } from "@/actions/notification.actions";
 import toast from "react-hot-toast";
 
