@@ -49,11 +49,8 @@ const RegisterForm = () => {
     try {
       const { email, password, name } = getValues();
       setIsLoading(true);
-      const success = await registerNewAccount({
-        email,
-        password,
-        name,
-      });
+
+      const success = await registerNewAccount({ email, password, name });
 
       if (success) {
         reset();
@@ -62,11 +59,12 @@ const RegisterForm = () => {
       } else {
         toast.error("Tạo tài khoản thất bại");
       }
-
+    } catch (error) {
+      toast.error(
+        error instanceof Error ? error.message : "Đã xảy ra lỗi không xác định"
+      );
+    } finally {
       setIsLoading(false);
-    } catch (error: any) {
-      toast.error(error.message);
-      return setIsLoading(false);
     }
   };
 
