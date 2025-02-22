@@ -36,7 +36,25 @@ export const getAllCarsForAdmin = async () => {
     return serializedCars;
   } catch (error) {
     console.error("Lỗi khi fetch xe cho admin:", error);
-    throw new Error("Lỗi khi lấy danh sách xe");
+  }
+};
+
+export const getAllCarsForHomepage = async () => {
+  try {
+    await dbConnect();
+    const cars: any[] = await Car.find()
+      .select("name priceFrom slug avatar")
+      .lean();
+
+    // Chuyển đổi _id thành chuỗi
+    const serializedCars = cars.map((car) => ({
+      ...car,
+      _id: car._id.toString(),
+    }));
+
+    return serializedCars;
+  } catch (error) {
+    console.error("Lỗi khi fetch xe cho homepage:", error);
   }
 };
 

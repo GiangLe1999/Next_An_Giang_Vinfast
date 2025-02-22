@@ -20,6 +20,7 @@
     "mongoose": "^8.10.1",
     "next": "15.1.7",
     "next-auth": "^4.24.11",
+    "nodemailer": "^6.10.0",
     "pusher": "^5.2.0",
     "pusher-js": "^8.4.0",
     "react": "^19.0.0",
@@ -32,6 +33,7 @@
     "react-select": "^5.10.0",
     "react-timeago": "^7.2.0",
     "sweetalert2": "^11.17.2",
+    "swiper": "^11.2.4",
     "tinymce": "^7.7.0",
     "yup": "^1.6.1"
   },
@@ -39,6 +41,7 @@
     "@eslint/eslintrc": "^3",
     "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-timeago": "^4.1.7",

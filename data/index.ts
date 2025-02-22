@@ -24,6 +24,29 @@ import { MdPhone } from "react-icons/md";
 import { IconType } from "react-icons";
 import { linkConstants } from "./constants";
 
+export const homeBanners = [
+  {
+    title: "Vinfast VF8",
+    link: "/vf8",
+    image: "/images/home/banners/vf8-banner.webp",
+  },
+  {
+    title: "Vinfast VF9",
+    link: "/vf9",
+    image: "/images/home/banners/vf9-banner.webp",
+  },
+  {
+    title: "Vinfast VF-e34",
+    link: "/",
+    image: "/images/home/banners/vf-e34-banner.webp",
+  },
+  {
+    title: "Vinfast VF6",
+    link: "/vf6",
+    image: "/images/home/banners/vf6-banner.webp",
+  },
+];
+
 export const navItems: {
   title: string;
   link: string;
@@ -41,7 +64,7 @@ export const navItems: {
     icon: FaInfoCircle,
   },
   {
-    title: "giá xe mazda",
+    title: "giá xe vinfast",
     link: linkConstants.quote,
     isParent: true,
   },
@@ -98,64 +121,40 @@ type navCarItemType = {
 
 export const navCarMenu: navCarItemType[] = [
   {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194430/Mazda/mazda2-do_ekcwdn.jpg",
-    name: "New Mazda 2",
-    price: "418",
-    link: "mazda-2",
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740191819/Suoi%20Tien%20Vinfast/airek9me2u7sszbqwsd7.jpg",
+    name: "Vinfast VF3",
+    price: "240",
+    link: "vf3",
   },
   {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194430/Mazda/mazda2-sport-trang_qwmme7.jpg",
-    name: "New Mazda 2 Sport",
-    price: "537",
-    link: "mazda-2-sport",
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740213021/Suoi%20Tien%20Vinfast/ab4jerelgiwhckcbknam.webp",
+    name: "Vinfast VF5",
+    price: "480",
+    link: "vf5",
   },
   {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194429/Mazda/mazda-cx3-xanh_g7kbvr.jpg",
-    name: "New Mazda CX3",
-    price: "522",
-    link: "mazda-cx-3",
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740214584/Suoi%20Tien%20Vinfast/ke7xwcyrxqnsryxnhla0.webp",
+    name: "Vinfast VF6",
+    price: "640",
+    link: "vf6",
   },
   {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194429/Mazda/mazda3-den_lhjkli.jpg",
-    name: "New Mazda 3",
-    price: "579",
-    link: "mazda-3",
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740216253/Suoi%20Tien%20Vinfast/o1cjdm4e4f6yjqdy6hwa.webp",
+    name: "Vinfast VF7",
+    price: "760",
+    link: "vf7",
   },
   {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194427/Mazda/mazdasport-xam_aaj30s.jpg",
-    name: "New Mazda 3 Sport",
-    price: "639",
-    link: "mazda-3-sport",
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740216994/Suoi%20Tien%20Vinfast/uk573tijp6c9o6qmqn7d.webp",
+    name: "Vinfast VF8",
+    price: "970",
+    link: "vf8",
   },
   {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194427/Mazda/mazdacx30-trang_xvfhyd.jpg",
-    name: "Mazda CX30",
-    price: "679",
-    link: "mazda-cx-30",
-  },
-  {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194426/Mazda/mazda6-xanhden_n05nvx.jpg",
-    name: "New Mazda 6",
-    price: "744",
-    link: "mazda-6",
-  },
-  {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194426/Mazda/mazdacx5-do_eaoitz.jpg",
-    name: "New Mazda CX5",
-    price: "729",
-    link: "mazda-cx-5",
-  },
-  {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194425/Mazda/mazdacx8-den_znommi.jpg",
-    name: "New Mazda CX8",
-    price: "969",
-    link: "mazda-cx-8",
-  },
-  {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1693194425/Mazda/bt50-xam_d9htf5.jpg",
-    name: "New Mazda BT-50",
-    price: "524",
-    link: "mazda-bt-50",
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740219323/Suoi%20Tien%20Vinfast/sqfnwwdqze8jrz6qhwlg.webp",
+    name: "Vinfast VF9",
+    price: "1380",
+    link: "vf9",
   },
 ];
 
@@ -265,22 +264,20 @@ export const aboutItems: itemType[] = [
 ];
 
 export const footerCol1: string[] = [
-  "Chuyên cung cấp dòng xe Mazda các loại",
-  "Xe 4 chỗ Mazda 2, 5 chỗ Mazda 3 và Mazda 6, 5 chỗ gầm cao CX-5, 7 chỗ CX-8, bán tải BT-50",
+  "Chuyên cung cấp dòng xe Vinfast các loại",
+  "Xe 4 chỗ VinFast VF 5, 5 chỗ VinFast VF 6 và VF 7, 5 chỗ gầm cao VinFast VF 8, 7 chỗ VinFast VF 9",
   "Địa chỉ : 127 Quốc Lộ 13, Khu phố 1, Thủ Đức, Ho Chi Minh City, Vietnam",
 ];
 
 type footerItemType = { title: string; link: string };
 
 export const footerCol2: footerItemType[] = [
-  { title: "New Mazda CX-5", link: "/mazda-cx-5" },
-  { title: "Mazda2", link: "/mazda-2" },
-  { title: "Mazda2 Sport", link: "/mazda-2-sport" },
-  { title: "Mazda3", link: "/mazda-3" },
-  { title: "Mazda3 Sport", link: "/mazda-3-sport" },
-  { title: "Mazda6", link: "/mazda-6" },
-  { title: "Mazda CX-8", link: "/mazda-cx-8" },
-  { title: "Mazda BT-50", link: "/mazda-bt-50" },
+  { title: "Vinfast VF3", link: "/vf3" },
+  { title: "Vinfast VF5", link: "/vf5" },
+  { title: "Vinfast VF6", link: "/vf6" },
+  { title: "Vinfast VF7", link: "/vf7" },
+  { title: "Vinfast VF8", link: "/vf8" },
+  { title: "Vinfast VF9", link: "/vf9" },
 ];
 
 export const footerCol3: footerItemType[] = [
