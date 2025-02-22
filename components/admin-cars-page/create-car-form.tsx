@@ -184,7 +184,7 @@ const CreateCarForm = () => {
               />
             </label>
 
-            <div className="flex flex-col justify-between h-full">
+            <div className="flex flex-col justify-between space-y-4">
               <AdminFormInput
                 id="name"
                 label="Tên xe"
