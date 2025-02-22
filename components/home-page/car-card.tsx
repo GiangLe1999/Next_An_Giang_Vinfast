@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { FC } from "react";
 import { formatPrice } from "@/lib/formatData";
-// import NextImage from "../next-image";
 import ContainNextImage from "../contain-next-image";
 
 interface Props {

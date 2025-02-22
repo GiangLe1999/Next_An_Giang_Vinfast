@@ -12,26 +12,30 @@ const HomeQuickConsultModal = dynamicImport(
 const CarsSection = dynamicImport(
   () => import("@/components/home-page/cars-section")
 );
+
+const SupportBuyersSection = dynamicImport(
+  () => import("@/components/home-page/support-buyers-section")
+);
+
+const PriceTableSection = dynamicImport(
+  () => import("@/components/home-page/price-table-section")
+);
+
 const ReasonsSection = dynamicImport(
   () => import("@/components/home-page/reasons-section")
 );
-// const AboutSection = dynamicImport(
-//   () => import("@/components/home-page/about-section")
-// );
+
 // const PostsSection = dynamicImport(
 //   () => import("@/components/home/PostsSection")
 // );
-// const QuoteSection = dynamicImport(
-//   () => import("@/components/home/QuoteSection")
-// );
 
-// const SupportBuyersSection = dynamicImport(
-//   () => import("@/components/home/SupportBuyersSection")
-// );
+const QuoteSection = dynamicImport(
+  () => import("@/components/home-page/quote-section")
+);
 
-// const GoogleMaps = dynamicImport(() => import("@/components/home/GoogleMaps"), {
-//   ssr: false,
-// });
+const GoogleMaps = dynamicImport(
+  () => import("@/components/home-page/google-maps")
+);
 
 export const generateMetadata = () => {
   return {
@@ -55,12 +59,14 @@ export default async function Home() {
           <MainOptions />
           <PromotionSection />
           <CarsSection cars={cars} />
+          <SupportBuyersSection />
+          <PriceTableSection cars={cars} />
           <ReasonsSection />
-          {/* <AboutSection /> */}
-          {/* <SupportBuyersSection />
-          <QuoteSection />
+          {/* 
           <PostsSection />
-          <GoogleMaps />  */}
+          */}
+          <QuoteSection />
+          <GoogleMaps />
         </div>
       </main>
 

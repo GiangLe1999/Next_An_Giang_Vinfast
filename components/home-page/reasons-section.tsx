@@ -47,15 +47,17 @@ const ReasonsSection = () => {
 
           <li>
             <p className="flex items-center gap-2 text-primary font-bold text-lg mb-1">
-              <BsChatHeartFill size={16} /> Tư vấn tận tình
+              <BsChatHeartFill size={16} /> Hết lòng vì khác hàng
             </p>
             <p>
-              Đội ngũ tư vấn luôn sẵn lòng giúp Anh chị tìm được chiếc xe ưng ý.
+              Đội ngũ tư vấn bán hàng luôn sẵn lòng giúp tư vấn để tìm ra chiếc
+              xe ưng ý cho quý khách hàng. Hỗ trợ 24/7 tận tâm, nhiệt tình, có
+              trách nhiệm.
             </p>
           </li>
         </ul>
 
-        <div className="relative w-full aspect-[1.55] rounded-sm overflow-hidden">
+        <div className="relative w-full aspect-[1.52] rounded-sm overflow-hidden">
           <NextImage
             src="/images/home/tai-sao-nen-mua-vinfast.webp"
             alt="Tại sao nên mua xe Vinfast?"
