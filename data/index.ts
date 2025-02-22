@@ -19,7 +19,7 @@ import { BiSolidContact } from "react-icons/bi";
 import { HiReceiptTax } from "react-icons/hi";
 import { BsChatHeartFill, BsTagsFill, BsFillGiftFill } from "react-icons/bs";
 import { SiAdguard } from "react-icons/si";
-import { MdMail, MdPhone } from "react-icons/md";
+import { MdPhone } from "react-icons/md";
 
 import { IconType } from "react-icons";
 import { linkConstants } from "./constants";
@@ -81,11 +81,6 @@ export const adminNavItems: {
     title: "List xe",
     link: linkConstants.admin_cars,
     icon: FaCar,
-  },
-  {
-    title: "Profile",
-    link: linkConstants.profile,
-    icon: FaInfoCircle,
   },
   {
     title: "Bài viết",
