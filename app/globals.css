@@ -160,7 +160,7 @@ html {
 
 .postContent h2,
 .postContent h3 {
-  @apply w-fit px-3 py-[9px] text-2xl bg-primary text-white relative uppercase max-[500px]:w-full;
+  @apply w-fit px-3 py-[9px] text-2xl bg-primary text-white relative max-[500px]:w-full;
 }
 
 .postContent h2::after,

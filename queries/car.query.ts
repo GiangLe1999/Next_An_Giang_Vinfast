@@ -39,3 +39,40 @@ export const getAllCarsForAdmin = async () => {
     throw new Error("Lỗi khi lấy danh sách xe");
   }
 };
+
+export const getCarRegistrationData = async (carName: string) => {
+  try {
+    await dbConnect();
+
+    const car = await Car.findOne({ name: carName })
+      .select("registration")
+      .lean();
+
+    return car;
+  } catch (error) {
+    console.error("Lỗi khi fetch xe:", error);
+  }
+};
+
+export const getAllCarLines = async () => {
+  try {
+    await dbConnect();
+
+    const carsWithCarLines = await Car.find().select("name carLines").lean();
+
+    return JSON.parse(JSON.stringify(carsWithCarLines));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ dòng xe:", error);
+  }
+};
+
+export const getAllCarsNameVsSlug = async () => {
+  try {
+    await dbConnect();
+    const carsWithNameAndSlug = await Car.find().select("name slug").lean();
+
+    return JSON.parse(JSON.stringify(carsWithNameAndSlug));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ xe gồm tên và slug:", error);
+  }
+};
