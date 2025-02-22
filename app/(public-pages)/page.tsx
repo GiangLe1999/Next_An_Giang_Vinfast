@@ -4,17 +4,19 @@ import { pageConstants } from "@/data/constants";
 import { getAllCarsForHomepage } from "@/queries/car.query";
 
 import dynamicImport from "next/dynamic";
+import PromotionSection from "@/components/home-page/promotion-section";
 const HomeQuickConsultModal = dynamicImport(
   () => import("@/components/public-layout/home-quick-consult-modal")
 );
 
-// import PromotionSection from "@/components/home/PromotionSection";
-
 const CarsSection = dynamicImport(
   () => import("@/components/home-page/cars-section")
 );
+const ReasonsSection = dynamicImport(
+  () => import("@/components/home-page/reasons-section")
+);
 // const AboutSection = dynamicImport(
-//   () => import("@/components/home/AboutSection")
+//   () => import("@/components/home-page/about-section")
 // );
 // const PostsSection = dynamicImport(
 //   () => import("@/components/home/PostsSection")
@@ -22,9 +24,7 @@ const CarsSection = dynamicImport(
 // const QuoteSection = dynamicImport(
 //   () => import("@/components/home/QuoteSection")
 // );
-// const ReasonsSection = dynamicImport(
-//   () => import("@/components/home/ReasonsSection")
-// );
+
 // const SupportBuyersSection = dynamicImport(
 //   () => import("@/components/home/SupportBuyersSection")
 // );
@@ -53,14 +53,14 @@ export default async function Home() {
 
         <div className="mt-4">
           <MainOptions />
-          {/* <PromotionSection /> */}
+          <PromotionSection />
           <CarsSection cars={cars} />
-          {/* <SupportBuyersSection />
           <ReasonsSection />
-          <AboutSection />
+          {/* <AboutSection /> */}
+          {/* <SupportBuyersSection />
           <QuoteSection />
           <PostsSection />
-          <GoogleMaps /> */}
+          <GoogleMaps />  */}
         </div>
       </main>
 

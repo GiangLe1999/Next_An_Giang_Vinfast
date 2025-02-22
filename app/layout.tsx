@@ -2,15 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/contexts/providers";
 import localFont from "next/font/local";
-import Header from "@/components/public-layout/header";
-import dynamic from "next/dynamic";
-const Footer = dynamic(() => import("@/components/public-layout/footer"));
-const MessengerBtn = dynamic(
-  () => import("@/components/public-layout/messenger-btn")
-);
-const ContactBtns = dynamic(
-  () => import("@/components/public-layout/contact-btns")
-);
 
 const myFont = localFont({
   src: [
@@ -45,13 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${myFont.className} antialiased`}>
-        <Providers>
-          <Header />
-          {children}
-          <ContactBtns />
-          <MessengerBtn />
-          <Footer />
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

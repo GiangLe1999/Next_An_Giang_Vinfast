@@ -8,14 +8,14 @@ interface Props {
 
 const CarsSection: FC<Props> = ({ cars }) => {
   return (
-    <section className="bg-lightBg">
+    <section>
       <div className="container py-10">
-        <p className="text-textColor text-center font-bold text-sm">
+        <p className="text-textColor text-center font-bold text-sm mb-2">
           DÒNG XE KINH DOANH TẠI
         </p>
         <SectionTitle title="VINFAST SUỐI TIÊN" />
 
-        <div className="grid grid-cols-3 gap-4 py-8 max-[982px]:grid-cols-2 max-[680px]:grid-cols-1">
+        <div className="mt-10 grid grid-cols-3 gap-x-16 gap-y-12 py-8 max-[982px]:grid-cols-2 max-[680px]:grid-cols-1">
           {cars?.map((car) => (
             <CarCard car={car} key={car._id} />
           ))}

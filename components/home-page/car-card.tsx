@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { FC } from "react";
 import { formatPrice } from "@/lib/formatData";
-import NextImage from "../next-image";
+// import NextImage from "../next-image";
+import ContainNextImage from "../contain-next-image";
 
 interface Props {
   car: any;
@@ -9,38 +10,26 @@ interface Props {
 
 const CarCard: FC<Props> = ({ car }) => {
   return (
-    <div className="shadow-md bg-white rounded-sm overflow-hidden border">
-      <Link
-        href={"/" + car.slug}
-        className="relative w-full main-image-ratio block overflow-hidden"
-      >
-        <NextImage
-          src={car.avatar.url}
-          alt={car.name}
-          className="hover:scale-105"
-        />
-      </Link>
+    <Link
+      href={`/${car.slug}`}
+      className="rounded-lg transition-transform duration-300 hover:-translate-y-2"
+    >
+      <div className="block relative w-full aspect-video p-10">
+        <ContainNextImage src={car.avatar.url} alt={car.name} />
+      </div>
 
-      <div>
-        <div className="grid grid-cols-2 gap-6 pl-4 items-center">
-          <h4>
-            <Link
-              className="text-[15px] text-textColor font-bold hover:text-primary transition"
-              href={"/" + car.slug}
-            >
-              {car.name.toUpperCase()}
-            </Link>
-          </h4>
-
-          <div>
-            <span className="-ml-2 max-[355px]:text-sm">
-              {formatPrice(car?.priceFrom)}
-              <u>đ</u>
-            </span>
-          </div>
+      <div className="p-4">
+        <h4 className="text-lg font-bold text-gray-800 hover:text-primary transition text-center">
+          {car.name.toUpperCase()}
+        </h4>
+        <div className="mt-1 text-center">
+          <span className="font-semibold text-primary">
+            Giá từ: {formatPrice(car?.priceFrom)}
+            <u>đ</u>
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

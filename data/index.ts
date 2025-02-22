@@ -3,7 +3,6 @@ import {
   FaCalculator,
   FaCarAlt,
   FaChartPie,
-  FaUsersCog,
   FaFlag,
   FaThumbsUp,
   FaShieldAlt,
@@ -16,9 +15,6 @@ import {
 
 import { BiSolidContact } from "react-icons/bi";
 
-import { HiReceiptTax } from "react-icons/hi";
-import { BsChatHeartFill, BsTagsFill, BsFillGiftFill } from "react-icons/bs";
-import { SiAdguard } from "react-icons/si";
 import { MdPhone } from "react-icons/md";
 
 import { IconType } from "react-icons";
@@ -170,75 +166,29 @@ export const homeOptions: homeOptionType[] = [
     title: "yêu cầu báo giá",
     link: linkConstants.requireQuotation,
     icon: FaEnvelopeOpenText,
-    des: "Đăng ký để nhận báo giá mới nhất cho các <strong>dòng xe Mazda</strong>",
+    des: "Đăng ký để nhận báo giá mới nhất cho các <strong>dòng xe Vinfast</strong>",
   },
   {
     title: "tính phí lăn bánh",
     link: linkConstants.finalPrice,
     icon: FaCalculator,
-    des: "Giá các phiên bản xe Mazda cùng các khoản phí chi tiết tại <strong>Mazda Thủ Đức</strong>",
+    des: "Giá các phiên bản xe Vinfast cùng các khoản phí chi tiết tại <strong>Vinfast Suối Tiên</strong>",
   },
   {
     title: "mua xe trả góp",
     link: linkConstants.installment,
     icon: FaChartPie,
-    des: "Trả góp đến <strong>85% giá trị xe</strong>, lãi suất chỉ <strong>0,6%/tháng</strong>",
+    des: "Trả góp đến <strong>80% giá trị xe</strong>, lãi suất chỉ <strong>0%/tháng</strong>",
   },
   {
     title: "đăng ký lái thử",
     link: linkConstants.testDrive,
     icon: FaCarAlt,
-    des: "Đến với <strong>Mazda Thủ Đức</strong> để được lái thử những mẫu xe Mazda mới nhất",
-  },
-];
-
-type promotionItemType = {
-  icon: IconType;
-  title: string;
-  subtitle: string;
-  desc: string;
-};
-
-export const promotionItems: promotionItemType[] = [
-  {
-    icon: HiReceiptTax,
-    title: "ƯU ĐÃI QUÀ TẶNG GIÁ TRỊ",
-    subtitle: "",
-    desc: "<ul><li><b>New Mazda 2 All New</b>: Phim cách nhiệt Lumar của Mỹ BH 5 năm, thảm lót sàn, dù Mazda, túi cứu hộ, ví da Mazda. Giá chỉ từ <b class='text-primary'>418 Triệu</b>.</li><li><b>Mazda CX3</b>: Quà tặng phim cách nhiệt Lumar của Mỹ BH 5 năm, thảm lót sàn, dù Mazda, túi cứu hộ, ví da Mazda. Giá chỉ từ <b class='text-primary'>522 Triệu</b>.</li><li><b>New Mazda 3 Sedan & Sport</b>: BHVC 1 năm, phim cách nhiệt Llumar của Mỹ BH 5 năm, thảm lót sàn, dù Mazda, túi cứu hộ, ví da Mazda. Giá chỉ từ <b class='text-primary'>591 Triệu</b>.</li><li><b>New Mazda 6</b>: BHVC 1 năm, phim cách nhiệt Lumar của Mỹ BH 5 năm, thảm lót sàn, dù Mazda, túi cứu hộ, ví da Mazda, thẻ GPS. Giá chỉ từ <b class='text-primary'>758 Triệu</b>.</li><li><b>Mazda CX30</b>: Giảm 10 triệu tiền mặt kèm gói quà tặng baga mui, ốp cản sau, phim cách nhiệt Lumar của Mỹ BH 5 năm, thảm lót sàn, dù Mazda, túi cứu hộ, ví da Mazda. Giá chỉ <b class='text-primary'>689 Triệu</b>.</li><li><b>New Mazda CX5</b>: Ưu đãi lên 20 triệu đồng ++ phim cách nhiệt Lumar của Mỹ BH 5 năm, thảm lót sàn, dù Mazda, túi cứu hộ, ví da Mazda. Giá chỉ <b class='text-primary'>729 Triệu</b>.</li><li><b>Mazda CX8 NEW</b>: Ưu đãi 01 năm bảo hiểm thân xe, bộ nâng cấp bệ bước chân + cốp rãnh tay + ty thuỷ lực + baga mui, phim cách nhiệt Lumar của Mỹ BH 5 năm, thảm lót sàn, dù Mazda, túi cứu hộ, ví da Mazda. Giá chỉ từ <b class='text-primary'>955 Triệu</b>.</li></ul>",
-  },
-  {
-    icon: FaUsersCog,
-    title: "TƯ VẤN TRỰC TUYẾN – LÁI THỬ TẠI NHÀ",
-    subtitle:
-      "Quý khách hàng sẽ được tư vấn đầy đủ các thông tin về giá bán, phiên bản và tính năng của từng sản phẩm Mazda thế hệ mới phù hợp với nhu cầu sử dụng thực tế.",
-    desc: "Song song với các chương trình ưu đãi hấp dẫn, Mazda vẫn đảm bảo thực hiện nhiều biện pháp phòng, chống dịch và đặt sự an toàn của khách hàng lên hàng đầu với chương trình <b class='text-primary'>“Tư vấn trực tuyến – Lái thử tại nhà”</b>. Thông qua các ứng dụng trực tuyến trên <b>Facebook, Zalo</b> … Quý khách hàng sẽ được tư vấn đầy đủ các thông tin về giá bán, phiên bản và tính năng của từng sản phẩm Mazda thế hệ mới phù hợp với nhu cầu sử dụng thực tế.",
+    des: "Đến với <strong>Vinfast Suối Tiên</strong> để được lái thử những mẫu xe Vinfast mới nhất",
   },
 ];
 
 type itemType = { icon: IconType; title: string; desc: string };
-
-export const reasonsToBuy: itemType[] = [
-  {
-    icon: BsTagsFill,
-    title: "GIÁ CẢ ƯU ĐÃI - GIAO XE SỚM",
-    desc: "Mazda Thủ Đức luôn cam kết mang lại mức giá ưu đãi nhất cho quý khách với thời gian giao xe nhanh nhất trong 1 ngày.",
-  },
-  {
-    icon: SiAdguard,
-    title: "BẢO HÀNH THEO TIÊU CHUẨN TOÀN QUỐC",
-    desc: "Anh chị sẽ yên tâm khi mua xe tại Mazda Thủ Đức, vì chúng tôi luôn bảo hành, bảo dưỡng và sửa chữa theo tiêu chuẩn chất lượng của Mazda trên toàn quốc. BẢO HÀNH ĐẾN 5 NĂM.",
-  },
-  {
-    icon: BsFillGiftFill,
-    title: "KHUYẾN MÃI NHIỀU NHẤT",
-    desc: "Với hoạt động bán hàng sôi nổi, chúng tôi luôn cập nhật sớm nhất các chương trình khuyến mãi của hãng và đại lý",
-  },
-  {
-    icon: BsChatHeartFill,
-    title: "TƯ VẤN TẬN TÌNH",
-    desc: "Đội ngũ tư vấn luôn sẵn lòng giúp Anh chị tìm được chiếc xe ưng ý.",
-  },
-];
 
 export const aboutItems: itemType[] = [
   {

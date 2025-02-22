@@ -18,7 +18,7 @@ const MainOptions = () => {
             <p className="uppercase text-sm font-bold text-primary mt-2">
               {option.title}
             </p>
-            <p className="text-center text-xs leading-6 my-2">
+            <p className="text-center text-[13px] leading-6 my-2">
               {parse(option.des)}
             </p>
             <BtnWithIcon

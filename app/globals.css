@@ -7,7 +7,7 @@ html {
 }
 
 .container {
-  @apply max-w-6xl px-4 mx-auto;
+  @apply max-w-7xl px-4 mx-auto;
 }
 
 .no-scrollbar {
