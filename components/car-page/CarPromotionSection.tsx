@@ -18,9 +18,9 @@ const PromotionSection: FC<Props> = ({ content, name }) => {
         Vinfast {name}
       </h1>
 
-      <p className="prose prose-ul:space-y-1 prose-strong:text-tertiary text-[15px]">
+      <div className="prose prose-ul:space-y-1 prose-strong:text-tertiary text-[15px]">
         {parse(content)}
-      </p>
+      </div>
 
       <div>
         <BtnWithIcon

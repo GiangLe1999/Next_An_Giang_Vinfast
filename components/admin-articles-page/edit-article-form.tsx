@@ -110,6 +110,7 @@ const EditArticleForm: FC<Props> = ({ article }) => {
 
       if (success) {
         toast.success("Chỉnh sửa bài viết thành công");
+        window.location.reload();
       } else {
         toast.error("Không thể chỉnh sửa bài viết");
       }

@@ -178,6 +178,10 @@ html {
   @apply bg-secondary block;
 }
 
+.postContent iframe {
+  @apply w-full aspect-video rounded-md;
+}
+
 /* Footer */
 .footer-title {
   @apply font-bold uppercase text-white mb-3;
@@ -584,4 +588,8 @@ figure.image figcaption {
 
 .drag-handle:active {
   background-color: #e0e0e0; /* Darker grey background when active */
+}
+
+.thumbs.animated {
+  overflow: hidden;
 }

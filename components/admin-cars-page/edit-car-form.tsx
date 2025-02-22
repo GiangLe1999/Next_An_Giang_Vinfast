@@ -140,6 +140,7 @@ const EditCarFrom: FC<Props> = ({ car }) => {
 
       if (updatedCar) {
         toast.success("Cập nhật xe thành công!");
+        window.location.reload();
       } else {
         toast.error("Cập nhật không thành công, vui lòng thử lại.");
       }

@@ -22,15 +22,15 @@ const CarImageGallery: FC<Props> = ({ colors, price }) => {
         showIndicators={false}
         showArrows={false}
         // autoPlay
-        renderThumbs={() =>
-          carColors.map((color, index) => (
+        renderThumbs={() => {
+          return carColors.map((color, index) => (
             <div
               key={index}
               style={{ backgroundColor: color }}
               className="w-full h-full rounded-sm"
             />
-          ))
-        }
+          ));
+        }}
       >
         {carImages.map((image, index) => (
           <div
