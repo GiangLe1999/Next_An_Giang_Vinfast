@@ -136,6 +136,7 @@ const CreateCarForm = () => {
       );
     } finally {
       setIsLoading(false);
+      router.push(linkConstants.admin_cars);
     }
   };
 

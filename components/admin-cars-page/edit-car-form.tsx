@@ -194,7 +194,7 @@ const EditCarFrom: FC<Props> = ({ car }) => {
               />
             </label>
 
-            <div>
+            <div className="flex flex-col justify-between">
               <AdminFormInput
                 id="name"
                 label="Tên xe"
@@ -218,17 +218,17 @@ const EditCarFrom: FC<Props> = ({ car }) => {
                 register={register("priceFrom", { valueAsNumber: true })}
                 errorMsg={errors.priceFrom?.message}
               />
+
+              <AdminFormInput
+                id="registration"
+                label="Registration"
+                register={register("registration", { valueAsNumber: true })}
+                errorMsg={errors.registration?.message}
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-x-10 gap-y-1 mb-4">
-            <AdminFormInput
-              id="registration"
-              label="Registration"
-              register={register("registration", { valueAsNumber: true })}
-              errorMsg={errors.registration?.message}
-            />
-
             <div>
               {fields.map((field, index) => (
                 <div

@@ -28,7 +28,12 @@ export const getAllCarsForAdmin = async () => {
     const cars: any[] = await Car.find().select("name priceFrom slug").lean();
 
     // Chuyển đổi _id thành chuỗi
-    return JSON.parse(JSON.stringify(cars));
+    const serializedCars = cars.map((car) => ({
+      ...car,
+      _id: car._id.toString(),
+    }));
+
+    return serializedCars;
   } catch (error) {
     console.error("Lỗi khi fetch xe cho admin:", error);
     throw new Error("Lỗi khi lấy danh sách xe");

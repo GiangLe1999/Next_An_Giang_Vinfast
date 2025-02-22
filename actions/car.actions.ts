@@ -124,7 +124,7 @@ export const updateCar = async (data: any) => {
     // Lưu xe đã cập nhật
     const updatedCar = await car.save();
 
-    return updatedCar;
+    return JSON.parse(JSON.stringify(updatedCar));
   } catch (error) {
     console.error("Lỗi khi cập nhật xe:", error);
     throw new Error(
