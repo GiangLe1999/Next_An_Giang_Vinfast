@@ -66,7 +66,7 @@ html {
 }
 
 .post-heading-2 span {
-  @apply bg-primary text-white uppercase px-3 py-[9px] text-2xl leading-none max-[650px]:text-lg max-[800px]:leading-8 font-bold;
+  @apply bg-primary text-white px-3 py-[9px] text-2xl leading-none max-[650px]:text-lg max-[800px]:leading-8 font-bold;
 }
 
 .warning-input {
@@ -76,7 +76,7 @@ html {
 
 /* Car Table */
 .price-table td {
-  @apply border border-[#80808080] px-[10px] py-2;
+  @apply border border-tertiary px-[10px] py-2;
 }
 
 .price-table tbody td {
@@ -84,7 +84,7 @@ html {
 }
 
 .price-table thead {
-  @apply bg-secondary text-white font-bold;
+  @apply bg-tertiary text-white font-bold;
 }
 
 .price-table tbody tr:nth-child(odd) {

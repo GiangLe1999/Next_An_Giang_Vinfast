@@ -1,15 +1,14 @@
 import { carFees } from "@/data";
 import { formatPrice } from "@/lib/formatData";
-import { CarLineType } from "@/types";
 import { Dispatch, FC, SetStateAction } from "react";
 
 interface Props {
-  lines?: CarLineType[];
+  lines?: any[];
   choseCarLine: string;
   setChoseCarLine: Dispatch<SetStateAction<string>>;
   registration: number;
   currentListPrice: number;
-  currentLine: CarLineType;
+  currentLine: any;
   carNameArr?: string[];
   isInstallmentPage?: boolean;
   choseCarName: string;
@@ -22,12 +21,13 @@ const FinalPriceFrom: FC<Props> = ({
   setChoseCarLine,
   registration,
   currentListPrice,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   currentLine,
   carNameArr,
   isInstallmentPage,
   choseCarName,
   setChoseCarName,
-}): JSX.Element => {
+}) => {
   const currentRegistrationFee = (registration * currentListPrice) / 100;
 
   const { phiDkyBienso, phiDuongbo, phiDkiem, bhTNDS } = carFees;
