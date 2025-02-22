@@ -13,7 +13,7 @@ const InterestDetailTable: FC<Props> = ({
   remainArr,
   originalPaidMonthly,
   lengthArr,
-}): JSX.Element => {
+}) => {
   return (
     <table className="price-table interest-table w-full">
       <thead>

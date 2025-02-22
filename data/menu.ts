@@ -1,5 +1,10 @@
 import { IconType } from "react-icons";
-import { MdDashboard, MdEditSquare, MdHome, MdImage } from "react-icons/md";
+import {
+  MdDashboard,
+  MdEditSquare,
+  MdHome,
+  // MdImage
+} from "react-icons/md";
 import {
   // FaEnvelopeOpenText,
   // FaCalculator,
@@ -40,11 +45,11 @@ export const adminSidebarItems: {
     title: "Bài Viết",
     icon: MdEditSquare,
   },
-  {
-    link: linkConstants.admin_banners,
-    title: "Banners",
-    icon: MdImage,
-  },
+  // {
+  //   link: linkConstants.admin_banners,
+  //   title: "Banners",
+  //   icon: MdImage,
+  // },
 ];
 
 export const adminNavItems: {

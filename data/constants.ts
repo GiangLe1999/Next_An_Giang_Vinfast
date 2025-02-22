@@ -31,7 +31,7 @@ export const linkConstants = {
   admin_cars: "/admin/cars",
   create_car: "/admin/cars/create",
   edit_car: "/admin/cars/edit",
-  admin_banners: "/admin/banners",
+  // admin_banners: "/admin/banners",
 };
 
 export const pageConstants = {
