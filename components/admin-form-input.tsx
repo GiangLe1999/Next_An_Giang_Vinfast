@@ -40,7 +40,7 @@ const AdminFormInput: FC<Props> = ({
   let Component: any = "input";
   if (textarea) Component = "textarea";
   return (
-    <div className={`mb-4 ${wrapperCustomClasses}`}>
+    <div className={wrapperCustomClasses}>
       <label
         htmlFor={id}
         className={`admin-form-input-label ${labelCustomClasses}`}

@@ -3,10 +3,9 @@
 import { FC } from "react";
 import { Accordion } from "@szhsin/react-accordion";
 import { signOut, useSession } from "next-auth/react";
-import Link from "next/link";
-import { linkConstants } from "@/data/constants";
 import { AccordionItem } from "../accordion-item";
 import UserAvatar from "../user-avatar";
+import { IoLogOut } from "react-icons/io5";
 
 /**
  * @type {React.ExoticComponent<import('@szhsin/react-accordion').AccordionItemProps>}
@@ -40,21 +39,12 @@ const ProfileAccordion: FC<Props> = ({ isExpand }) => {
             </div>
           }
         >
-          <Link
-            href={linkConstants.profile}
-            className={`${
-              isExpand ? "mb-1 gap-4 admin-sidebar-item" : "hidden"
-            }`}
-          >
-            <span>MP</span> Thông tin user
-          </Link>
           <button
-            className={`${
-              isExpand ? "w-full admin-sidebar-item gap-[19px]" : "hidden"
-            }`}
+            className={"w-full admin-sidebar-item gap-[14px]"}
             onClick={() => signOut()}
           >
-            <span>LO</span> Đăng xuất
+            <IoLogOut size={23} />{" "}
+            <span className={isExpand ? "block" : "hidden"}>Đăng Xuất</span>
           </button>
         </AccordionItem>
       </Accordion>

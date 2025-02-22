@@ -1,6 +1,9 @@
+"use client";
+
 import { FC } from "react";
 import { NextAuthProvider } from "./next-auth-provider";
 import ReactQueryProvider from "./react-query-provider";
+import ToastProvider from "@/components/contexts/toast-provider";
 
 interface Props {
   children: React.ReactNode;
@@ -9,7 +12,10 @@ interface Props {
 const Providers: FC<Props> = ({ children }: Props) => {
   return (
     <NextAuthProvider>
-      <ReactQueryProvider>{children}</ReactQueryProvider>
+      <ReactQueryProvider>
+        {children}
+        <ToastProvider />
+      </ReactQueryProvider>
     </NextAuthProvider>
   );
 };

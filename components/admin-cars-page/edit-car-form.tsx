@@ -1,22 +1,22 @@
 "use client";
 
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
+import AdminBtnWithIcon from "../admin-btn-with-icon";
 import { TiArrowBack } from "react-icons/ti";
 import { useRouter } from "next/navigation";
 import * as Yup from "yup";
 import { useFieldArray, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { blobToBase64 } from "@/lib/blobToBase64";
 import toast from "react-hot-toast";
+import AdminFormInput from "../admin-form-input";
 import { MdFileUpload } from "react-icons/md";
 import AdminBtnWithLoading from "../admin-btn-with-loading";
+import TextEditor from "../text-editor";
 import { BiMinusCircle, BiPlusCircle } from "react-icons/bi";
 import { linkConstants } from "@/data/constants";
-import AdminBtnWithIcon from "../admin-btn-with-icon";
-import { blobToBase64 } from "@/lib/blobToBase64";
 import NextImage from "../next-image";
-import AdminFormInput from "../admin-form-input";
-import TextEditor from "../text-editor";
-import { createCar } from "@/actions/car.actions";
+import { updateCar } from "@/actions/car.actions";
 
 const schema: any = Yup.object({
   name: Yup.string().required("Vui lòng nhập tên xe"),
@@ -36,22 +36,30 @@ interface FormValues {
   carLines: { name: string; price: number; tax: string }[];
 }
 
-const CreateCarForm = () => {
-  const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
+interface Props {
+  car: any;
+}
 
-  const [content, setContent] = useState("");
-  const [saleContent, setSaleContent] = useState("");
+const EditCarFrom: FC<Props> = ({ car }) => {
+  const router = useRouter();
+
+  const [content, setContent] = useState(car?.content || "");
+  const [saleContent, setSaleContent] = useState(car?.saleContent || "");
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm<FormValues>({
     defaultValues: {
-      name: "",
-      avatar: "",
-      slug: "",
-      priceFrom: 0,
-      registration: 0,
-      colors: [],
-      carLines: [],
+      name: car?.name || "",
+      avatar: car?.avatar?.url || "",
+      slug: car?.slug || "",
+      priceFrom: car?.priceFrom || 0,
+      registration: car?.registration || 0,
+      colors: car?.colors?.map((color: any) => ({
+        ...color,
+        colorImg: color?.colorImg?.url || "",
+      })),
+      carLines: car?.carLines || [],
     },
     resolver: yupResolver(schema),
   });
@@ -112,28 +120,31 @@ const CreateCarForm = () => {
   };
 
   const onSubmit = async (formData: FormValues) => {
-    if (!content) {
-      return toast.error("Vui lòng nhập thông tin chi tiết về xe");
-    }
-
-    const bodyRequest = {
-      ...formData,
-      content,
-      saleContent,
-    };
-
-    setIsLoading(true);
-
     try {
-      const result = await createCar(bodyRequest);
-      if (result) {
-        toast.success("Tạo xe thành công!");
+      setIsLoading(true);
+
+      if (!content) {
+        setIsLoading(false);
+        return toast.error("Vui lòng nhập thông tin chi tiết về xe");
       }
-    } catch (error) {
-      console.error("Lỗi khi tạo xe:", error);
-      toast.error(
-        error instanceof Error ? error.message : "Có lỗi xảy ra khi tạo xe"
-      );
+
+      const bodyRequest = {
+        ...formData,
+        id: car._id,
+        content,
+        saleContent,
+      };
+
+      // Gọi API cập nhật xe
+      const updatedCar = await updateCar(bodyRequest);
+
+      if (updatedCar) {
+        toast.success("Cập nhật xe thành công!");
+      } else {
+        toast.error("Cập nhật không thành công, vui lòng thử lại.");
+      }
+    } catch (error: any) {
+      toast.error(error.message || "Đã xảy ra lỗi khi cập nhật xe");
     } finally {
       setIsLoading(false);
     }
@@ -183,13 +194,13 @@ const CreateCarForm = () => {
               />
             </label>
 
-            <div className="flex flex-col justify-between h-full">
+            <div>
               <AdminFormInput
                 id="name"
                 label="Tên xe"
                 register={register("name")}
                 errorMsg={errors.name?.message}
-                placeholder="VD: VF3, VF5, VF6, ..."
+                placeholder="VD: Morning, Seltos, Soluto, ..."
               />
 
               <AdminFormInput
@@ -197,7 +208,7 @@ const CreateCarForm = () => {
                 label="Đường dẫn"
                 register={register("slug")}
                 errorMsg={errors.slug?.message}
-                placeholder="VD: vf3, vf5, vf6, ..."
+                placeholder="VD: morning, seltos, soluto, ..."
               />
 
               <AdminFormInput
@@ -207,17 +218,17 @@ const CreateCarForm = () => {
                 register={register("priceFrom", { valueAsNumber: true })}
                 errorMsg={errors.priceFrom?.message}
               />
-
-              <AdminFormInput
-                id="registration"
-                label="Phần trăm phí trước bạ"
-                register={register("registration", { valueAsNumber: true })}
-                errorMsg={errors.registration?.message}
-              />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-x-10 gap-y-1 mb-4">
+            <AdminFormInput
+              id="registration"
+              label="Registration"
+              register={register("registration", { valueAsNumber: true })}
+              errorMsg={errors.registration?.message}
+            />
+
             <div>
               {fields.map((field, index) => (
                 <div
@@ -242,7 +253,7 @@ const CreateCarForm = () => {
                       id={`carLine_${index}_name`}
                       label={`Tên dòng xe ${index + 1}`}
                       register={register(`carLines.${index}.name` as const)}
-                      placeholder={`VD: New Morning MT, New Morning Premium, ...`}
+                      placeholder={`VD: VF3, VF5, VF6, ...`}
                     />
 
                     <AdminFormInput
@@ -361,7 +372,7 @@ const CreateCarForm = () => {
           <TextEditor content={content} setContent={setContent} />
 
           <AdminBtnWithLoading
-            content="Tạo xe"
+            content="Cập nhật"
             isLoading={isLoading}
             type="submit"
             customClasses="!absolute bottom-7 right-5"
@@ -372,4 +383,4 @@ const CreateCarForm = () => {
   );
 };
 
-export default CreateCarForm;
+export default EditCarFrom;

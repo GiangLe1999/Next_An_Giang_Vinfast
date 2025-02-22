@@ -1,11 +1,5 @@
 import { IconType } from "react-icons";
-import {
-  MdAccountCircle,
-  MdDashboard,
-  MdEditSquare,
-  MdHome,
-  MdImage,
-} from "react-icons/md";
+import { MdDashboard, MdEditSquare, MdHome, MdImage } from "react-icons/md";
 import {
   // FaEnvelopeOpenText,
   // FaCalculator,
@@ -17,7 +11,6 @@ import {
   // FaShieldAlt,
   // FaHeartbeat,
   FaHome,
-  FaInfoCircle,
   FaBlog,
   FaCar,
 } from "react-icons/fa";
@@ -42,7 +35,6 @@ export const adminSidebarItems: {
     title: "Danh Sách Xe",
     icon: IoCarSportSharp,
   },
-  { link: linkConstants.profile, title: "Profile", icon: MdAccountCircle },
   {
     link: linkConstants.admin_articles,
     title: "Bài Viết",
@@ -71,29 +63,8 @@ export const adminNavItems: {
     icon: FaCar,
   },
   {
-    title: "Profile",
-    link: linkConstants.profile,
-    icon: FaInfoCircle,
-  },
-  {
     title: "Bài viết",
     link: linkConstants.admin_articles,
     icon: FaBlog,
   },
-];
-
-export const carCategories = [
-  { label: "Hatchback", value: "Hatchback" },
-  { label: "Sedan & Hatchback", value: "Sedan & Hatchback" },
-  { label: "Coupe (xe thể thao)", value: "Coupe (xe thể thao)" },
-  { label: "Sedan", value: "Sedan" },
-  { label: "SUV (xe thể thao đa dụng)", value: "SUV (xe thể thao đa dụng)" },
-  { label: "Pickup (xe bán tải)", value: "Pickup (xe bán tải)" },
-];
-export const carTiers = [
-  { label: "Hạng A", value: "Hạng A" },
-  { label: "Hạng B", value: "Hạng B" },
-  { label: "Hạng C", value: "Hạng C" },
-  { label: "Hạng D", value: "Hạng D" },
-  { label: "Hạng E", value: "Hạng E" },
 ];

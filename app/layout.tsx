@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/contexts/providers";
-import ToastProvider from "@/components/contexts/toast-provider";
 import localFont from "next/font/local";
 
 const myFont = localFont({
@@ -36,12 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Providers>
-        <body className={`${myFont.className} antialiased`}>
-          {children}
-          <ToastProvider />
-        </body>
-      </Providers>
+      <body className={`${myFont.className} antialiased`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

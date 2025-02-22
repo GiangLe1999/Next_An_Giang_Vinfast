@@ -2,9 +2,7 @@ import { FC } from "react";
 import { MdViewList } from "react-icons/md";
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import Link from "next/link";
-import { HiUser } from "react-icons/hi";
 import { IoMdHome } from "react-icons/io";
-import { linkConstants } from "@/data/constants";
 import AdminNotifications from "./admin-notifications";
 
 interface Props {
@@ -27,17 +25,10 @@ const AdminHeader: FC<Props> = ({ isExpand, setIsExpand }) => {
           )}
         </button>
 
-        <div className="flex md:items-center flex-wrap gap-4 md:flex-row flex-col">
-          <Link href="/" className="flex gap-1 uppercase text-sm font-bold">
+        <div className="flex md:items-center flex-wrap gap-8 md:flex-row flex-col">
+          <Link href="/" className="flex items-center gap-1 text-sm font-bold">
             <IoMdHome size={20} className="-mt-[2px]" />
             Đến Trang Chủ
-          </Link>
-          <Link
-            href={linkConstants.profile}
-            className="flex gap-1 uppercase text-sm font-bold"
-          >
-            <HiUser size={18} className="-mt-[1px]" />
-            Thông tin cá nhân
           </Link>
           <AdminNotifications />
         </div>

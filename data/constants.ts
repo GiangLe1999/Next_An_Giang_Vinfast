@@ -26,7 +26,6 @@ export const linkConstants = {
   create_article: "/admin/articles/create",
   edit_article: "/admin/articles/edit",
   dashboard: "/admin/dashboard",
-  profile: "/admin/profile",
   login: "/login",
   signup: "/signup",
   admin_cars: "/admin/cars",

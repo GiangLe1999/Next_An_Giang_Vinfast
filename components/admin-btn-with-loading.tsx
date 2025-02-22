@@ -8,7 +8,7 @@ interface Props {
   content: string;
   customClasses?: string;
   type?: "submit" | "button";
-  onClick?: () => void | undefined;
+  onClick?: any;
   id?: string;
   disabled?: boolean;
 }

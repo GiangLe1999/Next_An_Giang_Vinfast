@@ -85,7 +85,7 @@ const AdminNotifications = () => {
 
   return (
     <div
-      className="flex gap-2 uppercase text-sm font-bold relative cursor-pointer"
+      className="flex items-center gap-2 text-sm font-bold relative cursor-pointer"
       onClick={() => setShowNoti(!showNoti)}
       ref={notiDivRef}
     >
