@@ -3,6 +3,21 @@
 import dbConnect from "@/lib/db";
 import Article from "@/model/Article";
 
+export const getAllArticles = async (limit: number = 0) => {
+  try {
+    await dbConnect();
+    const articles = await Article.find()
+      .select("name slug description createdAt thumbnail category")
+      .sort({ createdAt: -1 })
+      .limit(limit)
+      .lean();
+
+    return JSON.parse(JSON.stringify(articles));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ bài viết cho admin:", error);
+  }
+};
+
 export const getAllArticlesForAdmin = async () => {
   try {
     await dbConnect();

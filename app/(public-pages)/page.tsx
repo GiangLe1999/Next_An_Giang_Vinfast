@@ -29,9 +29,9 @@ const ReasonsSection = dynamicImport(
   () => import("@/components/home-page/reasons-section")
 );
 
-// const PostsSection = dynamicImport(
-//   () => import("@/components/home/PostsSection")
-// );
+const PostsSection = dynamicImport(
+  () => import("@/components/home-page/posts-section")
+);
 
 const QuoteSection = dynamicImport(
   () => import("@/components/home-page/quote-section")
@@ -69,10 +69,8 @@ export default async function Home() {
             <PriceTableSection cars={cars} />
           </div>
           <ReasonsSection />
-          {/* 
-          <PostsSection />
-          */}
           <QuoteSection />
+          <PostsSection />
           <GoogleMaps />
         </div>
       </main>
