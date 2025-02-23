@@ -16,7 +16,7 @@ const MobileBottomNav = () => {
               href={item.link}
               key={index}
               className={`capitalize flex flex-col items-center justify-center py-2 text-sm max-[350px]:text-xs ${
-                path === item.link && "admin-main-gradient text-white"
+                path === item.link && "bg-[#B91C1C] text-white"
               }`}
             >
               {item.icon && item.icon({ size: 18 })} {item.title}

@@ -6,7 +6,7 @@ export const generateMetadata = () => {
   return {
     title: "Chính sách bảo mật thông tin",
     description:
-      "Thông tin mới nhất về chính sách bảo mật thông tin khách hàng tại website chính thức của Mazda Thủ Đức.",
+      "Thông tin mới nhất về chính sách bảo mật thông tin khách hàng tại website chính thức của Vinfast Suối Tiên.",
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/chinh-sach-bao-mat`,
   };
 };
