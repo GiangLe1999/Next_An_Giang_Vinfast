@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 
@@ -30,7 +30,7 @@ const HomeQuickConsultModal = () => {
     setLoading(false);
   };
 
-  function handleScroll() {
+  const handleScroll = () => {
     const supportBuyersSection = document.getElementById("support-buyers");
 
     if (!supportBuyersSection) return;
@@ -44,7 +44,12 @@ const HomeQuickConsultModal = () => {
       setShow(true);
       window.removeEventListener("scroll", handleScroll);
     }
-  }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const submitHandler = async (e: FormEvent) => {
     e.preventDefault();
@@ -109,7 +114,7 @@ const HomeQuickConsultModal = () => {
       >
         <div className="w-full aspect-[2.3] relative rounded-t-md overflow-hidden">
           <NextImage
-            src="/images/home/popup-banner.jpg"
+            src="/images/home/popup-banner.webp"
             alt="Home Popup banner"
           />
         </div>

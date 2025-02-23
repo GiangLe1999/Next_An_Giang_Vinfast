@@ -129,7 +129,7 @@ const CarQuickConsultModal: FC<Props> = ({ carSlug }) => {
       >
         <div className="w-full aspect-[2.3] relative rounded-t-md overflow-hidden">
           <NextImage
-            src="/images/home/popup-banner.jpg"
+            src="/images/home/popup-banner.webp"
             alt="Home Popup banner"
           />
         </div>

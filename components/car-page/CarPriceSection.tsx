@@ -102,25 +102,32 @@ const CarPriceSection: FC<Props> = ({
             <span>Giá xe {name}</span>
           </h2>
           {/* Table 1 */}
-          <table className="price-table w-full">
-            <thead>
-              <tr>
-                <td>Phiên Bản</td>
-                <td className="text-right">Giá Xe</td>
-              </tr>
-            </thead>
+          <div className="overflow-x-auto">
+            <div
+              style={{ scrollbarWidth: "thin" }}
+              className="overflow-x-scroll rounded-md"
+            >
+              <table className="price-table w-full">
+                <thead>
+                  <tr>
+                    <td>Phiên Bản</td>
+                    <td className="text-right">Giá Xe</td>
+                  </tr>
+                </thead>
 
-            <tbody>
-              {lines?.map((line, index) => (
-                <tr key={index}>
-                  <td>{line.name}</td>
-                  <td className="text-right font-bold">
-                    {formatPrice(line.price)} VNĐ
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                <tbody>
+                  {lines?.map((line, index) => (
+                    <tr key={index}>
+                      <td>{line.name}</td>
+                      <td className="text-right font-bold">
+                        {formatPrice(line.price)} VNĐ
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </>
       )}
 

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "@/components/public-layout/header";
 import dynamic from "next/dynamic";
+import MobileBottomNav from "@/components/public-layout/mobile-bottom-nav";
 const Footer = dynamic(() => import("@/components/public-layout/footer"));
 const MessengerBtn = dynamic(
   () => import("@/components/public-layout/messenger-btn")
@@ -13,7 +14,7 @@ interface Props {
   children: ReactNode;
 }
 
-const AdminPageLayout = ({ children }: Props) => {
+const PulbicPagesLayout = ({ children }: Props) => {
   return (
     <>
       <Header />
@@ -21,8 +22,9 @@ const AdminPageLayout = ({ children }: Props) => {
       <ContactBtns />
       <MessengerBtn />
       <Footer />
+      <MobileBottomNav />
     </>
   );
 };
 
-export default AdminPageLayout;
+export default PulbicPagesLayout;

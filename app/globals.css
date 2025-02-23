@@ -66,7 +66,7 @@ html {
 }
 
 .post-heading-2 span {
-  @apply bg-primary text-white px-3 py-[9px] text-2xl leading-none max-[650px]:text-lg max-[800px]:leading-8 font-bold;
+  @apply bg-primary rounded-t-md text-white px-3 py-[9px] text-2xl leading-none max-[650px]:text-lg max-[800px]:leading-8 font-bold;
 }
 
 .warning-input {
@@ -76,7 +76,7 @@ html {
 
 /* Car Table */
 .price-table td {
-  @apply border border-tertiary px-[10px] py-2;
+  @apply border px-[10px] py-2;
 }
 
 .price-table tbody td {
@@ -85,10 +85,6 @@ html {
 
 .price-table thead {
   @apply bg-tertiary text-white font-bold;
-}
-
-.price-table tbody tr:nth-child(odd) {
-  @apply bg-[#F4F9FE];
 }
 
 .interest-table td {
@@ -160,7 +156,7 @@ html {
 
 .postContent h2,
 .postContent h3 {
-  @apply w-fit px-3 py-[9px] text-2xl bg-primary text-white relative max-[500px]:w-full;
+  @apply w-fit px-3 py-[9px] text-2xl bg-primary text-white relative max-[500px]:w-full rounded-t-md;
 }
 
 .postContent h2::after,
@@ -240,6 +236,7 @@ html {
 
 .carousel .thumbs {
   text-align: center;
+  white-space: normal;
 }
 
 .carousel .thumb {
@@ -482,11 +479,6 @@ html {
 }
 
 /* Modal */
-/* .react-responsive-modal-root .react-responsive-modal-overlay,
-.react-responsive-modal-root .react-responsive-modal-container,
-.react-responsive-modal-root .react-responsive-modal-modal {
-  animation-fill-mode: initial !important;
-} */
 
 .react-responsive-modal-modal {
   @apply rounded-sm;
@@ -556,40 +548,4 @@ figure.image figcaption {
 
 .pagination .page-item.disabled .page-link {
   @apply !text-[#9f9f9f];
-}
-
-/* Drag and drop */
-.drag-handle {
-  width: 24px;
-  height: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: grab;
-  background-color: #f0f0f0; /* Light grey background */
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 4px; /* Padding inside the handle */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.drag-handle .dot {
-  width: 4px;
-  height: 4px;
-  background-color: #000;
-  border-radius: 50%;
-  margin: 2px 0;
-}
-
-.drag-handle:hover .dot {
-  background-color: #666;
-}
-
-.drag-handle:active {
-  background-color: #e0e0e0; /* Darker grey background when active */
-}
-
-.thumbs.animated {
-  overflow: hidden;
 }

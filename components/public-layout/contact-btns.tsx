@@ -33,7 +33,7 @@ const handlePhoneClick = (): void => {
 const ContactBtns = () => {
   return (
     <div className="fixed max-[844px]:bottom-16 bottom-3 left-4 flex flex-col gap-2 z-50">
-      <div className={`${common} bg-[#4267f4]`}>
+      <div className={`${common} bg-tertiary`}>
         <a
           href="https://zalo.me/0333122512"
           target="_blank"
@@ -47,7 +47,7 @@ const ContactBtns = () => {
             alt="Zalo icon"
             className="w-16"
           />
-          <span className={`${tooltipCommon} bg-[#4267f4] min-w-[150px]`}>
+          <span className={`${tooltipCommon} bg-tertiary min-w-[150px]`}>
             Liên hệ Zalo
           </span>
         </a>

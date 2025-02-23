@@ -2,6 +2,7 @@ import { IconType } from "react-icons";
 import {
   MdDashboard,
   MdEditSquare,
+  MdEmail,
   MdHome,
   // MdImage
 } from "react-icons/md";
@@ -71,5 +72,32 @@ export const adminNavItems: {
     title: "Bài viết",
     link: linkConstants.admin_articles,
     icon: FaBlog,
+  },
+];
+
+export const publicMobileNavItems: {
+  title: string;
+  link: string;
+  icon?: IconType;
+}[] = [
+  {
+    title: "Trang chủ",
+    link: linkConstants.home,
+    icon: FaHome,
+  },
+  {
+    title: "Mua xe",
+    link: linkConstants.requireQuotation,
+    icon: FaCar,
+  },
+  {
+    title: "Tin tức",
+    link: linkConstants.news,
+    icon: FaBlog,
+  },
+  {
+    title: "Liên hệ",
+    link: linkConstants.contact,
+    icon: MdEmail,
   },
 ];

@@ -109,7 +109,7 @@ const AdminNotification: FC<Props> = ({ detail, read, notiId }) => {
         <Image
           src="/images/admin/default-user-avt.png"
           alt="User Avatar in Notification"
-          className="rounded-full"
+          className="rounded-full shrink-0 h-fit"
           width={36}
           height={36}
         />
