@@ -43,7 +43,7 @@ export const getAllCarsForHomepage = async () => {
   try {
     await dbConnect();
     const cars: any[] = await Car.find()
-      .select("name priceFrom slug avatar")
+      .select("name priceFrom installmentPrice slug avatar")
       .lean();
 
     // Chuyển đổi _id thành chuỗi

@@ -64,7 +64,7 @@ export default async function Home() {
           <PromotionSection />
           <CarsSection cars={cars} />
           <SupportBuyersSection />
-          <div className="pt-24 pb-[85px] container grid grid-cols-2 gap-16">
+          <div className="pt-24 pb-[85px] container grid xl:grid-cols-2 grid-cols-1 gap-x-16 gap-y-28">
             <VideosSection />
             <PriceTableSection cars={cars} />
           </div>

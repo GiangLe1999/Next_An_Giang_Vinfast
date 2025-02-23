@@ -23,6 +23,7 @@ const schema: any = Yup.object({
   avatar: Yup.string().required("Vui lòng chọn ảnh đại diện cho xe"),
   slug: Yup.string().required("Vui lòng nhập đường dẫn của xe"),
   priceFrom: Yup.string().required("Vui lòng nhập giá thấp nhất của xe"),
+  installmentPrice: Yup.string().required("Vui lòng nhập giá trả góp của xe"),
   registration: Yup.string().required("Vui lòng nhập registration của xe"),
 });
 
@@ -31,6 +32,7 @@ interface FormValues {
   avatar: string;
   slug: string;
   priceFrom: number;
+  installmentPrice: number;
   registration: number;
   colors: { color: string; colorImg: string }[];
   carLines: { name: string; price: number; tax: string }[];
@@ -54,6 +56,7 @@ const EditCarFrom: FC<Props> = ({ car }) => {
       avatar: car?.avatar?.url || "",
       slug: car?.slug || "",
       priceFrom: car?.priceFrom || 0,
+      installmentPrice: car?.installmentPrice || 0,
       registration: car?.registration || 0,
       colors: car?.colors?.map((color: any) => ({
         ...color,
@@ -218,6 +221,14 @@ const EditCarFrom: FC<Props> = ({ car }) => {
                 label="Giá thấp nhất"
                 register={register("priceFrom", { valueAsNumber: true })}
                 errorMsg={errors.priceFrom?.message}
+              />
+
+              <AdminFormInput
+                id="installmentPrice"
+                type="number"
+                label="Giá trả góp"
+                register={register("installmentPrice", { valueAsNumber: true })}
+                errorMsg={errors.installmentPrice?.message}
               />
 
               <AdminFormInput

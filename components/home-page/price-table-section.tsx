@@ -17,7 +17,10 @@ const PriceTableSection: FC<Props> = ({ cars }) => {
       <SectionTitle title="VINFAST 2025" />
 
       <div className="overflow-x-auto mt-14">
-        <div className="overflow-hidden rounded-md border">
+        <div
+          style={{ scrollbarWidth: "thin" }}
+          className="overflow-x-scroll rounded-md border"
+        >
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-secondary text-white">
@@ -46,7 +49,7 @@ const PriceTableSection: FC<Props> = ({ cars }) => {
                     {formatPrice(car?.priceFrom)}đ
                   </td>
                   <td className="p-3 text-center text-primary font-semibold">
-                    {formatPrice(car?.priceFrom)}
+                    {formatPrice(car?.installmentPrice)}
                     <u>đ</u>
                   </td>
                 </tr>

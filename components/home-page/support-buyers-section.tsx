@@ -4,14 +4,14 @@ const SupportBuyersSection = () => {
   return (
     <section
       id="support-buyers"
-      className="md:h-[160px] h-auto bg-primary flex items-center py-8"
+      className="xl:h-[160px] h-auto bg-primary flex items-center py-8"
     >
-      <div className="flex items-center justify-between text-white container gap-20 flex-wrap">
+      <div className="flex items-center xl:justify-between justify-center text-white container gap-x-20 gap-y-10 flex-wrap">
         <div>
-          <h3 className="font-bold sm:text-3xl text-2xl text-right">
+          <h3 className="font-bold sm:text-3xl text-2xl text-center xl:text-right">
             HỖ TRỢ MUA XE VINFAST TRẢ GÓP ĐẾN 85%
           </h3>
-          <h4 className="sm:text-lg text-base mt-2 text-right">
+          <h4 className="sm:text-lg text-base mt-2 text-center xl:text-right">
             LÃI SUẤT THẤP - THỦ TỤC NHANH CHÓNG
           </h4>
         </div>

@@ -13,6 +13,11 @@ const CarSchema = new Schema(
       required: true,
     },
 
+    installmentPrice: {
+      type: Number,
+      required: true,
+    },
+
     slug: {
       type: String,
       required: true,
