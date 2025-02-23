@@ -16,7 +16,7 @@ const Page = () => {
     <div>
       <FirstBanner
         heading="CHÍNH SÁCH THANH TOÁN"
-        subHeading="Thông tin chi tiết về quy trình thanh toán tại Vinfast."
+        subHeading="Thông tin chi tiết về quy trình thanh toán tại Vinfast Suối Tiên."
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"
       />
