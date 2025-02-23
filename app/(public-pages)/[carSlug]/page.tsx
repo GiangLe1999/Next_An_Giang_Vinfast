@@ -4,7 +4,6 @@ import CarPromotionSection from "@/components/car-page/CarPromotionSection";
 import CarImageGallery from "@/components/car-page/CarImageGallery";
 import CarPriceSection from "@/components/car-page/CarPriceSection";
 import { getAllCarsForAdmin, getCarBySlug } from "@/queries/car.query";
-import CarQuickConsultModal from "@/components/car-quick-consult-modal";
 
 const SalerCard = dynamicImport(
   () => import("@/components/car-page/SalerCard")
@@ -12,12 +11,9 @@ const SalerCard = dynamicImport(
 const ContentSection = dynamicImport(
   () => import("@/components/car-page/ContentSection")
 );
-// const CarQuickConsultModal = dynamicImport(
-//   () => import("@/components/car-quick-consult-modal"),
-//   {
-//     ssr: false,
-//   }
-// );
+const CarQuickConsultModal = dynamicImport(
+  () => import("@/components/car-quick-consult-modal")
+);
 
 export async function generateStaticParams() {
   const cars = await getAllCarsForAdmin();

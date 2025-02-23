@@ -28,12 +28,7 @@ export const getAllCarsForAdmin = async () => {
     const cars: any[] = await Car.find().select("name priceFrom slug").lean();
 
     // Chuyển đổi _id thành chuỗi
-    const serializedCars = cars.map((car) => ({
-      ...car,
-      _id: car._id.toString(),
-    }));
-
-    return serializedCars;
+    return JSON.parse(JSON.stringify(cars));
   } catch (error) {
     console.error("Lỗi khi fetch xe cho admin:", error);
   }
@@ -46,13 +41,7 @@ export const getAllCarsForHomepage = async () => {
       .select("name priceFrom installmentPrice slug avatar")
       .lean();
 
-    // Chuyển đổi _id thành chuỗi
-    const serializedCars = cars.map((car) => ({
-      ...car,
-      _id: car._id.toString(),
-    }));
-
-    return serializedCars;
+    return JSON.parse(JSON.stringify(cars));
   } catch (error) {
     console.error("Lỗi khi fetch xe cho homepage:", error);
   }
@@ -66,7 +55,7 @@ export const getCarRegistrationData = async (carName: string) => {
       .select("registration")
       .lean();
 
-    return car;
+    return JSON.parse(JSON.stringify(car));
   } catch (error) {
     console.error("Lỗi khi fetch xe:", error);
   }
@@ -92,5 +81,41 @@ export const getAllCarsNameVsSlug = async () => {
     return JSON.parse(JSON.stringify(carsWithNameAndSlug));
   } catch (error) {
     console.error("Lỗi khi fetch toàn bộ xe gồm tên và slug:", error);
+  }
+};
+
+export const getFilteredCars = async (query: any) => {
+  try {
+    await dbConnect();
+    const { line, price } = query;
+
+    const carQuery: any = {};
+
+    if (line?.length) {
+      carQuery.name = line;
+    }
+
+    if (price?.length) {
+      const priceRanges: any = {
+        "Dưới 500 triệu": { priceFrom: { $lte: 500000000 } },
+        "500 triệu - 700 triệu": {
+          priceFrom: { $gte: 500000000, $lte: 700000000 },
+        },
+        "700 triệu - 1 tỷ": {
+          priceFrom: { $gte: 700000000, $lte: 1000000000 },
+        },
+        "1 tỷ - 2 tỷ": { priceFrom: { $gte: 1000000000, $lte: 2000000000 } },
+      };
+
+      carQuery.$or = price
+        .map((item: any) => priceRanges[item])
+        .filter(Boolean);
+    }
+
+    const cars = await Car.find(carQuery).lean();
+    return JSON.parse(JSON.stringify(cars));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ xe gồm tên và slug:", error);
+    return [];
   }
 };
