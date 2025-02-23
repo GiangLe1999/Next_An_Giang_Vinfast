@@ -34,3 +34,34 @@ export const getArticleBySlug = async (slug: string) => {
     console.error("Lỗi khi fetch bài viết theo slug:", error);
   }
 };
+
+export const getRelatedArticles = async ({
+  currentId,
+  currentCate,
+}: {
+  currentId: string;
+  currentCate: string;
+}) => {
+  if (!currentId || !currentCate) {
+    console.error("Thiếu currentId hoặc currentCate");
+    return [];
+  }
+
+  try {
+    await dbConnect();
+
+    const relatedArticles = await Article.find({
+      category: currentCate,
+      _id: { $ne: currentId },
+    })
+      .select("name slug description thumbnail createdAt category")
+      .sort({ createdAt: -1 })
+      .limit(3)
+      .lean();
+
+    return JSON.parse(JSON.stringify(relatedArticles));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ các bài viết liên quan:", error);
+    return [];
+  }
+};

@@ -2,6 +2,7 @@ import { FC } from "react";
 import SectionTitle from "./section-title";
 import { formatPrice } from "@/lib/formatData";
 import ContainNextImage from "../contain-next-image";
+import Link from "next/link";
 
 interface Props {
   cars: any[];
@@ -28,15 +29,18 @@ const PriceTableSection: FC<Props> = ({ cars }) => {
             <tbody>
               {cars.map((car, index) => (
                 <tr key={index} className="border-t">
-                  <td className="p-3 gap-2">
-                    <div className="flex flex-col justify-center items-center gap-1">
-                      <div className="block relative w-20 aspect-video p-10">
+                  <td className="p-3">
+                    <Link
+                      href={`/${car.slug}`}
+                      className="flex flex-col justify-center items-center group"
+                    >
+                      <div className="block relative w-20 aspect-video p-10 group-hover:scale-110 transition-transform duration-500">
                         <ContainNextImage src={car.avatar.url} alt={car.name} />
                       </div>
                       <p className="font-semibold text-sm">
                         Vinfast {car.name}
                       </p>
-                    </div>
+                    </Link>
                   </td>
                   <td className="p-3 text-center">
                     {formatPrice(car?.priceFrom)}đ
