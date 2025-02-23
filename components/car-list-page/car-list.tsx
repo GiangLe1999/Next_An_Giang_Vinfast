@@ -19,8 +19,8 @@ const CarList: FC<Props> = ({ cars }) => {
       {Array.isArray(cars) ? (
         cars.map((car) => (
           <div key={car._id.toString()} className="mb-16">
-            <h2 className="font-bold text-xl uppercase border-b py-1 mb-5 hover:text-primary transition">
-              <Link href={`/${car.slug}`}>{car.name}</Link>
+            <h2 className="font-bold text-xl border-b py-1 mb-5 hover:text-primary transition">
+              <Link href={`/${car.slug}`}>Vinfast {car.name}</Link>
             </h2>
             <div className="flex items-center gap-4 max-[779px]:flex-col">
               <Link

@@ -43,7 +43,7 @@ const AccordionItem: FC<ItemsProps> = ({ header, ...rest }) => {
       className="border-b"
       buttonProps={{
         className: ({ isEnter }) =>
-          `flex w-full p-4 text-left ${isEnter && "bg-[#E8E8E8]"}`,
+          `flex w-full p-4 text-left rounded-md ${isEnter && "bg-[#E8E8E8]"}`,
       }}
       contentProps={{
         className: "transition-height duration-300 ease-out",

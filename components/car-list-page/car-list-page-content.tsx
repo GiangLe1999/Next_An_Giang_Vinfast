@@ -20,14 +20,14 @@ const CarListPageContent: FC<Props> = ({ initialCars }) => {
         <FirstBanner
           heading="BẢNG GIÁ"
           subHeading="Bảng giá chi tiết tất cả các dòng xe của Vinfast"
-          bgImg="/images/thu-tuc-tra-gop/first-banner.jpg"
+          bgImg="/images/bang-gia-xe/first-banner.webp"
           bgClasses="!bg-cover"
         />
 
         <div className="container">
           <div className="flex mt-8 mb-16 gap-7 max-[1000px]:flex-col">
             <Filter
-              initialCars={cars}
+              initialCars={initialCars}
               setCars={setCars}
               filterLoading={filterLoading}
               setFilterLoading={setFilterLoading}
