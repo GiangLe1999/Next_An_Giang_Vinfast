@@ -135,7 +135,7 @@ export const navCarMenu: navCarItemType[] = [
     link: "vf6",
   },
   {
-    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740216253/Suoi%20Tien%20Vinfast/o1cjdm4e4f6yjqdy6hwa.webp",
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740240220/Suoi%20Tien%20Vinfast/x88b0dix3dojiwtiygy1.png",
     name: "Vinfast VF7",
     price: "760",
     link: "vf7",

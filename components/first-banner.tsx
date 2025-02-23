@@ -16,7 +16,7 @@ const FirstBanner: FC<Props> = ({ heading, subHeading, bgImg, bgClasses }) => {
       <h1 className="font-bold uppercase text-3xl relative z-10 max-[650px]:text-xl">
         {heading}
       </h1>
-      <span className="text-xl relative z-10 max-w-[80%] text-center max-[650px]:text-base">
+      <span className="text-lg relative z-10 max-w-[80%] text-center max-[650px]:text-base">
         {subHeading}
       </span>
     </div>
