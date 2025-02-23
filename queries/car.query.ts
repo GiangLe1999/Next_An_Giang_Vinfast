@@ -84,6 +84,17 @@ export const getAllCarsNameVsSlug = async () => {
   }
 };
 
+export const getAllCarsName = async () => {
+  try {
+    await dbConnect();
+    const carsWithName = await Car.find().select("name").lean();
+
+    return JSON.parse(JSON.stringify(carsWithName));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ xe gồm tên:", error);
+  }
+};
+
 export const getFilteredCars = async (query: any) => {
   try {
     await dbConnect();

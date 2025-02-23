@@ -331,7 +331,7 @@ html {
 }
 
 .installment-block h3 {
-  @apply text-center font-bold uppercase text-primary text-2xl mb-4;
+  @apply text-center font-bold uppercase text-primary text-2xl mb-10;
 }
 
 .installment-block ol {
@@ -359,11 +359,11 @@ html {
 }
 
 .installment-block-sm h3 {
-  @apply text-center font-bold text-tertiary text-xl mb-3;
+  @apply text-center font-bold text-tertiary text-xl mb-4;
 }
 
 .installment-block-sm ol {
-  @apply list-decimal ml-6 space-y-2 text-textColor;
+  @apply list-decimal ml-6 space-y-2 text-textColor text-sm leading-7;
 }
 
 /* Common Accordion */
