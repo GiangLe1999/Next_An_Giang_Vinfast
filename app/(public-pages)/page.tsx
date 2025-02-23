@@ -17,6 +17,10 @@ const SupportBuyersSection = dynamicImport(
   () => import("@/components/home-page/support-buyers-section")
 );
 
+const VideosSection = dynamicImport(
+  () => import("@/components/home-page/videos-section")
+);
+
 const PriceTableSection = dynamicImport(
   () => import("@/components/home-page/price-table-section")
 );
@@ -60,7 +64,10 @@ export default async function Home() {
           <PromotionSection />
           <CarsSection cars={cars} />
           <SupportBuyersSection />
-          <PriceTableSection cars={cars} />
+          <div className="pt-24 pb-[85px] container grid grid-cols-2 gap-16">
+            <VideosSection />
+            <PriceTableSection cars={cars} />
+          </div>
           <ReasonsSection />
           {/* 
           <PostsSection />

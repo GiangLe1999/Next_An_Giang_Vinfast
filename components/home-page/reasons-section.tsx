@@ -57,7 +57,7 @@ const ReasonsSection = () => {
           </li>
         </ul>
 
-        <div className="relative w-full aspect-[1.52] rounded-sm overflow-hidden">
+        <div className="relative w-full aspect-[1.52] rounded-md overflow-hidden">
           <NextImage
             src="/images/home/tai-sao-nen-mua-vinfast.webp"
             alt="Tại sao nên mua xe Vinfast?"

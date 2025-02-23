@@ -36,7 +36,7 @@ const BtnWithIcon: FC<Props> = ({
     <Component
       href={href || to}
       onClick={onClick}
-      className={`py-2 px-4 flex items-center justify-center gap-x-1 rounded-sm transition
+      className={`py-2 px-4 flex items-center justify-center gap-x-1 rounded-md transition
       border border-transparent ${customClasses} hover:scale-[1.01]`}
       type={type}
     >

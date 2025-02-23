@@ -112,7 +112,7 @@ html {
 }
 
 .form-input {
-  @apply px-4 py-2 rounded-sm outline-none;
+  @apply px-4 py-2 rounded-md outline-none;
 }
 
 .cal-price-form-input {

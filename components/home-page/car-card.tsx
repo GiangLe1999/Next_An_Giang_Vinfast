@@ -11,7 +11,7 @@ const CarCard: FC<Props> = ({ car }) => {
   return (
     <Link
       href={`/${car.slug}`}
-      className="rounded-lg transition-transform duration-300 hover:-translate-y-2"
+      className="transition-transform duration-300 hover:-translate-y-2 rounded-md shadow-md border pt-8 pb-4"
     >
       <div className="block relative w-full aspect-video p-10">
         <ContainNextImage src={car.avatar.url} alt={car.name} />
@@ -19,7 +19,7 @@ const CarCard: FC<Props> = ({ car }) => {
 
       <div className="p-4">
         <h4 className="text-lg font-bold text-gray-800 hover:text-primary transition text-center">
-          {car.name.toUpperCase()}
+          VINFAST {car.name.toUpperCase()}
         </h4>
         <div className="mt-1 text-center">
           <span className="font-semibold text-primary">

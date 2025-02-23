@@ -126,7 +126,7 @@ const FooterForm = () => {
 
       <button
         type="submit"
-        className="bg-secondary w-full text-white uppercase py-2 rounded-sm flex items-center justify-center gap-1 hover:scale-[1.01]"
+        className="bg-secondary w-full text-white uppercase py-2 rounded-md flex items-center justify-center gap-1 hover:scale-[1.01]"
       >
         {loading ? (
           <>

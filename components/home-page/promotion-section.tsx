@@ -5,11 +5,14 @@ import { HiReceiptTax } from "react-icons/hi";
 const PromotionSection = () => {
   return (
     <section className="pt-28 pb-10 container">
+      <p className="text-textColor text-center font-bold text-sm mb-2">
+        CHƯƠNG TRÌNH
+      </p>
       <SectionTitle title="KHUYẾN MÃI VINFAST" />
 
-      <div className="grid grid-cols-2 gap-x-12 gap-y-6 py-8 max-[738px]:grid-cols-1">
+      <div className="grid grid-cols-2 gap-x-12 gap-y-6 py-8 max-[738px]:grid-cols-1 mt-3">
         <div>
-          <p className="text-primary text-base font-bold mb-1 flex items-center gap-1">
+          <p className="text-primary text-base font-bold mb-2 flex items-center gap-1">
             <HiReceiptTax size={20} color="#C4161C" /> ƯU ĐÃI XE VINFAST 2025
           </p>
           <ul className="text-sm text-textColor leading-7">
@@ -37,7 +40,7 @@ const PromotionSection = () => {
         </div>
 
         <div>
-          <p className="text-primary text-base font-bold mb-1 flex items-center gap-1">
+          <p className="text-primary text-base font-bold mb-2 flex items-center gap-1">
             <FaUsersCog size={20} color="#C4161C" /> TRẢ GÓP – LÃI SUẤT ƯU ĐÃI
           </p>
           <p className="text-sm text-textColor leading-7 mt-2 mb-4">

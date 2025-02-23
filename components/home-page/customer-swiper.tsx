@@ -24,7 +24,7 @@ const CustomerSwiper = () => {
         className="customerSwiper"
       >
         <SwiperSlide>
-          <div className="relative w-full aspect-square rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-1.webp`}
               alt={`Giao xe Vinfast tới khách hàng 1`}
@@ -33,7 +33,7 @@ const CustomerSwiper = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative w-full aspect-square rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-2.webp`}
               alt={`Giao xe Vinfast tới khách hàng 2`}
@@ -42,7 +42,7 @@ const CustomerSwiper = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative w-full aspect-square rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-3.webp`}
               alt={`Giao xe Vinfast tới khách hàng 3`}
@@ -51,7 +51,7 @@ const CustomerSwiper = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative w-full aspect-square rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-4.webp`}
               alt={`Giao xe Vinfast tới khách hàng 4`}
@@ -60,7 +60,7 @@ const CustomerSwiper = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative w-full aspect-square rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-5.webp`}
               alt={`Giao xe Vinfast tới khách hàng 5`}
