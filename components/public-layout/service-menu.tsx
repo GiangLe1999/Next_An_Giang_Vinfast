@@ -41,7 +41,11 @@ const serviceList = [
   {
     icon: icon4,
     title: "ĐẶT HẸN DỊCH VỤ",
-    children: [{ title: "Chi tiết", link: linkConstants.bookService }],
+    children: [
+      { title: "Chi tiết", link: linkConstants.bookService },
+      { title: "Chính sách bảo hành", link: linkConstants.warranty },
+      { title: "Chính sách giao nhận", link: linkConstants.deliveryPolicy },
+    ],
   },
 
   {

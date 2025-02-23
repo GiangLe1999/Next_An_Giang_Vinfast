@@ -27,7 +27,7 @@ const NavCarMenu: FC<Props> = ({
         <Link
           href={"/" + car.link}
           key={index}
-          className="text-center hover:scale-[1.04] transition"
+          className="text-center hover:scale-110 transition-transform duration-500"
           onClick={parentUnHoverHandler}
         >
           <div className="relative w-full aspect-video">
@@ -46,7 +46,7 @@ const NavCarMenu: FC<Props> = ({
 
       <button
         onClick={() => setShowCarMenu(false)}
-        className="text-primary absolute top-2 right-2 flex items-center gap-1 hover:scale-[1.1] transition"
+        className="text-primary absolute top-2 right-2 flex items-center gap-1 hover:scale-110 transition-transform duration-500"
       >
         <span className="underline font-bold">Đóng</span>
         <AiFillCloseSquare size={25} />

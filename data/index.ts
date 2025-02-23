@@ -244,6 +244,10 @@ export const footerCol32: footerItemType[] = [
     title: "Chính sách Giao nhận - Vận chuyển",
     link: linkConstants.deliveryPolicy,
   },
+  {
+    title: "Chính sách Bảo hành",
+    link: linkConstants.warranty,
+  },
 ];
 
 export const footerCol4: { title: string; link: string; icon: IconType }[] = [
