@@ -9,7 +9,7 @@ interface Props {
   type?: string;
   label: string;
   register: UseFormRegisterReturn<string>;
-  errorMsg?: string | undefined;
+  errorMsg?: any;
   textarea?: boolean;
   rows?: number;
   placeholder?: string;
