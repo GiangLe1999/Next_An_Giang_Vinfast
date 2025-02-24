@@ -56,7 +56,7 @@ const serviceList = [
         title: "Tổng đài chăm sóc khách hàng",
         link: linkConstants.careCustomer,
       },
-      { title: "Chăm sóc xe lưu động", link: linkConstants.mobileService },
+      { title: "Dịch vụ sửa chữa", link: linkConstants.fix },
     ],
   },
 ];
