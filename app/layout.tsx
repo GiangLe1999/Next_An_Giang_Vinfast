@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/contexts/providers";
 import localFont from "next/font/local";
+import GoogleAnalytics from "@/components/google-analytics";
 
 const myFont = localFont({
   src: [
@@ -38,6 +39,8 @@ export default function RootLayout({
       <body className={`${myFont.className} antialiased`}>
         <Providers>{children}</Providers>
       </body>
+
+      <GoogleAnalytics />
     </html>
   );
 }

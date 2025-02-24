@@ -57,3 +57,45 @@ export const createTestDrive = async (data: any) => {
     throw new Error("Đã xảy ra lỗi, vui lòng thử lại sau!");
   }
 };
+
+export const updateTestDriveStatus = async ({ id, newStatus }: any) => {
+  try {
+    await dbConnect();
+
+    if (!newStatus || typeof newStatus !== "string") {
+      return { success: false, message: "Trạng thái mới không hợp lệ" };
+    }
+
+    // Cập nhật và trả về dữ liệu mới
+    const updatedConsult = await TestDrive.findByIdAndUpdate(
+      id,
+      { status: newStatus },
+      { new: true } // Trả về dữ liệu đã cập nhật
+    );
+
+    // Kiểm tra nếu không tìm thấy tài liệu
+    if (!updatedConsult) {
+      return JSON.parse(
+        JSON.stringify({
+          success: false,
+          message: "Không tìm thấy form đăng ký lái thử cần cập nhật",
+        })
+      );
+    }
+
+    return JSON.parse(
+      JSON.stringify({
+        success: true,
+        message: "Cập nhật tình trạng form đăng ký lái thử thành công",
+      })
+    );
+  } catch (error) {
+    console.error("Lỗi khi cập nhật tình trạng form đăng ký lái thử:", error);
+    return JSON.parse(
+      JSON.stringify({
+        success: false,
+        message: error instanceof Error ? error.message : "Lỗi không xác định",
+      })
+    );
+  }
+};

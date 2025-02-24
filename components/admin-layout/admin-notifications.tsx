@@ -34,7 +34,7 @@ const AdminNotifications = () => {
   const unreadNotis = data?.length
     ? data
         .filter((notification: any) => !notification.read)
-        .map((noti) => noti._id)
+        .map((noti: any) => noti._id)
     : [];
 
   const markReadAllHandler = async () => {
@@ -99,7 +99,7 @@ const AdminNotifications = () => {
           )}
         </span>
       </span>
-      Thông báo
+      Thông Báo
       {showNoti && (
         <div
           onClick={(e) => {

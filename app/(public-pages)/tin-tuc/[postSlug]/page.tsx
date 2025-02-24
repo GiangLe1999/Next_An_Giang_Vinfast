@@ -3,10 +3,7 @@ import { IoReturnUpBackSharp } from "react-icons/io5";
 import { linkConstants } from "@/data/constants";
 import { formatLongDate } from "@/lib/formatData";
 import NewsContent from "@/components/news-page/news-content";
-import {
-  // getAllArticlesForAdmin,
-  getArticleBySlug,
-} from "@/queries/article.query";
+import { getArticleBySlugAndIncreaseViews } from "@/queries/article.query";
 import RelatedArticles from "@/components/news-page/related-articles";
 
 // export async function generateStaticParams() {
@@ -48,7 +45,7 @@ export default async function Page({
 }) {
   const slug = (await params).postSlug;
 
-  const data = (await getArticleBySlug(slug)) as any;
+  const data = (await getArticleBySlugAndIncreaseViews(slug)) as any;
 
   return (
     <div className="container my-12 text-textColor">

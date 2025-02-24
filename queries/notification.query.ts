@@ -20,7 +20,7 @@ export const getRecentlyNotifications = async () => {
       })
       .lean();
 
-    return notifications;
+    return JSON.parse(JSON.stringify(notifications));
   } catch (error) {
     console.error("Lỗi khi fetch thông báo:", error);
 

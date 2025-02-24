@@ -64,3 +64,45 @@ export const createQuickConsult = async (data: any) => {
     };
   }
 };
+
+export const updateQuickConsultStatus = async ({ id, newStatus }: any) => {
+  try {
+    await dbConnect();
+
+    if (!newStatus || typeof newStatus !== "string") {
+      return { success: false, message: "Trạng thái mới không hợp lệ" };
+    }
+
+    // Cập nhật và trả về dữ liệu mới
+    const updatedConsult = await QuickConsult.findByIdAndUpdate(
+      id,
+      { status: newStatus },
+      { new: true } // Trả về dữ liệu đã cập nhật
+    );
+
+    // Kiểm tra nếu không tìm thấy tài liệu
+    if (!updatedConsult) {
+      return JSON.parse(
+        JSON.stringify({
+          success: false,
+          message: "Không tìm thấy báo giá cần cập nhật",
+        })
+      );
+    }
+
+    return JSON.parse(
+      JSON.stringify({
+        success: true,
+        message: "Cập nhật tình trạng báo giá thành công",
+      })
+    );
+  } catch (error) {
+    console.error("Lỗi khi cập nhật tình trạng báo giá:", error);
+    return JSON.parse(
+      JSON.stringify({
+        success: false,
+        message: error instanceof Error ? error.message : "Lỗi không xác định",
+      })
+    );
+  }
+};

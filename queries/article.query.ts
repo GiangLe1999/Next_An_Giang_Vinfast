@@ -38,15 +38,42 @@ export const getArticleBySlug = async (slug: string) => {
 
   try {
     await dbConnect();
-    const car = await Article.findOne({ slug }).lean();
+    const article = await Article.findOne({ slug }).lean();
 
-    if (!car) {
+    if (!article) {
       console.error(`Không tìm thấy bài viết với slug: ${slug}`);
     }
 
-    return JSON.parse(JSON.stringify(car));
+    return JSON.parse(JSON.stringify(article));
   } catch (error) {
     console.error("Lỗi khi fetch bài viết theo slug:", error);
+  }
+};
+
+export const getArticleBySlugAndIncreaseViews = async (slug: string) => {
+  if (!slug) {
+    console.error("Slug không hợp lệ.");
+    return null;
+  }
+
+  try {
+    await dbConnect();
+
+    const article = await Article.findOneAndUpdate(
+      { slug },
+      { $inc: { views: 1 } },
+      { new: true, lean: true } // Trả về dữ liệu sau khi cập nhật
+    );
+
+    if (!article) {
+      console.error(`Không tìm thấy bài viết với slug: ${slug}`);
+      return null;
+    }
+
+    return JSON.parse(JSON.stringify(article));
+  } catch (error) {
+    console.error("Lỗi khi fetch bài viết theo slug:", error);
+    return null;
   }
 };
 
