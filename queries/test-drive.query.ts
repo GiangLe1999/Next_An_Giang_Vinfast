@@ -1,7 +1,7 @@
 "use server";
 
 import dbConnect from "@/lib/db";
-import QuickConsult from "@/model/QuickConsult";
+import TestDrive from "@/model/TestDrive";
 
 export const getAllTestDrives = async (data: any) => {
   try {
@@ -52,19 +52,19 @@ export const getAllTestDrives = async (data: any) => {
     const perPage = Number(limit) > 0 ? Number(limit) : 10; // Mặc định 10 kết quả mỗi trang
 
     // Thực hiện truy vấn
-    const [quickConsults, totalDocuments] = await Promise.all([
-      QuickConsult.find(queryObj)
+    const [testdrives, totalDocuments] = await Promise.all([
+      TestDrive.find(queryObj)
         .sort({ createdAt: -1 })
         .skip(perPage * (page - 1))
         .limit(perPage)
         .lean(),
-      QuickConsult.countDocuments(queryObj),
+      TestDrive.countDocuments(queryObj),
     ]);
 
     const totalPages = Math.ceil(totalDocuments / perPage);
 
     return JSON.parse(
-      JSON.stringify({ data: quickConsults, totalDocuments, totalPages })
+      JSON.stringify({ data: testdrives, totalDocuments, totalPages })
     );
   } catch (error) {
     console.error("Lỗi khi fetch danh sách danh sách lái thử:", error);
