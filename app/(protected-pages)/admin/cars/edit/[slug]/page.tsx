@@ -1,7 +1,17 @@
 import AdminCardTitle from "@/components/admin-card-title";
-import { getCarBySlug } from "@/queries/car.query";
+import { getAllCarsForAdmin, getCarBySlug } from "@/queries/car.query";
 import { MdEditSquare } from "react-icons/md";
 import EditCarForm from "@/components/admin-cars-page/edit-car-form";
+
+export async function generateStaticParams() {
+  const cars = await getAllCarsForAdmin();
+
+  const carsSlugs = cars?.map((car: any) => ({
+    slug: car.slug,
+  }));
+
+  return carsSlugs;
+}
 
 export default async function Page({
   params,

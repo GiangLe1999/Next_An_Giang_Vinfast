@@ -1,7 +1,20 @@
 import EditArticleForm from "@/components/admin-articles-page/edit-article-form";
 import AdminCardTitle from "@/components/admin-card-title";
-import { getArticleBySlug } from "@/queries/article.query";
+import {
+  getAllArticlesForAdmin,
+  getArticleBySlug,
+} from "@/queries/article.query";
 import { MdEditSquare } from "react-icons/md";
+
+export async function generateStaticParams() {
+  const articles = await getAllArticlesForAdmin();
+
+  const articlesSlugs = articles?.map((article: any) => ({
+    slug: article.slug,
+  })) as any;
+
+  return articlesSlugs;
+}
 
 export default async function Page({
   params,
