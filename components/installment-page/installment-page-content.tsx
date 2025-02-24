@@ -21,7 +21,7 @@ const InstallmentPageContent: FC<Props> = ({ carNameArr }) => {
       <div className="container py-12 space-y-12">
         <div>
           <h2 className="post-heading-2">
-            <span>Thủ tục trả góp đối với doanh nghiệp & cá nhân</span>
+            <span>Thủ tục trả góp</span>
           </h2>
           <div className="grid grid-cols-2 gap-8 max-[920px]:grid-cols-1">
             <div className="installment-block">
