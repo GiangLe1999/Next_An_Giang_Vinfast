@@ -78,7 +78,7 @@ const TestDriveStatus: FC<Props> = ({
       queryClient.setQueryData(queryKeysArr, (old: any) => {
         const newTestDrives = [...old.data];
 
-        const updatedContactIndex = newTestDrives.findIndex(
+        const updatedContactIndex = newTestDrives?.findIndex(
           (testDrive: any) => testDrive._id === testDriveId
         );
 

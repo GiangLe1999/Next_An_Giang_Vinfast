@@ -120,20 +120,20 @@ const TestDriveListTable = () => {
                     <td className="border">{testDrive.phone}</td>
                     <td className="border">{testDrive.carName}</td>
                     <td className="border max-w-[250px] pr-2">
-                      {testDrive.carLine}
+                      {testDrive?.carLine}
                     </td>
                     <td
                       className="border max-w-[300px] pr-2"
                       style={{ wordWrap: "anywhere" as any }}
                     >
-                      {testDrive.content}
+                      {testDrive?.content}
                     </td>
                     <td className="border">
-                      {formatShortDate(testDrive.createdAt)}
+                      {formatShortDate(testDrive?.createdAt)}
                     </td>
                     <td className="border border-r-0">
                       <TestDriveStatus
-                        initialStatus={testDrive.status}
+                        initialStatus={testDrive?.status}
                         testDriveId={testDrive._id}
                         keyword={keyword}
                         startDate={startDate}

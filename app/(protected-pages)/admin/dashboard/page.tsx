@@ -7,7 +7,7 @@ const DashboardPage = () => {
     <div className="admin-page-container">
       <AnalyticsBlocks />
       <QuickConsultListTable />
-      {/* <TestDriveListTable /> */}
+      <TestDriveListTable />
     </div>
   );
 };

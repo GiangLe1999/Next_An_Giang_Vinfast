@@ -10,19 +10,12 @@ import RowSkeleton from "./row-skeleton";
 import QuickConsultStatus from "./quick-consult-status";
 import QuickConsultListTableFooter from "./quick-consult-list-table-footer";
 
-type DateRangeStateType = {
-  startDate: Date;
-  endDate: Date;
-  key: string;
-}[];
-
 const QuickConsultListTable = () => {
   const [isClient, setIsClient] = useState(false);
 
   const [keyword, setKeyword] = useState("");
 
-  const [dateRange, setDateRange] =
-    useState<DateRangeStateType>(initialDateRange);
+  const [dateRange, setDateRange] = useState<any>(initialDateRange);
 
   const startDate = dateRange[0].startDate;
   const endDate = dateRange[0].endDate;
@@ -111,15 +104,15 @@ const QuickConsultListTable = () => {
                     <td className="text-center border border-l-0 !pl-0">
                       {index + 1 + limit * (currentPage - 1)}
                     </td>
-                    <td className="border">{quickConsult.name}</td>
-                    <td className="border">{quickConsult.phone}</td>
-                    <td className="border">{quickConsult.carName}</td>
+                    <td className="border">{quickConsult?.name}</td>
+                    <td className="border">{quickConsult?.phone}</td>
+                    <td className="border">{quickConsult?.carName}</td>
                     <td className="border">
-                      {formatShortDate(quickConsult.createdAt)}
+                      {formatShortDate(quickConsult?.createdAt)}
                     </td>
                     <td className="border border-r-0">
                       <QuickConsultStatus
-                        initialStatus={quickConsult.status}
+                        initialStatus={quickConsult?.status}
                         quickConsultId={quickConsult._id}
                         keyword={keyword}
                         startDate={startDate}

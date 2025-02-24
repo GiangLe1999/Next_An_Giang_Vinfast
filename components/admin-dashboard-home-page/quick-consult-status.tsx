@@ -80,7 +80,7 @@ const QuickConsultStatus: FC<Props> = ({
       queryClient.setQueryData(queryKeysArr, (old: any) => {
         const newContacts = [...old.data];
 
-        const updatedContactIndex = newContacts.findIndex(
+        const updatedContactIndex = newContacts?.findIndex(
           (quickConsult: any) => quickConsult._id === quickConsultId
         );
 

@@ -43,7 +43,7 @@ const AdminNotification: FC<Props> = ({ detail, read, notiId }) => {
         if (!old || !old.data) return old; // Kiểm tra nếu không có dữ liệu trước đó
         const newNotifications = [...old.data];
 
-        const updatedNotificationIndex = newNotifications.findIndex(
+        const updatedNotificationIndex = newNotifications?.findIndex(
           (notification: any) => notification._id === notiId
         );
 
