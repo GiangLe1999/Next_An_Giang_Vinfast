@@ -13,7 +13,7 @@ import RelatedArticles from "@/components/news-page/related-articles";
 export async function generateStaticParams() {
   const articles = await getAllArticlesForAdmin();
 
-  const articlesSlugs = articles?.data?.map((article: any) => ({
+  const articlesSlugs = articles?.map((article: any) => ({
     postSlug: article.slug,
   })) as any;
 
