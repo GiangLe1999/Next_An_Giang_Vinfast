@@ -151,3 +151,16 @@ export const getAllArticlesForUsers = async ({
     return { result: [], pageMaxSize: 0 };
   }
 };
+
+export const getAllArticlesForSitemap = async () => {
+  try {
+    await dbConnect();
+    const articlesWithNameAndUpdatedAt = await Article.find()
+      .select("name updatedAt")
+      .lean();
+
+    return JSON.parse(JSON.stringify(articlesWithNameAndUpdatedAt));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ xe cho sitemap:", error);
+  }
+};

@@ -95,6 +95,19 @@ export const getAllCarsName = async () => {
   }
 };
 
+export const getAllCarsForSitemap = async () => {
+  try {
+    await dbConnect();
+    const carsWithNameAndUpdatedAt = await Car.find()
+      .select("name updatedAt")
+      .lean();
+
+    return JSON.parse(JSON.stringify(carsWithNameAndUpdatedAt));
+  } catch (error) {
+    console.error("Lỗi khi fetch toàn bộ xe cho sitemap:", error);
+  }
+};
+
 export const getFilteredCars = async (query: any) => {
   try {
     await dbConnect();
