@@ -50,7 +50,7 @@ export const createQuickConsult = async (data: any) => {
       pusherInstance.trigger("admin-notifications", "new-customer", {}),
       sendEmail(
         process.env.SMTP_MAIL_TO as string,
-        "KH Vinfast mới cần báo giá",
+        "KH VinFast mới cần báo giá",
         emailContent
       ),
     ]);

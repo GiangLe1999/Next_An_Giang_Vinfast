@@ -27,7 +27,7 @@ const CustomerSwiper = () => {
           <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-1.webp`}
-              alt={`Giao xe Vinfast tới khách hàng 1`}
+              alt={`Giao xe VinFast tới khách hàng 1`}
             />
           </div>
         </SwiperSlide>
@@ -36,7 +36,7 @@ const CustomerSwiper = () => {
           <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-2.webp`}
-              alt={`Giao xe Vinfast tới khách hàng 2`}
+              alt={`Giao xe VinFast tới khách hàng 2`}
             />
           </div>
         </SwiperSlide>
@@ -45,7 +45,7 @@ const CustomerSwiper = () => {
           <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-3.webp`}
-              alt={`Giao xe Vinfast tới khách hàng 3`}
+              alt={`Giao xe VinFast tới khách hàng 3`}
             />
           </div>
         </SwiperSlide>
@@ -54,7 +54,7 @@ const CustomerSwiper = () => {
           <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-4.webp`}
-              alt={`Giao xe Vinfast tới khách hàng 4`}
+              alt={`Giao xe VinFast tới khách hàng 4`}
             />
           </div>
         </SwiperSlide>
@@ -63,7 +63,7 @@ const CustomerSwiper = () => {
           <div className="relative w-full aspect-square rounded-md overflow-hidden">
             <NextImage
               src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-5.webp`}
-              alt={`Giao xe Vinfast tới khách hàng 5`}
+              alt={`Giao xe VinFast tới khách hàng 5`}
             />
           </div>
         </SwiperSlide>

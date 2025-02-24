@@ -47,12 +47,12 @@ export const warrantyData = [
           <li>trộn các chức năng của xe.</li>
           <li>
             Thực hiện các công việc sửa chữa, thay thế phụ tùng tại những nơi
-            không phải là Đại lý của Vinfast.
+            không phải là Đại lý của VinFast.
           </li>
-          <li>Thay thế phụ tùng hoặc phụ kiện không do Vinfast cung cấp.</li>
+          <li>Thay thế phụ tùng hoặc phụ kiện không do VinFast cung cấp.</li>
           <li>
             Can thiệp vào hệ thống điện trên xe để lắp thêm các phụ kiện không
-            do Vinfast cung cấp.
+            do VinFast cung cấp.
           </li>
         </ul>
 
@@ -74,7 +74,7 @@ export const warrantyData = [
             được thực hiện tại các Đại lý
           </li>
           <li>
-            của Vinfast và cần có xác nhận của Đại lý về thời gian thay, số km
+            của VinFast và cần có xác nhận của Đại lý về thời gian thay, số km
             trên đồng hồ cũ, số km trên
           </li>
           <li>đồng hồ mới sau khi thay thế.</li>
@@ -101,10 +101,10 @@ export const warrantyData = [
           </li>
           <li>
             Bất kỳ hư hỏng sơn, đổi màu, hư hỏng các chi tiết hoặc ăn mòn bề mặt
-            chi tiết do sửa chữa vỏ không đúng theo các thông số của Vinfast
+            chi tiết do sửa chữa vỏ không đúng theo các thông số của VinFast
             hoặc sử dụng phụ tùng không chính hãng hoặc sửa chữa ở những
           </li>
-          <li>nơi không phải là Đại lý của Vinfast sẽ không được bảo hành.</li>
+          <li>nơi không phải là Đại lý của VinFast sẽ không được bảo hành.</li>
           <li>
             Bất kỳ sự ăn mòn bề mặt, đổi màu của toàn bộ các chi tiết của hệ
             thống xả sẽ không được bảo hành.
@@ -161,7 +161,7 @@ export const warrantyData = [
     content: (
       <ul>
         <li>
-          Áp dụng đối với các dòng xe do Vinfast phân phối, đã được đăng ký lưu
+          Áp dụng đối với các dòng xe do VinFast phân phối, đã được đăng ký lưu
           hành và đang hoạt động trong lãnh thổ Việt Nam.{" "}
         </li>
         <li>
@@ -177,7 +177,7 @@ export const warrantyData = [
     content: (
       <ul>
         <li>
-          Xe Vinfast của Quý khách được bảo hành trong vòng 36 tháng hoặc
+          Xe VinFast của Quý khách được bảo hành trong vòng 36 tháng hoặc
           100.000 km tùy điều kiện nào đến trước, kể từ ngày giao xe đầu tiên
           (ghi trên phiếu đăng ký bảo hành).
         </li>
@@ -193,7 +193,7 @@ export const warrantyData = [
         <li>
           Ngoại trừ các chi tiết có điều kiện bảo hành đặc biệt như ở mục 4 và
           các chi tiết không được bảo hành như ở mục 5, tất cả các chi tiết trên
-          xe Vinfast của Quý khách sẽ được các Đại lý của Vinfast bảo hành bằng
+          xe VinFast của Quý khách sẽ được các Đại lý của VinFast bảo hành bằng
           cách sửa chữa, điều chỉnh hoặc thay thế miễn phí bất kỳ phụ tùng, chi
           tiết nào bị hư hỏng do lỗi phụ tùng hoặc lỗi lắp ráp được phát hiện.
         </li>
@@ -208,7 +208,7 @@ export const warrantyData = [
         <span>
           Các chi tiết dưới đây sẽ được bảo hành theo chính sách riêng của nhà
           sản xuất chi tiết đó. Trong trường hợp các nhà sản xuất này không có
-          đại diện hợp pháp và có thẩm quyền tại Việt Nam, Vinfast sẽ xem xét
+          đại diện hợp pháp và có thẩm quyền tại Việt Nam, VinFast sẽ xem xét
           bảo hành tùy từng trường hợp cụ thể như dưới đây.
         </span>
 
@@ -272,7 +272,7 @@ export const warrantyData = [
             Thùng sau xe bán tải: Hư hỏng sơn và han rỉ bề mặt của thùng sau xe
             bán tải không được bảo hành.
           </li>
-          <li>Đầu DVD/CD (đối với xe không có hệ thống Vinfast Connect):</li>
+          <li>Đầu DVD/CD (đối với xe không có hệ thống VinFast Connect):</li>
         </ul>
 
         <p>5.3 Lưu ý:</p>
@@ -283,10 +283,10 @@ export const warrantyData = [
             hành.
           </li>
           <li>
-            Đầu đọc DVD/CD thuộc hệ thống Vinfast Connect được bảo hành theo xe.
+            Đầu đọc DVD/CD thuộc hệ thống VinFast Connect được bảo hành theo xe.
           </li>
           <li>
-            Thẻ SD hệ thống dẫn đường (navigation) trên xe có trang bị Vinfast
+            Thẻ SD hệ thống dẫn đường (navigation) trên xe có trang bị VinFast
             Connect chỉ được bảo hành 12 tháng kể từ ngày đăng ký bảo hành.
           </li>
           <li>

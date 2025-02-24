@@ -208,7 +208,7 @@ const TestDriveForm: FC<Props> = ({ carLines }) => {
             />
             <label htmlFor="confirm1" className="cursor-pointer">
               Tôi xác nhận rằng VINFAST SUỐI TIÊN có thể gửi cho tôi thêm thông
-              tin về các sản phẩm hoặc dịch vụ của Mazda. *
+              tin về các sản phẩm hoặc dịch vụ của VinFast. *
             </label>
           </div>
           {submitted && !confirm1Checked && (
@@ -233,8 +233,8 @@ const TestDriveForm: FC<Props> = ({ carLines }) => {
             />
 
             <label htmlFor="confirm2" className="cursor-pointer">
-              Tôi đã đọc và đồng ý với các quy định và chính sách của Mazda Việt
-              Nam. *
+              Tôi đã đọc và đồng ý với các quy định và chính sách của Vinfast
+              Suối Tiên. *
             </label>
           </div>
           {submitted && !confirm2Checked && (

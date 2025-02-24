@@ -24,7 +24,7 @@ const PriceTableSection: FC<Props> = ({ cars }) => {
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-secondary text-white">
-                <th className="p-3 text-center">Xe Vinfast</th>
+                <th className="p-3 text-center">Xe VinFast</th>
                 <th className="p-3 text-center">Giá thấp nhất</th>
                 <th className="p-3 text-center">Trả góp</th>
               </tr>
@@ -41,7 +41,7 @@ const PriceTableSection: FC<Props> = ({ cars }) => {
                         <ContainNextImage src={car.avatar.url} alt={car.name} />
                       </div>
                       <p className="font-semibold text-sm">
-                        Vinfast {car.name}
+                        VinFast {car.name}
                       </p>
                     </Link>
                   </td>

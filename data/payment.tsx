@@ -43,7 +43,7 @@ export const paymentData = [
     content: (
       <ul>
         <li>
-          Áp dụng đối với các xe Vinfast do Vinfast phân phối, đã được đăng ký
+          Áp dụng đối với các xe VinFast do VinFast phân phối, đã được đăng ký
           lưu hành và đang hoạt động trong lãnh thổ Việt Nam.{" "}
         </li>
         <li>

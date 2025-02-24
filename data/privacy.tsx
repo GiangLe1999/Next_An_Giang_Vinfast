@@ -4,39 +4,39 @@ export const privacyData = [
     content: (
       <ul>
         <li>
-          Công ty cổ phần sản xuất và kinh doanh VinFast (“Vinfast”) hiểu rõ tầm
+          Công ty cổ phần sản xuất và kinh doanh VinFast (“VinFast”) hiểu rõ tầm
           quan trọng và tôn trọng quyền bảo mật thông tin cá nhân (“Thông tin”)
-          của người truy cập website và sử dụng dịch vụ của Vinfast (người truy
-          cập website và/hoặc mua sản phẩm, sử dụng dịch vụ của Vinfast sau đây
+          của người truy cập website và sử dụng dịch vụ của VinFast (người truy
+          cập website và/hoặc mua sản phẩm, sử dụng dịch vụ của VinFast sau đây
           gọi chung là “Khách hàng”); website, sản phẩm và dịch vụ sau đây gọi
-          chung là “Dịch vụ”), bằng thiện chí của mình - Vinfast với Chính sách
+          chung là “Dịch vụ”), bằng thiện chí của mình - VinFast với Chính sách
           bảo mật Thông tin này (“Chính sách”) sẽ cung cấp nội dung tổng quan
           nhằm minh bạch hóa các nguyên tắc thu thập, cách thức sử dụng, tiết
-          lộ, lưu trữ Thông tin của Khách hàng mà Vinfast thu thập được bằng
+          lộ, lưu trữ Thông tin của Khách hàng mà VinFast thu thập được bằng
           những cách thức nêu tại Mục 4 Chính sách này.
         </li>
         <li>
-          Chính sách này áp dụng đối với tổng thể Dịch vụ của Vinfast, nhưng tùy
+          Chính sách này áp dụng đối với tổng thể Dịch vụ của VinFast, nhưng tùy
           từng thời điểm, đối với từng Dịch vụ hoặc từng phần Dịch vụ cụ thể,
-          tùy thuộc đặc thù và yêu cầu cần thiết của Dịch vụ đó Vinfast có thể
+          tùy thuộc đặc thù và yêu cầu cần thiết của Dịch vụ đó VinFast có thể
           bổ sung/điều chỉnh các nội dung liên quan đến Chính sách này để áp
           dụng riêng cho những phần Dịch vụ cụ thể đó.
         </li>
         <li>
           Chính sách này được áp dụng khi Khách hàng truy cập, sử dụng Dịch vụ
-          của Vinfast, và bất kỳ thời điểm nào Khách hàng truy cập, sử dụng Dịch
-          vụ do Vinfast cung cấp, tức là Khách hàng đồng ý với các điều khoản mà
-          Vinfast quy định trong Chính sách này (bao gồm cả các phần bổ sung,
+          của VinFast, và bất kỳ thời điểm nào Khách hàng truy cập, sử dụng Dịch
+          vụ do VinFast cung cấp, tức là Khách hàng đồng ý với các điều khoản mà
+          VinFast quy định trong Chính sách này (bao gồm cả các phần bổ sung,
           sửa đổi tùy từng thời điểm).
         </li>
         <li>
-          Tùy tình hình, nhu cầu bảo mật thực tế, Vinfast có thể điều chỉnh
+          Tùy tình hình, nhu cầu bảo mật thực tế, VinFast có thể điều chỉnh
           Chính sách này mà không cần thông báo hay được sự đồng ý của Khách
-          hàng. Khi cập nhật nội dung chính sách này, Vinfast sẽ chỉnh sửa lại
+          hàng. Khi cập nhật nội dung chính sách này, VinFast sẽ chỉnh sửa lại
           thời gian “Cập nhật lần cuối” ở phần cuối của Chính sách này, vì vậy
-          trước khi truy cập, sử dụng Dịch vụ của Vinfast Khách hàng nên thường
+          trước khi truy cập, sử dụng Dịch vụ của VinFast Khách hàng nên thường
           xuyên kiểm tra lại Thông tin Chính sách để có các bản cập nhật mới
-          nhất. Trong trường hợp Vinfast cập nhật Chính sách và Khách hàng sử
+          nhất. Trong trường hợp VinFast cập nhật Chính sách và Khách hàng sử
           dụng Dịch vụ sau khi Chính sách đã được cập nhật, điều đó có nghĩa là
           Khách hàng đồng ý và chịu ràng buộc với (các) điều khoản mới được xác
           định trong bản Chính sách cập nhật.
@@ -50,7 +50,7 @@ export const privacyData = [
     content: (
       <ul>
         <li>
-          Vinfast thu thập Thông tin của Khách hàng chủ yếu phục vụ cho mục đích
+          VinFast thu thập Thông tin của Khách hàng chủ yếu phục vụ cho mục đích
           hỗ trợ, duy trì mối liên hệ với Khách hàng như:
           <ul className="!list-none list-child-item mt-2">
             <li>
@@ -60,29 +60,29 @@ export const privacyData = [
             </li>
             <li>
               - Duy trì liên lạc với Khách hàng, giải đáp các thắc mắc của Khách
-              hàng liên quan đến Dịch vụ của Vinfast.
+              hàng liên quan đến Dịch vụ của VinFast.
             </li>
             <li>
               - Hỗ trợ khi Khách hàng mua xe và/hoặc sử dụng Dịch vụ của
-              Vinfast.
+              VinFast.
             </li>
           </ul>
         </li>
         <li>
-          Vinfast thu thập Thông tin để phục vụ cho các mục đích kiểm soát, nâng
+          VinFast thu thập Thông tin để phục vụ cho các mục đích kiểm soát, nâng
           cao chất lượng Dịch vụ như:
           <ul className="!list-none list-child-item mt-2">
-            <li>- Kiểm soát người truy cập, sử dụng Dịch vụ của Vinfast.</li>
-            <li>- Phân tích và tối ưu hóa các Dịch vụ của Vinfast.</li>
+            <li>- Kiểm soát người truy cập, sử dụng Dịch vụ của VinFast.</li>
+            <li>- Phân tích và tối ưu hóa các Dịch vụ của VinFast.</li>
             <li>
-              - Nâng cao chất lượng Dịch vụ của Vinfast và/hoặc các Dịch vụ của
-              các Công ty con, Công ty liên kết của Vinfast (“Đơn vị trực
+              - Nâng cao chất lượng Dịch vụ của VinFast và/hoặc các Dịch vụ của
+              các Công ty con, Công ty liên kết của VinFast (“Đơn vị trực
               thuộc”).
             </li>
           </ul>
         </li>
         <li>
-          Ngoài những mục đích đề cập tại tiểu mục 2.1, 2.2 Vinfast cũng có thể
+          Ngoài những mục đích đề cập tại tiểu mục 2.1, 2.2 VinFast cũng có thể
           thu thập Thông tin để phục vụ các mục đích khác không trái với quy
           định pháp luật.
         </li>
@@ -95,7 +95,7 @@ export const privacyData = [
     content: (
       <ul>
         <li>
-          Thông tin của Khách hàng mà Vinfast sẽ thu thập bao gồm:
+          Thông tin của Khách hàng mà VinFast sẽ thu thập bao gồm:
           <ul className="!list-none list-child-item mt-2">
             <li>- Họ tên</li>
             <li>- Số điện thoại</li>
@@ -105,17 +105,17 @@ export const privacyData = [
         </li>
         <li>
           Cho từng Dịch vụ, mục đích thu thập cụ thể khác, tùy từng thời điểm
-          Vinfast có thể yêu cầu Khách hàng cung cấp thêm một số Thông tin nhằm
+          VinFast có thể yêu cầu Khách hàng cung cấp thêm một số Thông tin nhằm
           đảm bảo việc sử dụng Dịch vụ của chính Khách hàng hoặc đảm bảo sự liên
-          hệ, giao dịch giữa Vinfast và Khách hàng được thông suốt, thuận tiện
+          hệ, giao dịch giữa VinFast và Khách hàng được thông suốt, thuận tiện
           ví dụ như: loại xe Khách hàng sở hữu, yêu thích; biển số xe; số km đã
           đi và/hoặc các Thông tin cần thiết khác.
         </li>
         <li>
-          Đối với phạm vi thu thập Thông tin đề cập tại Chính sách này, Vinfast
+          Đối với phạm vi thu thập Thông tin đề cập tại Chính sách này, VinFast
           sẽ luôn tạo điều kiện bằng cách thiết lập những tính năng trên giao
           diện Website để Khách hàng tùy chọn để quyết định việc cung cấp hoặc
-          từ chối cung cấp Thông tin cho Vinfast.
+          từ chối cung cấp Thông tin cho VinFast.
         </li>
       </ul>
     ),
@@ -126,7 +126,7 @@ export const privacyData = [
     content: (
       <>
         Nhằm đảm bảo Thông tin được thu thập là đầy đủ, chính xác, tùy trường
-        hợp Vinfast có thể lựa chọn sử dụng đơn lẻ hoặc tổng hợp các phương thức
+        hợp VinFast có thể lựa chọn sử dụng đơn lẻ hoặc tổng hợp các phương thức
         thu thập Thông tin của khách hàng như sau:
         <ul className="mt-2">
           <li>
@@ -134,26 +134,26 @@ export const privacyData = [
           </li>
           <ul className="!list-none list-child-item">
             <li>
-              - Một số Dịch vụ của Vinfast cho phép/đề nghị Khách hàng tạo tài
+              - Một số Dịch vụ của VinFast cho phép/đề nghị Khách hàng tạo tài
               khoản hoặc hồ sơ cá nhân và để sử dụng một cách tốt nhất các Dịch
-              vụ này, Vinfast có thể yêu cầu Khách hàng cung cấp các Thông tin
+              vụ này, VinFast có thể yêu cầu Khách hàng cung cấp các Thông tin
               đề cập tại Mục 3 nêu trên để đáp ứng nhu cầu sử dụng Dịch vụ của
               Khách hàng.
             </li>
             <li>
-              - Trường hợp Khách hàng yêu cầu Vinfast giải đáp các thắc mắc liên
-              quan đến Dịch vụ của Vinfast hoặc Khách hàng yêu cầu Vinfast cung
+              - Trường hợp Khách hàng yêu cầu VinFast giải đáp các thắc mắc liên
+              quan đến Dịch vụ của VinFast hoặc Khách hàng yêu cầu VinFast cung
               cấp Dịch vụ ví dụ: đặt hàng mua Ô tô trực tuyến, yêu cầu hỗ trợ
-              bảo trì xe Ô tô thì Vinfast có thể yêu cầu Khách hàng cung cấp
+              bảo trì xe Ô tô thì VinFast có thể yêu cầu Khách hàng cung cấp
               Thông tin để xử lý các yêu cầu của Khách hàng một cách nhanh
               chóng, chính xác;
             </li>
             <li>
               - Các trường hợp yêu cầu thu thập Thông tin khác tùy theo nhu cầu
-              thu thập của Vinfast.
+              thu thập của VinFast.
             </li>
             <li>
-              - Vinfast sẽ luôn đưa ra tùy chọn về việc quyết định cung cấp hay
+              - VinFast sẽ luôn đưa ra tùy chọn về việc quyết định cung cấp hay
               không cung cấp Thông tin đối với Khách hàng. Trường hợp Khách hàng
               lựa chọn không cung cấp Thông tin có thể sẽ có một số Dịch vụ,
               giao dịch không thể thực hiện được hoặc một số giao dịch Khách
@@ -162,7 +162,7 @@ export const privacyData = [
           </ul>
 
           <li>
-            <b>Vinfast tự thu thập Thông tin:</b>
+            <b>VinFast tự thu thập Thông tin:</b>
           </li>
           <ul className="!list-none list-child-item">
             <li>
@@ -170,9 +170,9 @@ export const privacyData = [
               <b className="italic">
                 Thu thập Thông tin từ các nguồn của bên thứ ba
               </b>
-              : Vinfast có thể nhận Thông tin về Khách hàng đã công bố công khai
+              : VinFast có thể nhận Thông tin về Khách hàng đã công bố công khai
               trên các website thương mại điện tử của bất kỳ bên thứ ba nào hoặc
-              nhận Thông tin của Khách hàng từ bên thứ ba khi Vinfast tham gia
+              nhận Thông tin của Khách hàng từ bên thứ ba khi VinFast tham gia
               vào các giao dịch có sự chuyển giao Thông tin đó.
             </li>
 
@@ -181,7 +181,7 @@ export const privacyData = [
               <b className="italic">
                 Thu thập trong quá trình thực hiện Dịch vụ
               </b>
-              : Trong quá trình thực hiện Dịch vụ, Vinfast cũng có thể thu thập
+              : Trong quá trình thực hiện Dịch vụ, VinFast cũng có thể thu thập
               các Thông tin của Khách hàng bằng các cách thức phù hợp khác với
               sự đồng ý của Khách hàng với cách thức thu thập đó.
             </li>
@@ -192,10 +192,10 @@ export const privacyData = [
                 {" "}
                 Thu thập trong quá trình Khách hàng sử dụng Dịch vụ
               </b>
-              : Một số Dịch vụ của Vinfast cho phép Khách hàng liên lạc với bên
+              : Một số Dịch vụ của VinFast cho phép Khách hàng liên lạc với bên
               thứ ba, những lần liên lạc đó sẽ được truyền qua và những Thông
               tin phát sinh trong quá trình liên lạc đó có thể được lưu trữ trên
-              hệ thống của Vinfast.
+              hệ thống của VinFast.
             </li>
           </ul>
 
@@ -203,7 +203,7 @@ export const privacyData = [
             <b>Hợp nhất Thông tin:</b>
             <ul className="!list-none list-child-item">
               <li>
-                - Vinfast có thể hợp nhất Thông tin Khách hàng mà Vinfast có
+                - VinFast có thể hợp nhất Thông tin Khách hàng mà VinFast có
                 được từ việc thu thập bằng nhiều phương thức khác nhau đề cập
                 tại Mục này như một thao tác hoàn thiện Thông tin để phục vụ cho
                 các mục đích được đề cập tại Chính sách này mà không cần sự đồng
@@ -222,16 +222,16 @@ export const privacyData = [
     header: "V. PHẠM VI SỬ DỤNG THÔNG TIN",
     content: (
       <>
-        Vinfast sử dụng các Thông tin của Khách hàng thu thập được để:
+        VinFast sử dụng các Thông tin của Khách hàng thu thập được để:
         <ul className="mt-2">
-          <li>Thực hiện các biện pháp để hoàn thiện Dịch vụ của Vinfast.</li>
+          <li>Thực hiện các biện pháp để hoàn thiện Dịch vụ của VinFast.</li>
           <li>
             Thiết lập các chương trình hỗ trợ khách hàng thân thiết hoặc các
             chương trình xúc tiến thương mại khác.
           </li>
           <li>
             Xử lý các vấn đề liên quan đến việc sử dụng Dịch vụ của Khách hàng
-            hoặc giao dịch giữa Vinfast và Khách hàng.
+            hoặc giao dịch giữa VinFast và Khách hàng.
           </li>
           <li>Gửi thư ngỏ, đơn đặt hàng, thư cảm ơn.</li>
           <li>
@@ -239,14 +239,14 @@ export const privacyData = [
             khi có sự đồng ý trước của Khách hàng.
           </li>
           <li>
-            Thông báo về các thông tin tuyển dụng của Vinfast nếu Khách hàng
+            Thông báo về các thông tin tuyển dụng của VinFast nếu Khách hàng
             đăng kí nhận email thông báo.
           </li>
           <li>
-            Đánh giá và phân tích thị trường, khách hàng, Dịch vụ của Vinfast.
+            Đánh giá và phân tích thị trường, khách hàng, Dịch vụ của VinFast.
           </li>
           <li>
-            Các nội dung khác mà Vinfast được phép sử dụng Thông tin không trái
+            Các nội dung khác mà VinFast được phép sử dụng Thông tin không trái
             với quy định của pháp luật
           </li>
         </ul>
@@ -260,39 +260,39 @@ export const privacyData = [
       <ul>
         <li>
           Để thực hiện mục đích thu thập Thông tin đề cập tại Chính sách này
-          Vinfast có thể cần sự hỗ trợ từ bên thứ ba để phân tích dữ liệu, tiếp
+          VinFast có thể cần sự hỗ trợ từ bên thứ ba để phân tích dữ liệu, tiếp
           thị và hỗ trợ dịch vụ khách hàng và/hoặc cung cấp Dịch vụ tốt hơn cho
           Khách hàng. Trong quá trình hỗ trợ, Thông tin của Khách hàng có thể
-          được Vinfast tiết lộ cho các đối tượng được đề cập dưới đây:
+          được VinFast tiết lộ cho các đối tượng được đề cập dưới đây:
         </li>
 
         <ul className="!list-none list-child-item">
           <li>
-            - Đơn vị trực thuộc của Vinfast khi sự tham gia của Đơn vị trực
+            - Đơn vị trực thuộc của VinFast khi sự tham gia của Đơn vị trực
             thuộc là cần thiết để thực hiện/hoàn thiện giao dịch đã thiết lập
-            giữa Vinfast với Khách hàng.
+            giữa VinFast với Khách hàng.
           </li>
           <li>
-            - Đối tác kinh doanh mà Vinfast tin tưởng, việc tiết lộ và trách
+            - Đối tác kinh doanh mà VinFast tin tưởng, việc tiết lộ và trách
             nhiệm bảo mật Thông tin của Khách hàng sẽ được thực hiện theo thỏa
-            thuận giữa Vinfast và đối tác kinh doanh của Vinfast.
+            thuận giữa VinFast và đối tác kinh doanh của VinFast.
           </li>
         </ul>
 
         <li>
           Để phát triển hoạt động kinh doanh hoặc trong trường hợp bất khả kháng
-          Vinfast có thể phải thực hiện tổ chức lại, chuyển nhượng, giải thể
+          VinFast có thể phải thực hiện tổ chức lại, chuyển nhượng, giải thể
           hoặc phá sản công ty, trường hợp này các đơn vị kế thừa, nhận chuyển
-          nhượng của Vinfast có thể sẽ tiếp nhận Thông tin của Khách hàng để
-          thay thế Vinfast tiếp tục cung cấp, thực hiện Dịch vụ với Khách hàng.
+          nhượng của VinFast có thể sẽ tiếp nhận Thông tin của Khách hàng để
+          thay thế VinFast tiếp tục cung cấp, thực hiện Dịch vụ với Khách hàng.
         </li>
         <li>
-          Vinfast sẽ phải tiết lộ Thông tin của Khách hàng cho Bên thứ ba hoặc
+          VinFast sẽ phải tiết lộ Thông tin của Khách hàng cho Bên thứ ba hoặc
           cho cơ quan có thẩm quyền khi được cơ quan có thẩm quyền yêu cầu hoặc
-          các trường hợp khác theo quy định của pháp luật hoặc Vinfast có cơ sở
+          các trường hợp khác theo quy định của pháp luật hoặc VinFast có cơ sở
           để tin rằng việc tiết lộ Thông tin có thể bảo vệ quyền, tài sản hoặc
-          an toàn của chính Khách hàng hoặc của Vinfast/Đơn vị trực thuộc của
-          Vinfast.
+          an toàn của chính Khách hàng hoặc của VinFast/Đơn vị trực thuộc của
+          VinFast.
         </li>
         <li>
           Các bên khác khi có sự đồng ý hoặc theo hướng dẫn của Khách hàng.
@@ -305,7 +305,7 @@ export const privacyData = [
     header: "VII. THỜI GIAN LƯU TRỮ THÔNG TIN",
     content: (
       <>
-        Vinfast chỉ lưu giữ Thông tin về Khách hàng trong thời gian cần thiết
+        VinFast chỉ lưu giữ Thông tin về Khách hàng trong thời gian cần thiết
         cho mục đích mà Thông tin được thu thập hoặc theo yêu cầu của Hợp đồng
         hoặc theo quy định của pháp luật hiện hành.
       </>
@@ -317,33 +317,33 @@ export const privacyData = [
     content: (
       <ul>
         <li>
-          Một số nội dung, quảng cáo và tính năng trên trang web của Vinfast có
+          Một số nội dung, quảng cáo và tính năng trên trang web của VinFast có
           thể được cung cấp bởi các bên thứ ba có hoặc không liên kết với
-          Vinfast. Các bên thứ ba này có thể thu thập hoặc nhận Thông tin nhất
+          VinFast. Các bên thứ ba này có thể thu thập hoặc nhận Thông tin nhất
           định về việc Khách hàng sử dụng Dịch vụ, kể cả thông qua việc sử dụng
           Cookie, Beacon và các công nghệ tương tự và Thông tin này có thể được
           thu thập theo thời gian, đồng thời được kết hợp với Thông tin được thu
           thập trên các Website và dịch vụ trực tuyến khác nhau.
         </li>
         <li>
-          Nếu Khách hàng kết nối với dịch vụ mạng xã hội, Vinfast có thể nhận và
+          Nếu Khách hàng kết nối với dịch vụ mạng xã hội, VinFast có thể nhận và
           lưu trữ Thông tin xác thực từ dịch vụ đó để cho phép Khách hàng đăng
-          nhập, cũng như Thông tin khác mà Khách hàng cho phép Vinfast nhận khi
+          nhập, cũng như Thông tin khác mà Khách hàng cho phép VinFast nhận khi
           Khách hàng kết nối với các dịch vụ đó.
         </li>
         <li>
-          Bằng cách truy cập và/hoặc sử dụng Dịch vụ của Vinfast, Khách hàng
+          Bằng cách truy cập và/hoặc sử dụng Dịch vụ của VinFast, Khách hàng
           đồng ý lưu trữ Cookie, Beacon, các công nghệ lưu trữ cục bộ khác.
           Khách hàng cũng đồng ý quyền truy cập Cookie, Beacon, công nghệ lưu
-          trữ cục bộ của Vinfast và các bên thứ ba được đề cập ở trên.
+          trữ cục bộ của VinFast và các bên thứ ba được đề cập ở trên.
         </li>
         <li>
-          Như đã nêu trên, Dịch vụ của Vinfast có thể có các liên kết đến các
-          website của Bên thứ ba khác không thuộc quyền kiểm soát của Vinfast,
-          do đó Vinfast sẽ không chịu trách nhiệm về sự an toàn hoặc bảo mật của
+          Như đã nêu trên, Dịch vụ của VinFast có thể có các liên kết đến các
+          website của Bên thứ ba khác không thuộc quyền kiểm soát của VinFast,
+          do đó VinFast sẽ không chịu trách nhiệm về sự an toàn hoặc bảo mật của
           bất kỳ Thông tin nào được thu thập bởi các Bên thứ ba đó, không được
-          thực hiện trên giao diện website hoặc Vinfast có quyền quản lý và/hoặc
-          kiểm soát. Vinfast khuyên Khách hàng nên thận trọng và xem xét các
+          thực hiện trên giao diện website hoặc VinFast có quyền quản lý và/hoặc
+          kiểm soát. VinFast khuyên Khách hàng nên thận trọng và xem xét các
           quyết định về bảo mật Thông tin áp dụng cho các Website và dịch vụ của
           Bên thứ ba mà Khách hàng sử dụng.
         </li>
@@ -356,22 +356,22 @@ export const privacyData = [
     content: (
       <ul>
         <li>
-          Vinfast cam kết bảo mật Thông tin của Khách hàng theo đúng các nội
+          VinFast cam kết bảo mật Thông tin của Khách hàng theo đúng các nội
           dung được quy định tại Chính sách này và quy định của pháp luật.
         </li>
         <li>
-          Vinfast sẽ áp dụng phương án và giải pháp thích hợp về kỹ thuật và an
+          VinFast sẽ áp dụng phương án và giải pháp thích hợp về kỹ thuật và an
           ninh để bảo vệ hiệu quả nhất Thông tin của Khách hàng. Tuy nhiên, lưu
-          ý rằng mặc dù Vinfast thực hiện các phương thức hợp lý để bảo vệ Thông
+          ý rằng mặc dù VinFast thực hiện các phương thức hợp lý để bảo vệ Thông
           tin của Khách hàng, nhưng không có trang web, đường truyền Internet,
           hệ thống máy vi tính hay kết nối không dây nào là an toàn tuyệt đối.
-          Do vậy, Vinfast không thể đưa ra một cam kết chắc chắn rằng thông tin
-          Khách hàng cung cấp cho Vinfast sẽ được bảo mật một cách tuyệt đối an
-          toàn, và Vinfast không thể chịu trách nhiệm trong trường hợp có sự
+          Do vậy, VinFast không thể đưa ra một cam kết chắc chắn rằng thông tin
+          Khách hàng cung cấp cho VinFast sẽ được bảo mật một cách tuyệt đối an
+          toàn, và VinFast không thể chịu trách nhiệm trong trường hợp có sự
           truy cập trái phép, rò rỉ Thông tin của Khách hàng mà không do lỗi của
-          Vinfast. Nếu Khách hàng không đồng ý với các điều khoản như đã mô tả ở
-          trên, Vinfast khuyến nghị Khách hàng không nên gửi Thông tin đến cho
-          Vinfast
+          VinFast. Nếu Khách hàng không đồng ý với các điều khoản như đã mô tả ở
+          trên, VinFast khuyến nghị Khách hàng không nên gửi Thông tin đến cho
+          VinFast
         </li>
       </ul>
     ),
@@ -387,21 +387,21 @@ export const privacyData = [
         <ul className="!list-none list-child-item">
           <li>
             - Khách hàng được bảo đảm các quyền lợi và bảo mật về Thông tin mà
-            Vinfast đã cam kết theo Chính sách này.
+            VinFast đã cam kết theo Chính sách này.
           </li>
           <li>
             - Khách hàng có quyền truy cập vào dữ liệu Thông tin của mình và có
             quyền tự điều chỉnh lại những sai sót trong dữ liệu cá nhân của mình
             hoặc cập nhật, bổ sung để hoàn thiện Thông tin được lưu trữ trên
             website. Khách hàng cũng có quyền tự xóa dữ liệu cá nhân trên
-            website hoặc yêu cầu Vinfast ngưng sử dụng dữ liệu cá nhân cho mục
+            website hoặc yêu cầu VinFast ngưng sử dụng dữ liệu cá nhân cho mục
             đích tiếp thị bằng cách gửi yêu cầu ngưng các hoạt động nhận thông
             báo, thông tin từ website.
           </li>
           <li>
             - Nếu Khách hàng không muốn nhận bất cứ thông tin quảng cáo, chương
-            trình khuyến mại của Vinfast thì có quyền từ chối bất cứ lúc nào
-            bằng cách gửi yêu cầu ngưng nhận thông tin đến website của Vinfast
+            trình khuyến mại của VinFast thì có quyền từ chối bất cứ lúc nào
+            bằng cách gửi yêu cầu ngưng nhận thông tin đến website của VinFast
             theo các tính năng đã được hướng dẫn ở cuối trang.
           </li>
         </ul>
@@ -413,18 +413,18 @@ export const privacyData = [
         <ul className="!list-none list-child-item">
           <li>
             - Tìm hiểu kỹ Chính sách này trước khi sử dụng, truy cập Dịch vụ của
-            Vinfast., Việc Khách hàng sử dụng, truy cập Dịch vụ của Vinfast cũng
+            VinFast., Việc Khách hàng sử dụng, truy cập Dịch vụ của VinFast cũng
             chính là sự xác nhận việc đã tìm hiểu kỹ và đồng ý với toàn bộ nội
             dung Chính sách này.
           </li>
           <li>
-            - Cung cấp Thông tin chính xác, hợp pháp cho Vinfast khi được đề
+            - Cung cấp Thông tin chính xác, hợp pháp cho VinFast khi được đề
             nghị và đồng ý cung cấp. Khách hàng sẽ hoàn toàn chịu trách nhiệm
-            (trong mọi trường hợp, không có sự liên đới nào đến Vinfast dù cho
-            một phần hay toàn bộ) nếu Thông tin Khách hàng cung cấp cho Vinfast
+            (trong mọi trường hợp, không có sự liên đới nào đến VinFast dù cho
+            một phần hay toàn bộ) nếu Thông tin Khách hàng cung cấp cho VinFast
             là không chính xác, không hợp pháp và/hoặc việc thực hiện Dịch vụ
             của Khách hàng bị gián đoạn, không thể thực hiện; hoặc giao dịch
-            giữa Vinfast và Khách hàng, giữa Vinfast và Bên thứ ba, giữa Khách
+            giữa VinFast và Khách hàng, giữa VinFast và Bên thứ ba, giữa Khách
             hàng và Bên thứ ba bị gián đoạn hoặc không thể thực hiện được vì yếu
             tố kỹ thuật, đường truyền, lỗi hệ thống, v.v. hoặc phát sinh bất kể
             thiệt hại vật chất, phi vật chất nào từ việc sử dụng những Thông tin
@@ -434,16 +434,16 @@ export const privacyData = [
             - Không sử dụng bất kỳ chương trình, công cụ hay hình thức nào khác
             để can thiệp vào hệ thống hay làm thay đổi cấu trúc dữ liệu của Dịch
             vụ, giao diện của website, các tính năng hiện hữu của website
-            Vinfast.
+            VinFast.
           </li>
           <li>
             - Không phát tán, truyền bá hay cổ vũ cho bất kỳ hoạt động nào nhằm
             can thiệp, phá hoại hay xâm nhập vào dữ liệu của hệ thống website
-            thuộc quyền quản lý của Vinfast.
+            thuộc quyền quản lý của VinFast.
           </li>
           <li>
             - Không truyền bá, phát tán nội dung vi phạm pháp luật và/hoặc trái
-            đạo đức xã hội tại website của Vinfast.
+            đạo đức xã hội tại website của VinFast.
           </li>
           <li>- Mọi vi phạm sẽ bị xử lý theo quy định của pháp luật.</li>
         </ul>

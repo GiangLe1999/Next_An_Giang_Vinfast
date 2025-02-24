@@ -19,7 +19,7 @@ const CarListPageContent: FC<Props> = ({ initialCars }) => {
       <div>
         <FirstBanner
           heading="BẢNG GIÁ"
-          subHeading="Bảng giá chi tiết tất cả các dòng xe của Vinfast"
+          subHeading="Bảng giá chi tiết tất cả các dòng xe của VinFast"
           bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
           bgClasses="!bg-cover"
         />

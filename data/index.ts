@@ -3,10 +3,6 @@ import {
   FaCalculator,
   FaCarAlt,
   FaChartPie,
-  FaFlag,
-  FaThumbsUp,
-  FaShieldAlt,
-  FaHeartbeat,
   FaHome,
   FaInfoCircle,
   FaBlog,
@@ -22,22 +18,22 @@ import { linkConstants } from "./constants";
 
 export const homeBanners = [
   {
-    title: "Vinfast VF8",
+    title: "VinFast VF8",
     link: "/vf8",
     image: "/images/home/banners/vf8-banner.webp",
   },
   {
-    title: "Vinfast VF9",
+    title: "VinFast VF9",
     link: "/vf9",
     image: "/images/home/banners/vf9-banner.webp",
   },
   {
-    title: "Vinfast VF-e34",
+    title: "VinFast VF-e34",
     link: "/",
     image: "/images/home/banners/vf-e34-banner.webp",
   },
   {
-    title: "Vinfast VF6",
+    title: "VinFast VF6",
     link: "/vf6",
     image: "/images/home/banners/vf6-banner.webp",
   },
@@ -118,37 +114,37 @@ type navCarItemType = {
 export const navCarMenu: navCarItemType[] = [
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740191819/Suoi%20Tien%20Vinfast/airek9me2u7sszbqwsd7.jpg",
-    name: "Vinfast VF3",
+    name: "VinFast VF3",
     price: "240",
     link: "vf3",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740213021/Suoi%20Tien%20Vinfast/ab4jerelgiwhckcbknam.webp",
-    name: "Vinfast VF5",
+    name: "VinFast VF5",
     price: "480",
     link: "vf5",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740214584/Suoi%20Tien%20Vinfast/ke7xwcyrxqnsryxnhla0.webp",
-    name: "Vinfast VF6",
+    name: "VinFast VF6",
     price: "640",
     link: "vf6",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740240220/Suoi%20Tien%20Vinfast/x88b0dix3dojiwtiygy1.png",
-    name: "Vinfast VF7",
+    name: "VinFast VF7",
     price: "760",
     link: "vf7",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740216994/Suoi%20Tien%20Vinfast/uk573tijp6c9o6qmqn7d.webp",
-    name: "Vinfast VF8",
+    name: "VinFast VF8",
     price: "970",
     link: "vf8",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740219323/Suoi%20Tien%20Vinfast/sqfnwwdqze8jrz6qhwlg.webp",
-    name: "Vinfast VF9",
+    name: "VinFast VF9",
     price: "1380",
     link: "vf9",
   },
@@ -166,13 +162,13 @@ export const homeOptions: homeOptionType[] = [
     title: "yêu cầu báo giá",
     link: linkConstants.requireQuotation,
     icon: FaEnvelopeOpenText,
-    des: "Đăng ký để nhận báo giá mới nhất cho các <strong>dòng xe Vinfast</strong>",
+    des: "Đăng ký để nhận báo giá mới nhất cho các <strong>dòng xe VinFast</strong>",
   },
   {
     title: "tính phí lăn bánh",
     link: linkConstants.finalPrice,
     icon: FaCalculator,
-    des: "Giá các phiên bản xe Vinfast cùng các khoản phí chi tiết tại <strong>Vinfast Suối Tiên</strong>",
+    des: "Giá các phiên bản xe VinFast cùng các khoản phí chi tiết tại <strong>VinFast Suối Tiên</strong>",
   },
   {
     title: "mua xe trả góp",
@@ -184,37 +180,12 @@ export const homeOptions: homeOptionType[] = [
     title: "đăng ký lái thử",
     link: linkConstants.testDrive,
     icon: FaCarAlt,
-    des: "Đến với <strong>Vinfast Suối Tiên</strong> để được lái thử những mẫu xe Vinfast mới nhất",
-  },
-];
-
-type itemType = { icon: IconType; title: string; desc: string };
-
-export const aboutItems: itemType[] = [
-  {
-    icon: FaFlag,
-    title: "THIẾT KẾ",
-    desc: "Chúng tôi mang đến niềm vui lái xe thuần túy bằng cách tạo nên những mẫu xe chứa đựng tính cách và tâm hồn. Trong đó, ngôn ngữ thiết kế chính là nét độc đáo mà Mazda sử dụng để tác động và kết nối các giác quan của người nhìn.",
-  },
-  {
-    icon: FaThumbsUp,
-    title: "SÁNG TẠO",
-    desc: "Tại Mazda, tất cả chúng ta đều nói về việc lái xe và cảm giác hứng khởi mà điều đó mang lại. Lái xe không đơn thuần chỉ là vận hành một cỗ máy mà còn liên hệ đến những va chạm và cảm xúc. Một chiếc xe không những phải phản ứng hoàn hảo với các thao tác của người lái mà còn phải sở hữu các hệ thống trực quan.",
-  },
-  {
-    icon: FaShieldAlt,
-    title: "AN TOÀN",
-    desc: "Mazda nhắm đến mục tiêu mang đến cho tất cả khách hàng niềm vui lái xe và hiệu suất an toàn trong một môi trường vượt trội. Dựa trên triết lý này, Mazda đang thúc đẩy nghiên cứu và phát triển các tính năng an toàn để hoàn thành mục tiêu quan trọng: xe lưu thông an toàn và không xảy ra tai nạn.",
-  },
-  {
-    icon: FaHeartbeat,
-    title: "CẢM XÚC",
-    desc: "Tại Mazda, Chúng tôi không chỉ sản xuất xe, mà còn mang lại niềm vui và hạnh phúc cho khách hàng bởi Mazda tin rằng chiếc xe sẽ lay động cảm xúc và thức tỉnh các giác quan, tạo sự phấn khích cho người sở hữu.",
+    des: "Đến với <strong>VinFast Suối Tiên</strong> để được lái thử những mẫu xe VinFast mới nhất",
   },
 ];
 
 export const footerCol1: string[] = [
-  "Chuyên cung cấp dòng xe Vinfast các loại",
+  "Chuyên cung cấp dòng xe VinFast các loại",
   "Xe 4 chỗ VinFast VF 5, 5 chỗ VinFast VF 6 và VF 7, 5 chỗ gầm cao VinFast VF 8, 7 chỗ VinFast VF 9",
   "Địa chỉ : 127 Quốc Lộ 13, Khu phố 1, Thủ Đức, Ho Chi Minh City, Vietnam",
 ];
@@ -222,12 +193,12 @@ export const footerCol1: string[] = [
 type footerItemType = { title: string; link: string };
 
 export const footerCol2: footerItemType[] = [
-  { title: "Vinfast VF3", link: "/vf3" },
-  { title: "Vinfast VF5", link: "/vf5" },
-  { title: "Vinfast VF6", link: "/vf6" },
-  { title: "Vinfast VF7", link: "/vf7" },
-  { title: "Vinfast VF8", link: "/vf8" },
-  { title: "Vinfast VF9", link: "/vf9" },
+  { title: "VinFast VF3", link: "/vf3" },
+  { title: "VinFast VF5", link: "/vf5" },
+  { title: "VinFast VF6", link: "/vf6" },
+  { title: "VinFast VF7", link: "/vf7" },
+  { title: "VinFast VF8", link: "/vf8" },
+  { title: "VinFast VF9", link: "/vf9" },
 ];
 
 export const footerCol3: footerItemType[] = [

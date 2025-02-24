@@ -15,7 +15,7 @@ const PromotionSection: FC<Props> = ({ content, name }) => {
     <div className="text-textColor bg-[#f7fafc] rounded-md p-6 wrapper-shadow">
       <p className="font-bold text-center">KHUYẾN MÃI MUA XE</p>
       <h1 className="text-center text-primary font-bold text-2xl mt-1 mb-3">
-        Vinfast {name}
+        VinFast {name}
       </h1>
 
       <div className="prose prose-ul:space-y-1 prose-strong:text-tertiary text-[15px]">

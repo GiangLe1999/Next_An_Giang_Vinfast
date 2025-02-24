@@ -21,7 +21,7 @@ const Page = async () => {
     <div>
       <FirstBanner
         heading="TÍNH PHÍ LĂN BÁNH VINFAST 2025"
-        subHeading="Cập nhật chính xác nhất giá lăn bánh các dòng xe của Vinfast"
+        subHeading="Cập nhật chính xác nhất giá lăn bánh các dòng xe của VinFast"
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"
       />

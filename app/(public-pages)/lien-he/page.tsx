@@ -43,7 +43,7 @@ const ContactPage = () => {
     <div className="text-textColor">
       <FirstBanner
         heading="LIÊN HỆ CHÚNG TÔI"
-        subHeading="Hoặc ghé thăm trực tiếp đại lý Vinfast Suối Tiên"
+        subHeading="Hoặc ghé thăm trực tiếp đại lý VinFast Suối Tiên"
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-[50%_50%] !bg-cover"
       />
@@ -51,7 +51,7 @@ const ContactPage = () => {
         <div className="grid grid-cols-2 gap-9 max-[846px]:grid-cols-1">
           <div className="space-y-11">
             <div>
-              <h1 className={titleClasses}>Vinfast Suối Tiên</h1>
+              <h1 className={titleClasses}>VinFast Suối Tiên</h1>
               <ul>
                 {infos.map((info, index) => (
                   <li key={index} className="flex items-center gap-2 py-2">

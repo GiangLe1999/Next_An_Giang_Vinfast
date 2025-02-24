@@ -47,7 +47,7 @@ const Footer = () => {
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/facebook.jpg"
-                  alt="Vinfast Facebook"
+                  alt="VinFast Facebook"
                 />
               </div>
             </a>
@@ -56,7 +56,7 @@ const Footer = () => {
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/youtube.png"
-                  alt="Vinfast Youtube"
+                  alt="VinFast Youtube"
                 />
               </div>
             </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/instagram.png"
-                  alt="Vinfast Instagram"
+                  alt="VinFast Instagram"
                 />
               </div>
             </Link>
@@ -115,7 +115,7 @@ const Footer = () => {
       <div className="border-t border-[#999999] py-1">
         <div className="container text-[#999999] text-xs flex items-center justify-between">
           <span className="uppercase my-2 text-center">
-            © {new Date().getFullYear()} Vinfast Suối Tiên - All rights reserved
+            © {new Date().getFullYear()} VinFast Suối Tiên - All rights reserved
           </span>
 
           <span>

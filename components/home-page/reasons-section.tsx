@@ -19,7 +19,7 @@ const ReasonsSection = () => {
               <BsTagsFill size={16} /> Gía cả ưu đãi - Giao xe sớm
             </p>
             <p>
-              Vinfast Suối Tiên luôn cam kết mang lại mức giá ưu đãi nhất cho
+              VinFast Suối Tiên luôn cam kết mang lại mức giá ưu đãi nhất cho
               quý khách với thời gian giao xe nhanh nhất trong 1 ngày.
             </p>
           </li>
@@ -29,9 +29,9 @@ const ReasonsSection = () => {
               <SiAdguard size={16} /> Bảo hành theo tiêu chuẩn toàn quốc
             </p>
             <p>
-              Anh chị sẽ yên tâm khi mua xe tại Vinfast Suối Tiên, vì chúng tôi
+              Anh chị sẽ yên tâm khi mua xe tại VinFast Suối Tiên, vì chúng tôi
               luôn bảo hành, bảo dưỡng và sửa chữa theo tiêu chuẩn chất lượng
-              của Vinfast trên toàn quốc. BẢO HÀNH ĐẾN 5 NĂM.
+              của VinFast trên toàn quốc. BẢO HÀNH ĐẾN 5 NĂM.
             </p>
           </li>
 
@@ -60,7 +60,7 @@ const ReasonsSection = () => {
         <div className="relative w-full aspect-[1.52] rounded-md overflow-hidden">
           <NextImage
             src="/images/home/tai-sao-nen-mua-vinfast.webp"
-            alt="Tại sao nên mua xe Vinfast?"
+            alt="Tại sao nên mua xe VinFast?"
           />
         </div>
       </div>

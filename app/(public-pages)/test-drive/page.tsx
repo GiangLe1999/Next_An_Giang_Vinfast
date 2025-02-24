@@ -6,7 +6,7 @@ import { getAllCarLines } from "@/queries/car.query";
 
 export const generateMetadata = () => {
   return {
-    title: "Đăng Ký Lái Thử Xe VinFast - Trải Nghiệm Tại Vinfast Suối Tiên",
+    title: "Đăng Ký Lái Thử Xe VinFast - Trải Nghiệm Tại VinFast Suối Tiên",
     description:
       "Đăng ký lái thử xe VinFast tại VinFast Suối Tiên để trải nghiệm thực tế các dòng xe điện hiện đại. Hỗ trợ đăng ký nhanh chóng, hoàn toàn miễn phí.",
     alternates: {
@@ -32,7 +32,7 @@ const Page = async () => {
           <div className="relative w-full h-full">
             <NextImage
               src="/images/test-drive/lai-thu-vinfast-vf8-tai-vinfast-suoi-tien.webp"
-              alt="Lái thử Vinfast"
+              alt="Lái thử VinFast"
             />
           </div>
 

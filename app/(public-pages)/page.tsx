@@ -43,7 +43,7 @@ const GoogleMaps = dynamicImport(
 
 export const generateMetadata = () => {
   return {
-    title: "Vinfast Suối Tiên | Đại Lý Chính Hãng Của Vinfast",
+    title: "VinFast Suối Tiên | Đại Lý Chính Hãng Của VinFast",
     description: pageConstants.siteDescription,
     alternates: {
       canonical: process.env.NEXT_PUBLIC_BASE_URL,

@@ -56,7 +56,7 @@ const Header = () => {
           <Link href="/" className="relative w-36 h-8 block">
             <ContainNextImage
               src="/images/logo-vinfast.png"
-              alt="Vinfast logo"
+              alt="VinFast logo"
               priority
             />
           </Link>

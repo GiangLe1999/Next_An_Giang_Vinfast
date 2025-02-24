@@ -6,7 +6,7 @@ const GoogleMaps = () => {
       loading="lazy"
       allowFullScreen
       referrerPolicy="no-referrer-when-downgrade"
-      title="Vị trí Vinfast Suối Tiên"
+      title="Vị trí VinFast Suối Tiên"
     ></iframe>
   );
 };

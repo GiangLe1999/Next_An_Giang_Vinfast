@@ -19,7 +19,7 @@ const Page = () => {
     <div>
       <FirstBanner
         heading="CHÍNH SÁCH BẢO HÀNH"
-        subHeading="Tất cả các xe Vinfast mua mới đều sẽ có chế độ bảo hành trong khoản thời gian nhất định bên cạnh các dịch vụ sửa chửa xe khi cần thiết. Thông tin chi tiết về chế độ bảo hành được hiển thị bên dưới."
+        subHeading="Tất cả các xe VinFast mua mới đều sẽ có chế độ bảo hành trong khoản thời gian nhất định bên cạnh các dịch vụ sửa chửa xe khi cần thiết. Thông tin chi tiết về chế độ bảo hành được hiển thị bên dưới."
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"
       />

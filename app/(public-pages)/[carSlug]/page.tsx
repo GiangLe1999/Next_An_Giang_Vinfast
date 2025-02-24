@@ -28,16 +28,17 @@ export async function generateStaticParams() {
 export const generateMetadata = async ({
   params,
 }: {
-  params: { carSlug: string };
+  params: Promise<{ carSlug: string }>;
 }) => {
   try {
-    const carData = (await getCarBySlug(params.carSlug)) as any;
+    const slug = (await params).carSlug;
+    const carData = (await getCarBySlug(slug)) as any;
 
     return {
-      title: `Giá Xe Vinfast ${carData?.name} - Mua Xe Vinfast Trả Góp Đến 80%`,
-      description: `Vinfast ${carData?.name} có giá từ ${carData?.priceFrom} VNĐ. Cập nhật giá xe Vinfast ${carData?.name} 2025 kèm thông tin khuyến mãi, thông số kỹ thuật và giá lăn bánh.`,
+      title: `Giá Xe VinFast ${carData?.name} - Mua Xe VinFast Trả Góp Đến 80%`,
+      description: `VinFast ${carData?.name} có giá từ ${carData?.priceFrom} VNĐ. Cập nhật giá xe VinFast ${carData?.name} 2025 kèm thông tin khuyến mãi, thông số kỹ thuật và giá lăn bánh.`,
       alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${params.carSlug}`,
+        canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${slug}`,
       },
     };
   } catch (error) {

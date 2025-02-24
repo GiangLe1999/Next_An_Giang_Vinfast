@@ -8,7 +8,7 @@ const CustomerCarousel = dynamicImport(
 
 export const generateMetadata = () => {
   return {
-    title: "Về Chúng Tôi - VinFast Suối Tiên | Đại Lý Vinfast Chính Hãng",
+    title: "Về Chúng Tôi - VinFast Suối Tiên | Đại Lý VinFast Chính Hãng",
     description:
       "Tìm hiểu về VinFast Suối Tiên - đại lý ủy quyền chính hãng của VinFast. Cung cấp các dòng xe điện, dịch vụ bảo hành, bảo dưỡng, và hỗ trợ khách hàng chuyên nghiệp.",
     alternates: {
@@ -22,7 +22,7 @@ const page = () => {
     <div>
       <FirstBanner
         heading="VỀ CHÚNG TÔI"
-        subHeading="Vinfast Suối Tiên"
+        subHeading="VinFast Suối Tiên"
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"
       />
@@ -61,7 +61,7 @@ const page = () => {
           <div className="introduce-section-img">
             <NextImage
               src="/images/gioi-thieu/vinfast-suoi-tien.webp"
-              alt="Vinfast Suối Tiên"
+              alt="VinFast Suối Tiên"
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ const page = () => {
           <div className="introduce-section-img left">
             <NextImage
               src="/images/gioi-thieu/khong-gian-vinfast-suoi-tien.webp"
-              alt="Không gian Vinfast Suối Tiên"
+              alt="Không gian VinFast Suối Tiên"
             />
           </div>
 
@@ -102,11 +102,11 @@ const page = () => {
         <div className="introduce-section">
           <div>
             <p>Những lợi ích mà</p>
-            <h2>Vinfast Suối Tiên mang lại</h2>
+            <h2>VinFast Suối Tiên mang lại</h2>
             <ul>
               <li>
                 <span>Công nghệ hiện đại: </span>
-                Xưởng dịch vụ-sửa chữa của Vinfast Suối Tiên được trang bị máy
+                Xưởng dịch vụ-sửa chữa của VinFast Suối Tiên được trang bị máy
                 móc, thiết bị công nghệ hiện đại đáp ứng các như cầu bảo hành,
                 bảo dưỡng, sửa chữa và dịch vụ đồng-sơn xe mới… Công suất phục
                 vụ sửa chữa tối đa của xưởng lên đến hàng trăm lượt xe mỗi ngày.
@@ -129,7 +129,7 @@ const page = () => {
               <li>
                 <span>Hết lòng vì khách hàng: </span>
                 Không chỉ có những sản phẩm tối ưu với thiết kế độc đáo,
-                showroom Vinfast Suối Tiên còn có đội ngũ bán hàng chuyên
+                showroom VinFast Suối Tiên còn có đội ngũ bán hàng chuyên
                 nghiệp, có kiến thức sâu rộng và thái độ phục vụ ân cần, chu
                 đáo, giúp khách hàng chọn được mẫu xe ưng ý nhất.
               </li>
@@ -139,7 +139,7 @@ const page = () => {
           <div className="introduce-section-img">
             <NextImage
               src="/images/gioi-thieu/phong-kinh-doanh-vinfast-suoi-tien.webp"
-              alt="Phong kinh doanh Vinfast Suối Tiên"
+              alt="Phong kinh doanh VinFast Suối Tiên"
             />
           </div>
         </div>
@@ -150,7 +150,7 @@ const page = () => {
               Một số hình ảnh khác
             </p>
             <p className="font-bold text-3xl uppercase text-center mb-3">
-              Tại Vinfast Suối Tiên
+              Tại VinFast Suối Tiên
             </p>
           </h2>
           <CustomerCarousel />

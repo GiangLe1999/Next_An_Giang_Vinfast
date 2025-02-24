@@ -20,7 +20,7 @@ const CarList: FC<Props> = ({ cars }) => {
         cars.map((car) => (
           <div key={car._id.toString()} className="mb-16">
             <h2 className="font-bold text-xl border-b py-1 mb-5 hover:text-primary transition">
-              <Link href={`/${car.slug}`}>Vinfast {car.name}</Link>
+              <Link href={`/${car.slug}`}>VinFast {car.name}</Link>
             </h2>
             <div className="flex items-center gap-4 max-[779px]:flex-col">
               <Link
@@ -41,7 +41,7 @@ const CarList: FC<Props> = ({ cars }) => {
                     key={index}
                   >
                     <h3 className="w-[40%] truncate font-bold max-[545px]:w-full">
-                      Vinfast {line.name}
+                      VinFast {line.name}
                     </h3>
                     <div className="w-[35%] max-[545px]:w-full">
                       Giá: {formatPrice(line.price)} VNĐ

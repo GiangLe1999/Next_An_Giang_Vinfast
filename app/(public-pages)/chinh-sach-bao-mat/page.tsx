@@ -20,7 +20,7 @@ const Page = () => {
     <div>
       <FirstBanner
         heading="CHÍNH SÁCH BẢO MẬT"
-        subHeading="Thông tin chi tiết về chính sách bảo mật thông tin tại Vinfast Suối Tiên."
+        subHeading="Thông tin chi tiết về chính sách bảo mật thông tin tại VinFast Suối Tiên."
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"
       />

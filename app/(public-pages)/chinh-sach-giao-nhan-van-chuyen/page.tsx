@@ -5,7 +5,7 @@ import { deliveryData } from "@/data/delivery";
 
 export const generateMetadata = () => {
   return {
-    title: "Chính Sách Giao Nhận & Vận Chuyển Xe VinFast Tại Vinfast Suối Tiên",
+    title: "Chính Sách Giao Nhận & Vận Chuyển Xe VinFast Tại VinFast Suối Tiên",
     description:
       "Tìm hiểu chính sách giao nhận và vận chuyển xe VinFast tại VinFast Suối Tiên. Hỗ trợ giao xe tận nơi, nhanh chóng, an toàn và đảm bảo đúng hẹn.",
     alternates: {
@@ -19,7 +19,7 @@ const Page = () => {
     <div>
       <FirstBanner
         heading="CHÍNH SÁCH GIAO NHẬN - VẬN CHUYỂN"
-        subHeading="Thông tin chi tiết về chính sách Giao nhận - Vận chuyển tại Vinfast Suối Tiên."
+        subHeading="Thông tin chi tiết về chính sách Giao nhận - Vận chuyển tại VinFast Suối Tiên."
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"
       />
