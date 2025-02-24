@@ -1,21 +1,19 @@
-export const dynamic = "force-dynamic";
-// import image7 from "@/public/images/gioi-thieu/phong-kinh-doanh-mazda-binh-trieu.jpg";
-// import image8 from "@/public/images/gioi-thieu/mazda-binh-trieu.jpg";
-// import image10 from "@/public/images/gioi-thieu/khong-gian-mazda-binh-trieu.jpg";
-
 import dynamicImport from "next/dynamic";
 import FirstBanner from "@/components/first-banner";
 import NextImage from "@/components/next-image";
+import { linkConstants } from "@/data/constants";
 const CustomerCarousel = dynamicImport(
   () => import("@/components/home-page/customer-swiper")
 );
 
 export const generateMetadata = () => {
   return {
-    title: "Về chúng tôi",
+    title: "Về Chúng Tôi - VinFast Suối Tiên | Đại Lý Vinfast Chính Hãng",
     description:
-      "Thông tin về Vinfast Suối Tiên, về cơ sở vật chất, đội ngũ nhận viên. Tham khảo tại website chính thức của Vinfast Suối Tiên.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/gioi-thieu`,
+      "Tìm hiểu về VinFast Suối Tiên - đại lý ủy quyền chính hãng của VinFast. Cung cấp các dòng xe điện, dịch vụ bảo hành, bảo dưỡng, và hỗ trợ khách hàng chuyên nghiệp.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.introduce}`,
+    },
   };
 };
 

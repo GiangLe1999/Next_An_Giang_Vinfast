@@ -1,13 +1,16 @@
 import FirstBanner from "@/components/first-banner";
 import StyledAccordion from "@/components/styled-accordion";
+import { linkConstants } from "@/data/constants";
 import { warrantyData } from "@/data/warranty";
 
 export const generateMetadata = () => {
   return {
-    title: "Chính sách bảo hành xe Mazda 2023",
+    title: "Chính Sách Bảo Hành Xe VinFast 2025 - Cập Nhật Mới Nhất",
     description:
-      "Thông tin mới nhất về chính sách bảo hành cho các dòng xe Mazda: Mazda 2, Mazda 3, Mazda CX-3, ... tại website chính thức của Vinfast Suối Tiên.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/chinh-sach-bao-hanh`,
+      "Tìm hiểu chi tiết chính sách bảo hành xe VinFast 2025: VinFast VF e34, VF 5, VF 6, VF 7, VF 8, VF 9,... tại VinFast Suối Tiên. Thông tin đầy đủ, chính xác và mới nhất.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.warranty}`,
+    },
   };
 };
 

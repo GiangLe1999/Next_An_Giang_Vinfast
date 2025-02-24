@@ -3,40 +3,44 @@ import { IoReturnUpBackSharp } from "react-icons/io5";
 import { linkConstants } from "@/data/constants";
 import { formatLongDate } from "@/lib/formatData";
 import NewsContent from "@/components/news-page/news-content";
-import { getArticleBySlugAndIncreaseViews } from "@/queries/article.query";
+import {
+  getAllArticlesForAdmin,
+  getArticleBySlug,
+  getArticleBySlugAndIncreaseViews,
+} from "@/queries/article.query";
 import RelatedArticles from "@/components/news-page/related-articles";
 
-// export async function generateStaticParams() {
-//   const articles = await getAllArticlesForAdmin();
+export async function generateStaticParams() {
+  const articles = await getAllArticlesForAdmin();
 
-//   const articlesSlugs = articles?.data?.map((article: any) => ({
-//     postSlug: article.slug,
-//   })) as any;
+  const articlesSlugs = articles?.data?.map((article: any) => ({
+    postSlug: article.slug,
+  })) as any;
 
-//   return articlesSlugs;
-// }
+  return articlesSlugs;
+}
 
-// export const generateMetadata = async ({
-//   params,
-// }: {
-//   params: { postSlug: string };
-// }) => {
-//   try {
-//     const data = (await getArticleBySlugForUser(
-//       params.postSlug
-//     )) as ArticleEntity;
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ postSlug: string }>;
+}) => {
+  try {
+    const slug = (await params).postSlug;
 
-//     return {
-//       title: data?.name,
-//       description: data?.description,
-//       alternates: {
-//         canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${params.postSlug}`,
-//       },
-//     };
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
+    const data = await getArticleBySlug(slug);
+
+    return {
+      title: data?.name,
+      description: data?.description,
+      alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.news}/${slug}`,
+      },
+    };
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 export default async function Page({
   params,

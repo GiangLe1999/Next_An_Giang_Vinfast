@@ -37,5 +37,5 @@ export const linkConstants = {
 export const pageConstants = {
   siteTitle: "Vinfast Suối Tiên",
   siteDescription:
-    "Website chính thức của Vinfast Suối Tiên cung cấp thông tin chính xác nhất về các tính năng, hình ảnh và thông số kỹ thuật của tất cả các xe ô tô, SUV, Sedan, Sport.",
+    "Vinfast Suối Tiên cung cấp thông tin chính xác nhất về giá cả, tính năng, thông số kỹ thuật của các dòng xe Vinfast như VF3, VF5, VF6, VF7, VF8, VF9.",
 };

@@ -1,12 +1,15 @@
 import InstallmentPageContent from "@/components/installment-page/installment-page-content";
+import { linkConstants } from "@/data/constants";
 import { getAllCarsName } from "@/queries/car.query";
 
 export const generateMetadata = () => {
   return {
-    title: "Thủ tục trả góp",
+    title: "Thủ Tục Trả Góp Xe VinFast - Hướng Dẫn Chi Tiết",
     description:
-      "Tìm hiểu thông tin về thủ tục trả góp đối với sản phẩm xe Mazda một cách chính xác nhất tại Mazda Thủ Đức.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/thu-tuc-tra-gop`,
+      "Tìm hiểu thủ tục trả góp xe VinFast tại VinFast Suối Tiên. Hỗ trợ vay ngân hàng, lãi suất ưu đãi, hồ sơ đơn giản, duyệt nhanh chóng.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.installment}`,
+    },
   };
 };
 

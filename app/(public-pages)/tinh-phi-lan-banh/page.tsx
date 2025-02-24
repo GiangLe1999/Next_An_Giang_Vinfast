@@ -1,13 +1,16 @@
 import CarPriceSection from "@/components/car-page/CarPriceSection";
 import FirstBanner from "@/components/first-banner";
+import { linkConstants } from "@/data/constants";
 import { getAllCarsName } from "@/queries/car.query";
 
 export const generateMetadata = () => {
   return {
-    title: "Tính phí lăn bánh Ô tô Mazda 2023",
+    title: "Tính Phí Lăn Bánh Xe VinFast 2025 - Cập Nhật Chi Tiết Mới Nhất",
     description:
-      "Cách tính và bảng tính phí lăn bánh Ô tô Mazda chính xác nhất 2023.Tham khảo tại Website Mazda Thủ Đức.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/tinh-phi-lan-banh`,
+      "Công cụ tính phí lăn bánh xe VinFast giúp bạn ước tính chi phí chính xác bao gồm giá xe, thuế, phí trước bạ, đăng ký, bảo hiểm,... Cập nhật mới nhất tại VinFast Suối Tiên.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.finalPrice}`,
+    },
   };
 };
 
@@ -17,7 +20,7 @@ const Page = async () => {
   return (
     <div>
       <FirstBanner
-        heading="TÍNH PHÍ LĂN BÁNH MAZDA 2023"
+        heading="TÍNH PHÍ LĂN BÁNH VINFAST 2025"
         subHeading="Cập nhật chính xác nhất giá lăn bánh các dòng xe của Vinfast"
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"

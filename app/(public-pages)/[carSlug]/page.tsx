@@ -25,25 +25,25 @@ export async function generateStaticParams() {
   return carsSlugs;
 }
 
-// export const generateMetadata = async ({
-//   params,
-// }: {
-//   params: { carSlug: string };
-// }) => {
-//   try {
-//     const carData = (await getCarBySlug(params.carSlug)) as any;
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { carSlug: string };
+}) => {
+  try {
+    const carData = (await getCarBySlug(params.carSlug)) as any;
 
-//     return {
-//       title: carData?.name,
-//       description: `${carData?.name} có giá từ ${carData?.priceFrom} VNĐ. Xem thêm thông số kỹ thuật, và chương trình ưu đãi đặc biệt của ${carData?.name}.`,
-//       alternates: {
-//         canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${params.carSlug}`,
-//       },
-//     };
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
+    return {
+      title: `Giá Xe Vinfast ${carData?.name} - Mua Xe Vinfast Trả Góp Đến 80%`,
+      description: `Vinfast ${carData?.name} có giá từ ${carData?.priceFrom} VNĐ. Cập nhật giá xe Vinfast ${carData?.name} 2025 kèm thông tin khuyến mãi, thông số kỹ thuật và giá lăn bánh.`,
+      alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${params.carSlug}`,
+      },
+    };
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 export default async function Page({
   params,

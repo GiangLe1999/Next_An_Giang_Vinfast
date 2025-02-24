@@ -1,11 +1,18 @@
 import FirstBanner from "@/components/first-banner";
 import NextImage from "@/components/next-image";
 import TestDriveForm from "@/components/test-drive-page/test-drive-form";
+import { linkConstants } from "@/data/constants";
 import { getAllCarLines } from "@/queries/car.query";
 
-export type CarLinesType = {
-  name: string;
-  carLines: any[];
+export const generateMetadata = () => {
+  return {
+    title: "Đăng Ký Lái Thử Xe VinFast - Trải Nghiệm Tại Vinfast Suối Tiên",
+    description:
+      "Đăng ký lái thử xe VinFast tại VinFast Suối Tiên để trải nghiệm thực tế các dòng xe điện hiện đại. Hỗ trợ đăng ký nhanh chóng, hoàn toàn miễn phí.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.testDrive}`,
+    },
+  };
 };
 
 const Page = async () => {

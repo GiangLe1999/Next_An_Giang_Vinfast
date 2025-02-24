@@ -1,14 +1,16 @@
 import FirstBanner from "@/components/first-banner";
 import QuickConsultForm from "@/components/public-layout/quick-consult-form";
+import { linkConstants } from "@/data/constants";
 import { BsDot } from "react-icons/bs";
-export const dynamic = "force-dynamic";
 
 export const generateMetadata = () => {
   return {
-    title: "Liên hệ với Vinfast Suối Tiên",
+    title: "Liên Hệ VinFast Suối Tiên - Hỗ Trợ Tư Vấn Nhanh Chóng",
     description:
-      "Liên hệ ngay với Vinfast Suối Tiên để đặt lịch lái thử hoặc nhận báo giá mới nhất cho các dòng xe Mazda.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/lien-he`,
+      "Liên hệ ngay với VinFast Suối Tiên để được tư vấn chi tiết về các dòng xe, chính sách mua bán, bảo hành, bảo dưỡng và các chương trình ưu đãi mới nhất.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.contact}`,
+    },
   };
 };
 

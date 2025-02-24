@@ -1,13 +1,16 @@
 import FirstBanner from "@/components/first-banner";
 import StyledAccordion from "@/components/styled-accordion";
+import { linkConstants } from "@/data/constants";
 import { deliveryData } from "@/data/delivery";
 
 export const generateMetadata = () => {
   return {
-    title: "Chính sách giao nhận & vận chuyển",
+    title: "Chính Sách Giao Nhận & Vận Chuyển Xe VinFast Tại Vinfast Suối Tiên",
     description:
-      "Thông tin mới nhất về chính sách giao nhận & vận chuyển đối với sản phẩm xe Mazda tại website chính thức của Vinfast Suối Tiên.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/chinh-sach-giao-nhan-van-chuyen`,
+      "Tìm hiểu chính sách giao nhận và vận chuyển xe VinFast tại VinFast Suối Tiên. Hỗ trợ giao xe tận nơi, nhanh chóng, an toàn và đảm bảo đúng hẹn.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.deliveryPolicy}`,
+    },
   };
 };
 

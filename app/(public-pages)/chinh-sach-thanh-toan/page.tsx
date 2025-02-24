@@ -1,13 +1,16 @@
 import FirstBanner from "@/components/first-banner";
 import StyledAccordion from "@/components/styled-accordion";
+import { linkConstants } from "@/data/constants";
 import { paymentData } from "@/data/payment";
 
 export const generateMetadata = () => {
   return {
-    title: "Chính sách thanh toán",
+    title: "Chính Sách Thanh Toán Xe Tại VinFast Suối Tiên",
     description:
-      "Thông tin mới nhất về chính sách thanh toán sản phẩm xe Mazda tại website chính thức của Vinfast Suối Tiên.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/chinh-sach-thanh-toan`,
+      "Tìm hiểu chính sách thanh toán khi mua xe VinFast tại VinFast Suối Tiên. Hỗ trợ nhiều phương thức thanh toán linh hoạt, an toàn và tiện lợi.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.paymentPolicy}`,
+    },
   };
 };
 

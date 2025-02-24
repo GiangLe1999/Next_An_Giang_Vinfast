@@ -1,13 +1,17 @@
 import FirstBanner from "@/components/first-banner";
 import StyledAccordion from "@/components/styled-accordion";
+import { linkConstants } from "@/data/constants";
 import { privacyData } from "@/data/privacy";
 
 export const generateMetadata = () => {
   return {
-    title: "Chính sách bảo mật thông tin",
+    title:
+      "Chính Sách Bảo Mật VinFast Suối Tiên - Cam Kết Bảo Vệ Thông Tin Khách Hàng",
     description:
-      "Thông tin mới nhất về chính sách bảo mật thông tin khách hàng tại website chính thức của Vinfast Suối Tiên.",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/chinh-sach-bao-mat`,
+      "Tìm hiểu chính sách bảo mật của VinFast Suối Tiên. Chúng tôi cam kết bảo vệ thông tin cá nhân của bạn với các tiêu chuẩn an toàn cao nhất.",
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.privacyPolicy}`,
+    },
   };
 };
 
