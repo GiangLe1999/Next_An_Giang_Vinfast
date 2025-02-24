@@ -31,7 +31,7 @@ const ReasonsSection = () => {
             <p>
               Anh chị sẽ yên tâm khi mua xe tại Vinfast Suối Tiên, vì chúng tôi
               luôn bảo hành, bảo dưỡng và sửa chữa theo tiêu chuẩn chất lượng
-              của Mazda trên toàn quốc. BẢO HÀNH ĐẾN 5 NĂM.
+              của Vinfast trên toàn quốc. BẢO HÀNH ĐẾN 5 NĂM.
             </p>
           </li>
 

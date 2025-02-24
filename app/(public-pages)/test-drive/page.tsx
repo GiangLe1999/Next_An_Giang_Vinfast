@@ -32,7 +32,7 @@ const Page = async () => {
           <div className="relative w-full h-full">
             <NextImage
               src="/images/test-drive/lai-thu-vinfast-vf8-tai-vinfast-suoi-tien.webp"
-              alt="Lái thử Mazda"
+              alt="Lái thử Vinfast"
             />
           </div>
 

@@ -33,7 +33,7 @@ const AdminSidebar: FC<Props> = ({ isExpand }) => {
       <div className="relative z-[4]">
         <Image
           src="/images/logo-vinfast.png"
-          alt="Mazda logo"
+          alt="Vinfast logo"
           priority
           className="mx-auto my-6"
           width={isExpand ? 200 : 60}
