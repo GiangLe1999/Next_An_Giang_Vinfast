@@ -95,7 +95,7 @@ const FilterBar: FC<Props> = ({
               </span>
 
               <a
-                href="https://twitter.com/gmajorglobal"
+                href="https://www.facebook.com/vinfastdian/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -103,7 +103,7 @@ const FilterBar: FC<Props> = ({
               </a>
 
               <a
-                href="https://gmajor.biz/rss.xml"
+                href="https://www.tiktok.com/@duongw.22"
                 target="_blank"
                 rel="noopener noreferrer"
               >
