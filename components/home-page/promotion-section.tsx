@@ -13,7 +13,7 @@ const PromotionSection = () => {
       <div className="grid grid-cols-2 gap-x-12 gap-y-6 py-8 max-[738px]:grid-cols-1 mt-3">
         <div>
           <p className="text-primary text-base font-bold mb-2 flex items-center gap-1">
-            <HiReceiptTax size={20} color="#C4161C" /> ƯU ĐÃI XE VINFAST 2025
+            <HiReceiptTax size={20} color="#025eda" /> ƯU ĐÃI XE VINFAST 2025
           </p>
           <ul className="text-sm text-textColor leading-7">
             <li>
@@ -41,7 +41,7 @@ const PromotionSection = () => {
 
         <div>
           <p className="text-primary text-base font-bold mb-2 flex items-center gap-1">
-            <FaUsersCog size={20} color="#C4161C" /> TRẢ GÓP – LÃI SUẤT ƯU ĐÃI
+            <FaUsersCog size={20} color="#025eda" /> TRẢ GÓP – LÃI SUẤT ƯU ĐÃI
           </p>
           <p className="text-sm text-textColor leading-7 mt-2 mb-4">
             VinFast mang đến chính sách trả góp linh hoạt, giúp khách hàng dễ

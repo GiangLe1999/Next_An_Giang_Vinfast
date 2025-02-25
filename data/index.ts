@@ -249,3 +249,30 @@ export const carNames: string[] = [
   "new mazda cx-8",
   "new mazda bt-50",
 ];
+
+export const socialItems = [
+  {
+    img: "/images/home/facebook.jpg",
+    alt: "Facebook Icon",
+    href: "https://www.facebook.com/vinfastdian/",
+    title: "Facebook",
+  },
+  {
+    img: "/images/home/youtube.png",
+    alt: "Youtube Icon",
+    href: "https://www.youtube.com/@anhduongwauto",
+    title: "Youtube",
+  },
+  {
+    img: "/images/home/tiktok.png",
+    alt: "TikTok Icon",
+    href: "https://www.tiktok.com/@duongw.22",
+    title: "TikTok",
+  },
+  {
+    img: "/images/home/zalo.png",
+    alt: "Zalo Icon",
+    href: "https://zalo.me/0989223653",
+    title: "Zalo",
+  },
+];

@@ -1,32 +1,8 @@
+"use client";
+
 import { useState } from "react";
 import NextImage from "../next-image";
-
-export const socialItems = [
-  {
-    img: "/images/home/facebook.jpg",
-    alt: "Facebook Icon",
-    href: "https://www.facebook.com/vinfastdian/",
-    title: "Facebook",
-  },
-  {
-    img: "/images/home/youtube.png",
-    alt: "Youtube Icon",
-    href: "https://www.youtube.com/@anhduongwauto",
-    title: "Youtube",
-  },
-  {
-    img: "/images/home/tiktok.png",
-    alt: "TikTok Icon",
-    href: "https://www.tiktok.com/@duongw.22",
-    title: "TikTok",
-  },
-  {
-    img: "/images/home/zalo.png",
-    alt: "Zalo Icon",
-    href: "https://zalo.me/0989223653",
-    title: "Zalo",
-  },
-];
+import { socialItems } from "@/data";
 
 const SubscribeCard = () => {
   const [email, setEmail] = useState("");
@@ -58,8 +34,8 @@ const SubscribeCard = () => {
           Subscribe kênh tin tức VinFast
         </h3>
         <p className="max-w-md mt-2 text-sm text-white leading-7">
-          Đăng ký nhận tin tức hoặc theo dõi VinFast trên mạng xã hội để cập
-          nhật những thông tin mới nhất về những dòng xe VinFast.
+          Đăng ký nhận tin tức hoặc theo dõi VinFast Suối Tiên trên mạng xã hội
+          để cập nhật những thông tin mới nhất về những dòng xe VinFast.
         </p>
 
         {/* Form */}
