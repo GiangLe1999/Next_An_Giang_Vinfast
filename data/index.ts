@@ -11,7 +11,7 @@ import {
 
 import { BiSolidContact } from "react-icons/bi";
 
-import { MdPhone } from "react-icons/md";
+import { MdMail, MdPhone } from "react-icons/md";
 
 import { IconType } from "react-icons";
 import { linkConstants } from "./constants";
@@ -187,7 +187,7 @@ export const homeOptions: homeOptionType[] = [
 export const footerCol1: string[] = [
   "Chuyên cung cấp dòng xe VinFast các loại",
   "Xe 4 chỗ VinFast VF 5, 5 chỗ VinFast VF 6 và VF 7, 5 chỗ gầm cao VinFast VF 8, 7 chỗ VinFast VF 9",
-  "Địa chỉ : 127 Quốc Lộ 13, Khu phố 1, Thủ Đức, Ho Chi Minh City, Vietnam",
+  "Địa chỉ : 44C Xa Lộ Hà Nội, Bình Thắng, Dĩ An, Bình Dương",
 ];
 
 type footerItemType = { title: string; link: string };
@@ -222,12 +222,12 @@ export const footerCol32: footerItemType[] = [
 ];
 
 export const footerCol4: { title: string; link: string; icon: IconType }[] = [
-  { title: "Hotline: 0333122512", link: "tel:0333122512", icon: MdPhone },
-  // {
-  //   title: "hualong02072000@gmail.com",
-  //   link: "mailto:hualong02072000@gmail.com",
-  //   icon: MdMail,
-  // },
+  { title: "Hotline: 0989 223 653", link: "tel:0989223653", icon: MdPhone },
+  {
+    title: "duongwkb@gmail.com",
+    link: "mailto:duongwkb@gmail.com",
+    icon: MdMail,
+  },
 ];
 
 export const carFees = {

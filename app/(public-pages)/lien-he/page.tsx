@@ -19,17 +19,17 @@ const titleClasses = "text-primary uppercase font-bold text-2xl mb-3";
 const infos = [
   {
     title: "Địa chỉ",
-    content: "125 Quốc Lộ 13, Khu phố 1, Thủ Đức, TP. Hồ Chí Minh",
+    content: "44C Xa Lộ Hà Nội, Bình Thắng, Dĩ An, Bình Dương",
   },
   {
     title: "Số điện thoại",
-    link: "tel:0333122512",
-    content: "033.3122.512 (Mr.Dương)",
+    link: "tel:0989223653",
+    content: "0989 223 653 (Mr.Dương)",
   },
   {
     title: "Email",
-    link: "mailto:hualong02072000@gmail.com",
-    content: "hualong02072000@gmail.com",
+    link: "mailto:duongwkb@gmail.com",
+    content: "duongwkb@gmail.com",
   },
   {
     title: "Website",
@@ -100,7 +100,7 @@ const ContactPage = () => {
 
           <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.7887680054164!2d106.71228047601315!3d10.827470858248212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752902a0e9a235%3A0xb75352c6302b9a24!2zTWF6ZGEgLSBUaMOgbmggUGjhu5EgVGjhu6cgxJDhu6lj!5e0!3m2!1svi!2s!4v1717517833562!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.5916644556087!2d106.81774379999999!3d10.8871139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8b4b360afe5%3A0xac379557e685ddc5!2zNDRjIFhhIGzhu5kgSMOgIE7hu5lpLCBCw6xuaCBBbiwgRMSpIEFuLCBCw6xuaCBExrDGoW5n!5e1!3m2!1svi!2s!4v1740457116810!5m2!1svi!2s"
               className="w-full h-full max-[846px]:aspect-video rounded-md shadow-md"
               loading="lazy"
               allowFullScreen

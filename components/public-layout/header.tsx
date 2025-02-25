@@ -66,7 +66,7 @@ const Header = () => {
           </h2>
 
           <a
-            href="tel:0333122512"
+            href="tel:0989223653"
             className="flex items-center gap-2 font-medium hover:scale-[1.1] transition"
           >
             <div className="bg-primary rounded-full w-8 h-8 grid place-items-center">
@@ -75,7 +75,7 @@ const Header = () => {
 
             <div className="text-xs">
               <p>HOTLINE</p>
-              <p>033.3122.512</p>
+              <p>0989 223 653</p>
             </div>
           </a>
         </div>
@@ -97,7 +97,7 @@ const Header = () => {
                   }`}
                   onMouseEnter={() => parentHoverHandler(item.title)}
                 >
-                  <span className="flex gap-2 items-center max-[500px]:text-sm">
+                  <span className="font-bold flex gap-2 items-center max-[500px]:text-sm">
                     {item.title}
                     <BiChevronDown
                       size={20}

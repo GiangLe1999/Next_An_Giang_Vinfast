@@ -22,7 +22,7 @@ const CarCard: FC<Props> = ({ car }) => {
           VINFAST {car.name.toUpperCase()}
         </h4>
         <div className="mt-1 text-center">
-          <span className="font-semibold text-primary">
+          <span className="font-bold text-primary">
             Giá từ: {formatPrice(car?.priceFrom)}
             <u>đ</u>
           </span>

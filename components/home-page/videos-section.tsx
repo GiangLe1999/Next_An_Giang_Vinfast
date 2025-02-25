@@ -9,7 +9,7 @@ const VideosSection = () => {
       </p>
       <SectionTitle title="VINFAST 2025" />
 
-      <div className="overflow-x-auto mt-14 space-y-10">
+      <div className="mt-14 space-y-10">
         <div>
           <div className="w-full aspect-video mb-3">
             <iframe

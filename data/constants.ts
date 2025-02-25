@@ -29,11 +29,10 @@ export const linkConstants = {
   admin_cars: "/admin/cars",
   create_car: "/admin/cars/create",
   edit_car: "/admin/cars/edit",
-  // admin_banners: "/admin/banners",
 };
 
 export const pageConstants = {
-  siteTitle: "VinFast Suối Tiên",
+  siteTitle: "VinFast Suối Tiên | Đại Lý Chính Hãng Của VinFast",
   siteDescription:
     "VinFast Suối Tiên cung cấp thông tin chính xác nhất về giá cả, tính năng, thông số kỹ thuật của các dòng xe VinFast như VF3, VF5, VF6, VF7, VF8, VF9.",
 };

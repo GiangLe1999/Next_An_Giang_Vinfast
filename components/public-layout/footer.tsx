@@ -40,32 +40,40 @@ const Footer = () => {
           </ul>
           <div className="flex item-center gap-2 my-3">
             <a
-              href="https://www.facebook.com/profile.php?id=100086421081221&locale=vi_VN"
+              href="https://www.facebook.com/vinfastdian/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
             >
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/facebook.jpg"
-                  alt="VinFast Facebook"
+                  alt="VinFast Suối Tiên Facebook"
                 />
               </div>
             </a>
 
-            <Link href="" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.youtube.com/@anhduongwauto"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/youtube.png"
-                  alt="VinFast Youtube"
+                  alt="VinFast Suối Tiên Youtube"
                 />
               </div>
             </Link>
 
-            <Link href="" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.tiktok.com/@duongw.22"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
               <div className="footer-icon">
                 <NextImage
-                  src="/images/home/instagram.png"
-                  alt="VinFast Instagram"
+                  src="/images/home/tiktok.png"
+                  alt="VinFast Suối Tiên TikTok"
                 />
               </div>
             </Link>
