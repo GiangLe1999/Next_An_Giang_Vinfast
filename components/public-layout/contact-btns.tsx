@@ -62,7 +62,7 @@ const ContactBtns = () => {
         <div className="absolute top-[10px] left-[7px] w-[70%] h-[70%] animate-ping bg-red-700 rounded-full"></div>
         <BsHeadset color="white" size={30} className="z-30" />
         <span className={`${tooltipCommon} bg-red-700 min-w-[170px]`}>
-          0333.122.512
+          0989.223.653
         </span>
       </a>
     </div>

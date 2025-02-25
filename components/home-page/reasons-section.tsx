@@ -16,7 +16,7 @@ const ReasonsSection = () => {
         <ul className="space-y-5 text-sm leading-7">
           <li>
             <p className="flex items-center gap-2 text-primary font-bold text-lg mb-1">
-              <BsTagsFill size={16} /> Gía cả ưu đãi - Giao xe sớm
+              <BsTagsFill size={16} /> Giá cả ưu đãi - Giao xe sớm
             </p>
             <p>
               VinFast Suối Tiên luôn cam kết mang lại mức giá ưu đãi nhất cho
