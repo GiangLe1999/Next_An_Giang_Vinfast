@@ -113,6 +113,30 @@ type navCarItemType = {
 
 export const navCarMenu: navCarItemType[] = [
   {
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1742913595/Suoi%20Tien%20Vinfast/lqtpfqfjoshxj0oodwld.webp",
+    name: "VinFast Minio Green",
+    price: "269",
+    link: "minio-green",
+  },
+  {
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1742914255/Suoi%20Tien%20Vinfast/nkzkvk5pg8pwrn8ipd1x.png",
+    name: "VinFast Minio Green",
+    price: "499",
+    link: "herio-green",
+  },
+  {
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1742914783/Suoi%20Tien%20Vinfast/qgmi4toorl0k6sxfxxor.png",
+    name: "VinFast Nerio Green",
+    price: "710",
+    link: "nerio-green",
+  },
+  {
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1742915568/Suoi%20Tien%20Vinfast/aadm3o6yzbcffy2cier1.png",
+    name: "VinFast Limo Green",
+    price: "749",
+    link: "limo-green",
+  },
+  {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740191819/Suoi%20Tien%20Vinfast/airek9me2u7sszbqwsd7.jpg",
     name: "VinFast VF3",
     price: "299",
