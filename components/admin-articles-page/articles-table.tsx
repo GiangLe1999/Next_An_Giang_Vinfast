@@ -48,7 +48,7 @@ const ArticlesTable: FC<Props> = ({ articles }) => {
 
             <tbody>
               {articles?.map((article) => (
-                <tr key={article?.name}>
+                <tr key={article?._id}>
                   <td className="max-w-[300px]">
                     <span className="line-clamp-1">{article?.name}</span>
                   </td>

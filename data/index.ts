@@ -120,7 +120,7 @@ export const navCarMenu: navCarItemType[] = [
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1742914255/Suoi%20Tien%20Vinfast/nkzkvk5pg8pwrn8ipd1x.png",
-    name: "VinFast Minio Green",
+    name: "VinFast Herio Green",
     price: "499",
     link: "herio-green",
   },
