@@ -3,8 +3,6 @@ import { getAllCarsForAdmin, getCarBySlug } from "@/queries/car.query";
 import { MdEditSquare } from "react-icons/md";
 import EditCarForm from "@/components/admin-cars-page/edit-car-form";
 
-export const dynamic = "force-dynamic";
-
 export async function generateStaticParams() {
   const cars = await getAllCarsForAdmin();
 

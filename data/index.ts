@@ -115,37 +115,37 @@ export const navCarMenu: navCarItemType[] = [
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740191819/Suoi%20Tien%20Vinfast/airek9me2u7sszbqwsd7.jpg",
     name: "VinFast VF3",
-    price: "240",
+    price: "299",
     link: "vf3",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740213021/Suoi%20Tien%20Vinfast/ab4jerelgiwhckcbknam.webp",
     name: "VinFast VF5",
-    price: "480",
+    price: "529",
     link: "vf5",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740214584/Suoi%20Tien%20Vinfast/ke7xwcyrxqnsryxnhla0.webp",
     name: "VinFast VF6",
-    price: "640",
+    price: "694",
     link: "vf6",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740240220/Suoi%20Tien%20Vinfast/x88b0dix3dojiwtiygy1.png",
     name: "VinFast VF7",
-    price: "760",
+    price: "799",
     link: "vf7",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740216994/Suoi%20Tien%20Vinfast/uk573tijp6c9o6qmqn7d.webp",
     name: "VinFast VF8",
-    price: "970",
+    price: "1019",
     link: "vf8",
   },
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1740219323/Suoi%20Tien%20Vinfast/sqfnwwdqze8jrz6qhwlg.webp",
     name: "VinFast VF9",
-    price: "1380",
+    price: "1499",
     link: "vf9",
   },
 ];
