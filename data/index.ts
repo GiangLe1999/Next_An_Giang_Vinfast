@@ -217,6 +217,10 @@ export const footerCol1: string[] = [
 type footerItemType = { title: string; link: string };
 
 export const footerCol2: footerItemType[] = [
+  { title: "VinFast Minio Green", link: "/minio-green" },
+  { title: "VinFast Herio Green", link: "/herio-green" },
+  { title: "VinFast Nerio Green", link: "/nerio-green" },
+  { title: "VinFast Limo Green", link: "/limo-green" },
   { title: "VinFast VF3", link: "/vf3" },
   { title: "VinFast VF5", link: "/vf5" },
   { title: "VinFast VF6", link: "/vf6" },

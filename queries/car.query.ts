@@ -39,6 +39,7 @@ export const getAllCarsForHomepage = async () => {
     await dbConnect();
     const cars: any[] = await Car.find()
       .select("name priceFrom installmentPrice slug avatar")
+      .sort({ createdAt: -1 })
       .lean();
 
     return JSON.parse(JSON.stringify(cars));
