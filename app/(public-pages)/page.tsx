@@ -9,6 +9,10 @@ const HomeQuickConsultModal = dynamicImport(
   () => import("@/components/public-layout/home-quick-consult-modal")
 );
 
+const CarsSection2 = dynamicImport(
+  () => import("@/components/home-page/cars-section-2")
+);
+
 const CarsSection = dynamicImport(
   () => import("@/components/home-page/cars-section")
 );
@@ -62,6 +66,7 @@ export default async function Home() {
         <div className="mt-4">
           <MainOptions />
           <PromotionSection />
+          <CarsSection2 cars={cars} />
           <CarsSection cars={cars} />
           <SupportBuyersSection />
           <div className="pt-24 pb-[85px] container grid xl:grid-cols-2 grid-cols-1 gap-x-16 gap-y-28">
