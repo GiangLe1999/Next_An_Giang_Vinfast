@@ -28,8 +28,8 @@ const infos = [
   },
   {
     title: "Email",
-    link: "mailto:duongwkb@gmail.com",
-    content: "duongwkb@gmail.com",
+    link: "mailto:duongvfsuoitien@gmail.com",
+    content: "duongvfsuoitien@gmail.com",
   },
   {
     title: "Website",

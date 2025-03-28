@@ -252,8 +252,8 @@ export const footerCol32: footerItemType[] = [
 export const footerCol4: { title: string; link: string; icon: IconType }[] = [
   { title: "Hotline: 0989 223 653", link: "tel:0989223653", icon: MdPhone },
   {
-    title: "duongwkb@gmail.com",
-    link: "mailto:duongwkb@gmail.com",
+    title: "duongvfsuoitien@gmail.com",
+    link: "mailto:duongvfsuoitien@gmail.com",
     icon: MdMail,
   },
 ];
