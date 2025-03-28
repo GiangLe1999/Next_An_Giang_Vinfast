@@ -6,6 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import { FormEvent, useState } from "react";
 import { getAllCarsNameVsSlug } from "@/queries/car.query";
 import NextImage from "../next-image";
+import { createQuickConsult } from "@/actions/quick-consult.actions";
 
 const QuickConsultForm = () => {
   const { data: cars, isPending } = useQuery({
@@ -28,7 +29,7 @@ const QuickConsultForm = () => {
   const submitHandler = async (e: FormEvent) => {
     e.preventDefault();
 
-    if (!name || !name.trim() || !phone || !phone.trim() || !choseCar) {
+    if (!name?.trim() || !phone?.trim() || !choseCar?.trim()) {
       Swal.fire({
         icon: "error",
         title: "Không hợp lệ!",
@@ -41,35 +42,34 @@ const QuickConsultForm = () => {
     setLoading(true);
 
     try {
-      const data = JSON.stringify({ name, phone, choseCar });
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/quick-consult`,
-        {
-          method: "POST",
-          body: data,
-        }
-      );
+      const response = await createQuickConsult({ name, phone, choseCar });
 
-      if (!res.ok) {
-        throw new Error();
+      if (response.success) {
+        Swal.fire({
+          icon: "success",
+          title: "Thành công!",
+          text: "Chúng tôi sẽ liên hệ đến Anh (Chị) trong thời gian sớm nhất.",
+          confirmButtonColor: "green",
+        });
+
+        resetFormHandler();
+      } else {
+        throw new Error(response.message);
       }
-
-      Swal.fire({
-        icon: "success",
-        title: "Thành công!",
-        text: "Chúng tôi sẽ liên hê đến Anh (Chị) trong thời gian sớm nhất.",
-        confirmButtonColor: "green",
-      });
-      resetFormHandler();
-    } catch (error: any) {
-      console.log(error);
+    } catch (error) {
+      console.error("Lỗi gửi form:", error);
       Swal.fire({
         icon: "error",
-        title: "Không hợp lệ!",
-        text: "Vui lòng kiểm tra lại thông tin trước khi gửi form.",
+        title: "Lỗi gửi yêu cầu!",
+        text:
+          error instanceof Error
+            ? error.message
+            : "Đã xảy ra lỗi, vui lòng thử lại.",
         confirmButtonColor: "#C4161C",
       });
     }
+
+    setLoading(false);
   };
 
   return (
