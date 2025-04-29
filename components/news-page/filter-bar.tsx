@@ -95,7 +95,7 @@ const FilterBar: FC<Props> = ({
               </span>
 
               <a
-                href="https://www.facebook.com/vinfastdian/"
+                href="https://www.facebook.com/VinFastAuto.Official/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -103,7 +103,7 @@ const FilterBar: FC<Props> = ({
               </a>
 
               <a
-                href="https://www.tiktok.com/@duongw.22"
+                href="https://www.tiktok.com/@vinfastofficial"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -31,7 +31,7 @@ const Page = async () => {
         <div className="customer-form-wrapper">
           <div className="relative w-full h-full">
             <NextImage
-              src="/images/test-drive/lai-thu-vinfast-vf8-tai-vinfast-suoi-tien.webp"
+              src="/images/test-drive/lai-thu-vinfast-vf8-tai-vinfast-an-giang.webp"
               alt="Lái thử VinFast"
             />
           </div>

@@ -48,8 +48,8 @@ const FinalPriceFrom: FC<Props> = ({
         {/* Place */}
         <div className="cal-price-form-input">
           <label htmlFor="place">Chọn nơi :</label>
-          <select id="place" value="hcm">
-            <option value="hcm">Hồ Chí Minh</option>
+          <select id="place" value="ag">
+            <option value="ag">An Giang</option>
           </select>
         </div>
 

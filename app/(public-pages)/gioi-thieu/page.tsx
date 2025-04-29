@@ -60,7 +60,7 @@ const page = () => {
 
           <div className="introduce-section-img">
             <NextImage
-              src="/images/gioi-thieu/vinfast-suoi-tien.webp"
+              src="/images/gioi-thieu/vinfast-an-giang.webp"
               alt="VinFast An Giang"
             />
           </div>
@@ -69,7 +69,7 @@ const page = () => {
         <div className="introduce-section introduce-reverse">
           <div className="introduce-section-img left">
             <NextImage
-              src="/images/gioi-thieu/khong-gian-vinfast-suoi-tien.webp"
+              src="/images/gioi-thieu/khong-gian-vinfast-an-giang.webp"
               alt="Không gian VinFast An Giang"
             />
           </div>
@@ -138,7 +138,7 @@ const page = () => {
 
           <div className="introduce-section-img">
             <NextImage
-              src="/images/gioi-thieu/phong-kinh-doanh-vinfast-suoi-tien.webp"
+              src="/images/gioi-thieu/phong-kinh-doanh-vinfast-an-giang.webp"
               alt="Phong kinh doanh VinFast An Giang"
             />
           </div>

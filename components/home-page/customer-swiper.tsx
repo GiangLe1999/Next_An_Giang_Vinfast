@@ -67,6 +67,15 @@ const CustomerSwiper = () => {
             />
           </div>
         </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="relative w-full aspect-square rounded-md overflow-hidden">
+            <NextImage
+              src={`/images/home/customers/giao-xe-vinfast-toi-khach-hang-6.webp`}
+              alt={`Giao xe VinFast tới khách hàng 5`}
+            />
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
