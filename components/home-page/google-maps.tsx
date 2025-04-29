@@ -1,7 +1,7 @@
 const GoogleMaps = () => {
   return (
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.5916644556087!2d106.81774379999999!3d10.8871139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8b4b360afe5%3A0xac379557e685ddc5!2zNDRjIFhhIGzhu5kgSMOgIE7hu5lpLCBCw6xuaCBBbiwgRMSpIEFuLCBCw6xuaCBExrDGoW5n!5e1!3m2!1svi!2s!4v1740457116810!5m2!1svi!2s"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31400.756012274618!2d105.4791069!3d10.3343221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a73d739223791%3A0xab912464ec7247af!2sVinFast%20Ph%C3%BA%20Khang%20An%20Giang!5e0!3m2!1sen!2s!4v1745945364184!5m2!1sen!2s"
       className="w-full h-[400px] mt-10"
       loading="lazy"
       allowFullScreen

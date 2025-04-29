@@ -23,7 +23,7 @@ const MessengerBtn = () => {
   return (
     <div className="fixed max-[844px]:bottom-16 bottom-3 right-4 flex flex-col gap-2 z-50">
       <a
-        href="https://m.me/177623738768542"
+        href="https://zalo.me/082222008"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Messenger contact button"
