@@ -34,7 +34,7 @@ const SubscribeCard = () => {
           Subscribe kênh tin tức VinFast
         </h3>
         <p className="max-w-md mt-2 text-sm text-white leading-7">
-          Đăng ký nhận tin tức hoặc theo dõi VinFast Suối Tiên trên mạng xã hội
+          Đăng ký nhận tin tức hoặc theo dõi VinFast An Giang trên mạng xã hội
           để cập nhật những thông tin mới nhất về những dòng xe VinFast.
         </p>
 

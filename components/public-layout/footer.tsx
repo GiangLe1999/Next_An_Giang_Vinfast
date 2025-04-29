@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Column1 */}
         <div className="w-1/3 pr-3 max-[1017px]:w-[50%] max-[717px]:w-full">
           {/* General info */}
-          <p className="footer-title">VINFAST SUỐI TIÊN</p>
+          <p className="footer-title">VINFAST AN GIANG</p>
           <ul>
             {footerCol1.map((item, index) => (
               <li className="footer-item hover:font-normal" key={index}>
@@ -47,7 +47,7 @@ const Footer = () => {
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/facebook.jpg"
-                  alt="VinFast Suối Tiên Facebook"
+                  alt="VinFast An Giang Facebook"
                 />
               </div>
             </a>
@@ -60,7 +60,7 @@ const Footer = () => {
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/youtube.png"
-                  alt="VinFast Suối Tiên Youtube"
+                  alt="VinFast An Giang Youtube"
                 />
               </div>
             </Link>
@@ -73,7 +73,7 @@ const Footer = () => {
               <div className="footer-icon">
                 <NextImage
                   src="/images/home/tiktok.png"
-                  alt="VinFast Suối Tiên TikTok"
+                  alt="VinFast An Giang TikTok"
                 />
               </div>
             </Link>
@@ -123,7 +123,7 @@ const Footer = () => {
       <div className="border-t border-[#999999] py-1">
         <div className="container text-[#999999] text-xs flex items-center justify-between">
           <span className="uppercase my-2 text-center">
-            © {new Date().getFullYear()} VinFast Suối Tiên - All rights reserved
+            © {new Date().getFullYear()} VinFast An Giang - All rights reserved
           </span>
 
           <span>

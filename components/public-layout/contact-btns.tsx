@@ -35,7 +35,7 @@ const ContactBtns = () => {
     <div className="fixed max-[844px]:bottom-16 bottom-3 left-4 flex flex-col gap-2 z-50">
       <div className={`${common} bg-tertiary`}>
         <a
-          href="https://zalo.me/0989223653"
+          href="https://zalo.me/0822220088"
           target="_blank"
           rel="noopener noreferrer"
           className="relative w-full h-auto z-50 grid place-items-center group"
@@ -54,7 +54,7 @@ const ContactBtns = () => {
       </div>
 
       <a
-        href="tel:0989223653"
+        href="tel:0822220088"
         className={`${common} bg-red-700`}
         aria-label="Hotline button"
         onClick={handlePhoneClick}
@@ -62,7 +62,7 @@ const ContactBtns = () => {
         <div className="absolute top-[10px] left-[7px] w-[70%] h-[70%] animate-ping bg-red-700 rounded-full"></div>
         <BsHeadset color="white" size={30} className="z-30" />
         <span className={`${tooltipCommon} bg-red-700 min-w-[170px]`}>
-          0989.223.653
+          0822.220.088
         </span>
       </a>
     </div>

@@ -16,7 +16,7 @@ const QuoteSection = () => {
                 tại các tỉnh thành cũng như tại Tp. Hồ Chí Minh. Hiện tại, nếu
                 biết giá lăn bánh cụ thể, đi kèm khuyến mãi hiện hành ở thời
                 điểm quý khách đang xem như thể nào, xin mời quý khách liên hệ
-                0989 223 653 ( Ghi chú: Giá xe Lăn Bánh có thể thay đổi tùy vào
+                0822 220 088 ( Ghi chú: Giá xe Lăn Bánh có thể thay đổi tùy vào
                 khu vực, tất cả chi phí trên chưa bao gồm phí dịch vụ làm biển
                 số liên hệ để biết giá xe lăn bánh tại từng khu vực ).
               </p>

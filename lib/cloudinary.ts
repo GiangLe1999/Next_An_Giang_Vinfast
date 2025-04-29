@@ -21,7 +21,7 @@ export const editCloudinaryImage = async (
     const newImage = await cloudinary.v2.uploader.upload(
       newImageUrl as string,
       {
-        folder: "Suoi Tien Vinfast",
+        folder: "An Giang Vinfast",
       }
     );
 

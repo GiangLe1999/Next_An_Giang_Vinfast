@@ -6,9 +6,9 @@ import { privacyData } from "@/data/privacy";
 export const generateMetadata = () => {
   return {
     title:
-      "Chính Sách Bảo Mật VinFast Suối Tiên - Cam Kết Bảo Vệ Thông Tin Khách Hàng",
+      "Chính Sách Bảo Mật VinFast An Giang - Cam Kết Bảo Vệ Thông Tin Khách Hàng",
     description:
-      "Tìm hiểu chính sách bảo mật của VinFast Suối Tiên. Chúng tôi cam kết bảo vệ thông tin cá nhân của bạn với các tiêu chuẩn an toàn cao nhất.",
+      "Tìm hiểu chính sách bảo mật của VinFast An Giang. Chúng tôi cam kết bảo vệ thông tin cá nhân của bạn với các tiêu chuẩn an toàn cao nhất.",
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.privacyPolicy}`,
     },
@@ -20,7 +20,7 @@ const Page = () => {
     <div>
       <FirstBanner
         heading="CHÍNH SÁCH BẢO MẬT"
-        subHeading="Thông tin chi tiết về chính sách bảo mật thông tin tại VinFast Suối Tiên."
+        subHeading="Thông tin chi tiết về chính sách bảo mật thông tin tại VinFast An Giang."
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-cover"
       />

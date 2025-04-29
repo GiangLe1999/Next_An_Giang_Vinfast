@@ -165,7 +165,7 @@ const CarQuickConsultModal: FC<Props> = ({ carSlug }) => {
             <input
               type="number"
               id="phone"
-              placeholder="0989 223 653"
+              placeholder="0822 220 088"
               className="w-full py-[10px] px-4 rounded-md bg-[#f5f5f5] outline-none border"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}

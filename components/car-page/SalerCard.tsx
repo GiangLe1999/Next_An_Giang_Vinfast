@@ -10,7 +10,7 @@ const SalerCard = () => {
         <div className="w-full aspect-square relative">
           <NextImage
             src="/images/gioi-thieu/saler-card-vinfast-suoi-tien.png"
-            alt="Phòng kinh doanh VinFast Suối Tiên"
+            alt="Phòng kinh doanh VinFast An Giang"
           />
         </div>
 
@@ -20,9 +20,9 @@ const SalerCard = () => {
           </p>
 
           <BtnWithIcon
-            href="tel:0989223653"
+            href="tel:0822220088"
             customClasses="bg-primary w-full mb-4 font-bold text-sm"
-            content="0989 223 653"
+            content="0822 220 088"
             icon={MdPhone}
             iconSize={16}
           />

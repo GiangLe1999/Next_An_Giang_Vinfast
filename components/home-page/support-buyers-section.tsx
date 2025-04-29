@@ -16,11 +16,11 @@ const SupportBuyersSection = () => {
           </h4>
         </div>
         <a
-          href="tel:0989223653"
+          href="tel:0822220088"
           className="flex items-center gap-x-2 py-3 px-6 shadow-lg bg-white text-primary sm:text-2xl text-lg font-bold !gap-2 !rounded-md sm:w-fit w-full"
         >
           <FaPhoneAlt />
-          0989 223 653
+          0822 220 088
         </a>
       </div>
     </section>

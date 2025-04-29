@@ -62,11 +62,11 @@ const Header = () => {
           </Link>
 
           <h2 className="text-lg font-bold max-[500px]:hidden">
-            <Link href="/">VINFAST SUỐI TIÊN</Link>
+            <Link href="/">VINFAST AN GIANG</Link>
           </h2>
 
           <a
-            href="tel:0989223653"
+            href="tel:0822220088"
             className="flex items-center gap-2 font-medium hover:scale-[1.1] transition"
           >
             <div className="bg-primary rounded-full w-8 h-8 grid place-items-center">
@@ -75,7 +75,7 @@ const Header = () => {
 
             <div className="text-xs">
               <p>HOTLINE</p>
-              <p>0989 223 653</p>
+              <p>0822 220 088</p>
             </div>
           </a>
         </div>

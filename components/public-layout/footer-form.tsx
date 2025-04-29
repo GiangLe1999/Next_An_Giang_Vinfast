@@ -97,7 +97,7 @@ const FooterForm = () => {
         <input
           type="number"
           id="phone"
-          placeholder="0989 223 653"
+          placeholder="0822 220 088"
           className="form-input"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}

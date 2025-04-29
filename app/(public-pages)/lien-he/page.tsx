@@ -5,9 +5,9 @@ import { BsDot } from "react-icons/bs";
 
 export const generateMetadata = () => {
   return {
-    title: "Liên Hệ VinFast Suối Tiên - Hỗ Trợ Tư Vấn Nhanh Chóng",
+    title: "Liên Hệ VinFast An Giang - Hỗ Trợ Tư Vấn Nhanh Chóng",
     description:
-      "Liên hệ ngay với VinFast Suối Tiên để được tư vấn chi tiết về các dòng xe, chính sách mua bán, bảo hành, bảo dưỡng và các chương trình ưu đãi mới nhất.",
+      "Liên hệ ngay với VinFast An Giang để được tư vấn chi tiết về các dòng xe, chính sách mua bán, bảo hành, bảo dưỡng và các chương trình ưu đãi mới nhất.",
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_BASE_URL}${linkConstants.contact}`,
     },
@@ -19,22 +19,22 @@ const titleClasses = "text-primary uppercase font-bold text-2xl mb-3";
 const infos = [
   {
     title: "Địa chỉ",
-    content: "44C Xa Lộ Hà Nội, Bình Thắng, Dĩ An, Bình Dương",
+    content: "2699 Trần Hưng Đạo, P. Mỹ Thạch, Thành phố Long Xuyên, An Giang",
   },
   {
     title: "Số điện thoại",
-    link: "tel:0989223653",
-    content: "0989 223 653 (Mr.Dương)",
+    link: "tel:0822220088",
+    content: "0822 220 088 (Mr.Dương)",
   },
   {
     title: "Email",
-    link: "mailto:duongvfsuoitien@gmail.com",
-    content: "duongvfsuoitien@gmail.com",
+    link: "mailto:vinfast3sangiang@gmail.com",
+    content: "vinfast3sangiang@gmail.com",
   },
   {
     title: "Website",
-    link: "https://vinfastsuoitien.com",
-    content: "https://vinfastsuoitien.com",
+    link: "https://vinfastangiang.com.vn",
+    content: "https://vinfastangiang.com.vn",
   },
 ];
 
@@ -43,7 +43,7 @@ const ContactPage = () => {
     <div className="text-textColor">
       <FirstBanner
         heading="LIÊN HỆ CHÚNG TÔI"
-        subHeading="Hoặc ghé thăm trực tiếp đại lý VinFast Suối Tiên"
+        subHeading="Hoặc ghé thăm trực tiếp đại lý VinFast An Giang"
         bgImg="/images/first-banners/bang-gia-xe-vinfast.webp"
         bgClasses="!bg-[50%_50%] !bg-cover"
       />
@@ -51,7 +51,7 @@ const ContactPage = () => {
         <div className="grid grid-cols-2 gap-9 max-[846px]:grid-cols-1">
           <div className="space-y-11">
             <div>
-              <h1 className={titleClasses}>VinFast Suối Tiên</h1>
+              <h1 className={titleClasses}>VinFast An Giang</h1>
               <ul>
                 {infos.map((info, index) => (
                   <li key={index} className="flex items-center gap-2 py-2">

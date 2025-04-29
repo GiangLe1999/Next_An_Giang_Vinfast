@@ -192,7 +192,7 @@ export const homeOptions: homeOptionType[] = [
     title: "tính phí lăn bánh",
     link: linkConstants.finalPrice,
     icon: FaCalculator,
-    des: "Giá các phiên bản xe VinFast cùng các khoản phí chi tiết tại <strong>VinFast Suối Tiên</strong>",
+    des: "Giá các phiên bản xe VinFast cùng các khoản phí chi tiết tại <strong>VinFast An Giang</strong>",
   },
   {
     title: "mua xe trả góp",
@@ -204,14 +204,14 @@ export const homeOptions: homeOptionType[] = [
     title: "đăng ký lái thử",
     link: linkConstants.testDrive,
     icon: FaCarAlt,
-    des: "Đến với <strong>VinFast Suối Tiên</strong> để được lái thử những mẫu xe VinFast mới nhất",
+    des: "Đến với <strong>VinFast An Giang</strong> để được lái thử những mẫu xe VinFast mới nhất",
   },
 ];
 
 export const footerCol1: string[] = [
   "Chuyên cung cấp dòng xe VinFast các loại",
   "Xe 4 chỗ VinFast VF 5, 5 chỗ VinFast VF 6 và VF 7, 5 chỗ gầm cao VinFast VF 8, 7 chỗ VinFast VF 9",
-  "Địa chỉ : 44C Xa Lộ Hà Nội, Bình Thắng, Dĩ An, Bình Dương",
+  "Địa chỉ : 2699 Trần Hưng Đạo, P. Mỹ Thạch, Thành phố Long Xuyên, An Giang",
 ];
 
 type footerItemType = { title: string; link: string };
@@ -250,10 +250,10 @@ export const footerCol32: footerItemType[] = [
 ];
 
 export const footerCol4: { title: string; link: string; icon: IconType }[] = [
-  { title: "Hotline: 0989 223 653", link: "tel:0989223653", icon: MdPhone },
+  { title: "Hotline: 0822 220 088", link: "tel:0822220088", icon: MdPhone },
   {
-    title: "duongvfsuoitien@gmail.com",
-    link: "mailto:duongvfsuoitien@gmail.com",
+    title: "vinfast3sangiang@gmail.com",
+    link: "mailto:vinfast3sangiang@gmail.com",
     icon: MdMail,
   },
 ];
@@ -300,7 +300,7 @@ export const socialItems = [
   {
     img: "/images/home/zalo.png",
     alt: "Zalo Icon",
-    href: "https://zalo.me/0989223653",
+    href: "https://zalo.me/0822220088",
     title: "Zalo",
   },
 ];
