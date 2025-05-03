@@ -13,6 +13,8 @@ interface Props {
   isInstallmentPage?: boolean;
   choseCarName: string;
   setChoseCarName: Dispatch<SetStateAction<string>>;
+  choseProvince: string;
+  setChoseProvince: Dispatch<SetStateAction<string>>;
 }
 
 const FinalPriceFrom: FC<Props> = ({
@@ -27,10 +29,14 @@ const FinalPriceFrom: FC<Props> = ({
   isInstallmentPage,
   choseCarName,
   setChoseCarName,
+  choseProvince,
+  setChoseProvince,
 }) => {
   const currentRegistrationFee = (registration * currentListPrice) / 100;
 
-  const { phiDkyBienso, phiDuongbo, phiDkiem, bhTNDS } = carFees;
+  const { phiDuongbo, phiDkiem, bhTNDS } = carFees;
+  const phiDkyBienso =
+    choseProvince === "hn" || choseProvince === "hcm" ? 20000000 : 1000000;
 
   const currentTotal =
     currentListPrice +
@@ -48,8 +54,73 @@ const FinalPriceFrom: FC<Props> = ({
         {/* Place */}
         <div className="cal-price-form-input">
           <label htmlFor="place">Chọn nơi :</label>
-          <select id="place" value="ag">
+          <select
+            id="place"
+            name="place"
+            value={choseProvince}
+            onChange={(e) => setChoseProvince(e.target.value)}
+          >
             <option value="ag">An Giang</option>
+            <option value="bl">Bạc Liêu</option>
+            <option value="bk">Bắc Kạn</option>
+            <option value="bg">Bắc Giang</option>
+            <option value="bn">Bắc Ninh</option>
+            <option value="bd">Bình Dương</option>
+            <option value="bp">Bình Phước</option>
+            <option value="bh">Bình Thuận</option>
+            <option value="bt">Bến Tre</option>
+            <option value="cm">Cà Mau</option>
+            <option value="cb">Cao Bằng</option>
+            <option value="ct">Cần Thơ</option>
+            <option value="gl">Gia Lai</option>
+            <option value="hg">Hà Giang</option>
+            <option value="hn">Hà Nội</option>
+            <option value="ht">Hà Tĩnh</option>
+            <option value="hd">Hải Dương</option>
+            <option value="hp">Hải Phòng</option>
+            <option value="hb">Hòa Bình</option>
+            <option value="hu">Hậu Giang</option>
+            <option value="hy">Hưng Yên</option>
+            <option value="hm">Hà Nam</option>
+            <option value="hcm">TP Hồ Chí Minh</option>
+            <option value="kl">Khánh Hòa</option>
+            <option value="kg">Kiên Giang</option>
+            <option value="kt">Kon Tum</option>
+            <option value="lc">Lai Châu</option>
+            <option value="la">Long An</option>
+            <option value="lo">Lào Cai</option>
+            <option value="ld">Lâm Đồng</option>
+            <option value="ls">Lạng Sơn</option>
+            <option value="nd">Nam Định</option>
+            <option value="na">Nghệ An</option>
+            <option value="nb">Ninh Bình</option>
+            <option value="nt">Ninh Thuận</option>
+            <option value="pt">Phú Thọ</option>
+            <option value="py">Phú Yên</option>
+            <option value="qb">Quảng Bình</option>
+            <option value="qn">Quảng Nam</option>
+            <option value="qu">Quảng Ngãi</option>
+            <option value="qg">Quảng Ninh</option>
+            <option value="qt">Quảng Trị</option>
+            <option value="st">Sóc Trăng</option>
+            <option value="sl">Sơn La</option>
+            <option value="tn">Tây Ninh</option>
+            <option value="tb">Thái Bình</option>
+            <option value="ty">Thái Nguyên</option>
+            <option value="th">Thanh Hóa</option>
+            <option value="tt">Thừa Thiên Huế</option>
+            <option value="tg">Tiền Giang</option>
+            <option value="tv">Trà Vinh</option>
+            <option value="tq">Tuyên Quang</option>
+            <option value="vl">Vĩnh Long</option>
+            <option value="vp">Vĩnh Phúc</option>
+            <option value="yb">Yên Bái</option>
+            <option value="dn">Đà Nẵng</option>
+            <option value="dg">Đắk Nông</option>
+            <option value="dl">Đắk Lắk</option>
+            <option value="db">Điện Biên</option>
+            <option value="dn2">Đồng Nai</option>
+            <option value="dt">Đồng Tháp</option>
           </select>
         </div>
 
