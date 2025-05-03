@@ -17,6 +17,7 @@ export const linkConstants = {
   paymentPolicy: "/chinh-sach-thanh-toan",
   privacyPolicy: "/chinh-sach-bao-mat",
   deliveryPolicy: "/chinh-sach-giao-nhan-van-chuyen",
+  accessories: "/phu-kien-vinfast",
   uudai: "/tin-tuc/uu-dai",
   sukien: "/tin-tuc/su-kien",
   thongtinxe: "/tin-tuc/thong-tin-xe",

@@ -22,7 +22,7 @@ const serviceList = [
       },
       {
         title: "Phụ kiện chính hãng",
-        link: "/tin-tuc/phu-kien-o-to-vinfast",
+        link: linkConstants.accessories,
       },
     ],
   },
