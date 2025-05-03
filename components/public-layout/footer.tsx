@@ -40,7 +40,7 @@ const Footer = () => {
           </ul>
           <div className="flex item-center gap-2 my-3">
             <a
-              href="https://www.facebook.com/VinFastAuto.Official/"
+              href="https://www.facebook.com/people/VinFast-An-Giang-0822220088/61557426075220/"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
@@ -66,7 +66,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              href="https://www.tiktok.com/@vinfastofficial"
+              href="https://www.tiktok.com/@tran..viet"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >

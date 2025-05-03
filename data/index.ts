@@ -282,7 +282,7 @@ export const socialItems = [
   {
     img: "/images/home/facebook.jpg",
     alt: "Facebook Icon",
-    href: "https://www.facebook.com/VinFastAuto.Official/",
+    href: "https://www.facebook.com/people/VinFast-An-Giang-0822220088/61557426075220/",
     title: "Facebook",
   },
   {
@@ -294,7 +294,7 @@ export const socialItems = [
   {
     img: "/images/home/tiktok.png",
     alt: "TikTok Icon",
-    href: "https://www.tiktok.com/@vinfastofficial",
+    href: "https://www.tiktok.com/@tran..viet",
     title: "TikTok",
   },
   {
