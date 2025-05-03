@@ -17,24 +17,24 @@ const PromotionSection = () => {
           </p>
           <ul className="text-sm text-textColor leading-7">
             <li>
-              <b>VinFast VF 3</b>: Tặng bộ sạc di động, bảo hành pin 10 năm,
-              miễn phí sạc tại trạm V-GREEN đến 2027. Giá chỉ từ{" "}
-              <b className="text-primary">240 Triệu</b>.
+              <b>VinFast VF 3</b>: Bảo hành xe <b>7 năm</b>, bảo hành pin{" "}
+              <b>8 năm</b>, miễn phí sạc tại trạm V-GREEN 2 năm. Giá chỉ từ{" "}
+              <b className="text-primary">299 Triệu</b>.
             </li>
             <li>
-              <b>VinFast VF 5</b>: Ưu đãi 100% phí trước bạ, hỗ trợ trả góp lãi
-              suất 0% năm đầu, tặng gói bảo hiểm thân vỏ. Giá chỉ từ{" "}
-              <b className="text-primary">472 Triệu</b>.
+              <b>VinFast VF 5</b>: Ưu đãi 100% phí trước bạ, Miễn phí sạc đến{" "}
+              <b>30/06/2027</b>. Giá chỉ từ{" "}
+              <b className="text-primary">529 Triệu</b>.
             </li>
             <li>
-              <b>VinFast VF 6</b>: Giảm trực tiếp 15 triệu, miễn phí cứu hộ
-              24/7, tặng bộ sạc nhanh tại nhà. Giá chỉ từ{" "}
-              <b className="text-primary">640 Triệu</b>.
+              <b>VinFast VF 6</b>:Ưu đãi 100% phí trước bạ, Miễn phí sạc đến{" "}
+              <b>30/06/2027</b>. Giá chỉ từ{" "}
+              <b className="text-primary">694 Triệu</b>.
             </li>
             <li>
-              <b>VinFast VF 7</b>: Hỗ trợ đổi xe xăng sang xe điện, tặng gói bảo
-              dưỡng miễn phí 3 năm. Giá chỉ từ{" "}
-              <b className="text-primary">760 Triệu</b>.
+              <b>VinFast VF 7</b>:Ưu đãi 100% phí trước bạ, Miễn phí sạc đến{" "}
+              <b>30/06/2027</b>. Giá chỉ từ{" "}
+              <b className="text-primary">799 Triệu</b>.
             </li>
           </ul>
         </div>
