@@ -17,24 +17,34 @@ const PromotionSection = () => {
           </p>
           <ul className="text-sm text-textColor leading-7">
             <li>
-              <b>VinFast VF 3</b>: Bảo hành xe <b>7 năm</b>, bảo hành pin{" "}
-              <b>8 năm</b>, miễn phí sạc tại trạm V-GREEN 2 năm. Giá chỉ từ{" "}
-              <b className="text-primary">299 Triệu</b>.
+              <b>VinFast VF 3</b>: Xe được bảo hành <b>7 năm</b>, pin bảo hành{" "}
+              <b>8 năm</b>, miễn phí sạc tại trạm V-GREEN trong <b>2 năm</b>.
+              Giá chỉ từ <b className="text-primary">299 Triệu</b>.
             </li>
             <li>
-              <b>VinFast VF 5</b>: Ưu đãi 100% phí trước bạ, Miễn phí sạc đến{" "}
-              <b>30/06/2027</b>. Giá chỉ từ{" "}
+              <b>VinFast VF 5</b>: Được miễn 100% phí trước bạ, và hưởng ưu đãi
+              miễn phí sạc đến <b>30/06/2027</b>. Giá chỉ từ{" "}
               <b className="text-primary">529 Triệu</b>.
             </li>
             <li>
-              <b>VinFast VF 6</b>:Ưu đãi 100% phí trước bạ, Miễn phí sạc đến{" "}
+              <b>VinFast VF 6</b>: Miễn 100% phí trước bạ, miễn phí sạc đến{" "}
               <b>30/06/2027</b>. Giá chỉ từ{" "}
               <b className="text-primary">694 Triệu</b>.
             </li>
             <li>
-              <b>VinFast VF 7</b>:Ưu đãi 100% phí trước bạ, Miễn phí sạc đến{" "}
+              <b>VinFast VF 7</b>: Miễn phí trước bạ 100%, miễn phí sạc đến{" "}
               <b>30/06/2027</b>. Giá chỉ từ{" "}
               <b className="text-primary">799 Triệu</b>.
+            </li>
+            <li>
+              <b>VinFast VF 8</b>: Ưu đãi miễn phí phí trước bạ 100%, miễn phí
+              sạc đến <b>30/06/2027</b>. Giá chỉ từ{" "}
+              <b className="text-primary">1.019 tỷ</b>.
+            </li>
+            <li>
+              <b>VinFast VF 9</b>: Miễn 100% phí trước bạ, miễn phí sạc đến{" "}
+              <b>30/06/2027</b>. Giá chỉ từ{" "}
+              <b className="text-primary">1.499 tỷ</b>.
             </li>
           </ul>
         </div>
