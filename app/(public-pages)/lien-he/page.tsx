@@ -24,7 +24,7 @@ const infos = [
   {
     title: "Số điện thoại",
     link: "tel:0822220088",
-    content: "0822 220 088 (Mr.Dương)",
+    content: "0822 220 088 (Mr.Việt)",
   },
   {
     title: "Email",
