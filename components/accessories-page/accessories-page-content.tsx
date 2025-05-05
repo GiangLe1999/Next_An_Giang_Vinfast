@@ -288,6 +288,142 @@ export default function AccessoriesPageContent() {
       image:
         "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw681468fa/images/Accessory/FLOORMATS3DVF9/ACS10000043/1.png",
     },
+    {
+      id: 36,
+      src: "https://shop.vinfastauto.com/vn_vi/VINFASTVF8SCALECARMODELS.html",
+      name: "Mô Hình Xe VinFast VF 8",
+      price: 3095000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw681468fa/images/Accessory/FLOORMATS3DVF9/ACS10000043/1.png",
+    },
+    {
+      id: 37,
+      src: "https://shop.vinfastauto.com/vn_vi/VINFASTVF9SCALECARMODELS.html",
+      name: "Mô Hình Xe VinFast VF 9",
+      price: 3311000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dwedcc5052/images/Accessory/VINFASTSCALECARMODELS/ACS30000074/1%20.png",
+    },
+    {
+      id: 38,
+      src: "https://shop.vinfastauto.com/vn_vi/ACS10000039.html",
+      name: "Bộ Sạc Di Động Ô Tô Điện 2.2 kW",
+      price: 4000000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw3060cd2a/images/Accessory/EEH20000204/1.png",
+    },
+    {
+      id: 39,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMVF6.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast VF 6",
+      price: 5500000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw2bd054d5/images/Accessory/INSULATIONFILM/INSULATIONFILMVF6/1.png",
+    },
+    {
+      id: 40,
+      src: "https://shop.vinfastauto.com/vn_vi/ACS10000037.html",
+      name: "Tấm Che Nắng Cửa VinFast VF 6",
+      price: 540000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw8887232c/images/Accessory/ACS10000037/1.png",
+    },
+    {
+      id: 41,
+      src: "https://shop.vinfastauto.com/vn_vi/ACS10000035.html",
+      name: "Thảm Sàn Nhựa 3D VF 6",
+      price: 1999000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dwd5b08a38/images/Accessory/ACS10000035/1.png",
+    },
+    {
+      id: 42,
+      src: "https://shop.vinfastauto.com/vn_vi/CHG00009020.html",
+      name: "Bộ Sạc Treo Tường AC 7,4 kW",
+      price: 1100000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dwa0be0ad5/images/Accessory/CHG00009020/1.png",
+    },
+    {
+      id: 43,
+      src: "https://shop.vinfastauto.com/vn_vi/LEATHERBELTSVINFAST.html",
+      name: "Thắt lưng da VinFast",
+      price: 3534000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw1cf7889e/images/Accessory/LEATHERBELTSVINFAST/4.png",
+    },
+    {
+      id: 44,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMVF8.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast VF 8",
+      price: 6700000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw964130cb/images/Accessory/INSULATIONFILM/INSULATIONFILMVF8/1.png",
+    },
+    {
+      id: 45,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMCEILINGVF8.html",
+      name: "Gói Film Cách Nhiệt Dán Trần VinFast VF 8",
+      price: 5625000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw37bdea90/images/Accessory/INSULATIONFILM/INSULATIONFILMCEILINGVF8/1.png",
+    },
+    {
+      id: 46,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMVFE34.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast Nerio Green",
+      price: 5500000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw4edef61f/images/Accessory/INSULATIONFILM/INSULATIONFILMVFE34/1.png",
+    },
+    {
+      id: 47,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMVF5.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast VF 5",
+      price: 5500000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw32e9600b/images/Accessory/INSULATIONFILM/INSULATIONFILMVF5/1.png",
+    },
+    {
+      id: 48,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMCEILINGVF9.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast VF 9",
+      price: 78750000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw03b8dc3f/images/Accessory/INSULATIONFILM/INSULATIONFILMCEILINGVF9/1.png",
+    },
+    {
+      id: 49,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMFADIL.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast Fadil",
+      price: 5500000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw9af16ccb/images/Accessory/INSULATIONFILM/INSULATIONFILMFADIL/1.png",
+    },
+    {
+      id: 50,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMLUXA.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast Lux A2.0",
+      price: 5500000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dwabfda446/images/Accessory/INSULATIONFILM/INSULATIONFILMLUXA/1.png",
+    },
+    {
+      id: 51,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMLUXSA.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast Lux SA2.0",
+      price: 6700000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dwb6e8a864/images/Accessory/INSULATIONFILM/INSULATIONFILMLUXSA/1.png",
+    },
+    {
+      id: 52,
+      src: "https://shop.vinfastauto.com/vn_vi/INSULATIONFILMVF9.html",
+      name: "Gói Dán Film Cách Nhiệt VinFast VF 9",
+      price: 6700000,
+      image:
+        "https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw82622531/images/Accessory/INSULATIONFILM/INSULATIONFILMVF9/1.png",
+    },
   ];
 
   const [searchTerm, setSearchTerm] = useState("");
