@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -47,6 +47,10 @@ const Header = () => {
     setShowBuyMenu(false);
     setShowServiceMenu(false);
   };
+
+  useEffect(() => {
+    setShowServiceMenu(false);
+  }, [pathname]);
 
   return (
     <>
