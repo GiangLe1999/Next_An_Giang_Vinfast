@@ -114,6 +114,12 @@ type navCarItemType = {
 export const navCarMenu: navCarItemType[] = [
   {
     img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1742913595/Suoi%20Tien%20Vinfast/lqtpfqfjoshxj0oodwld.webp",
+    name: "VinFast EC Van",
+    price: "285",
+    link: "ec-van",
+  },
+  {
+    img: "https://res.cloudinary.com/dfhheac8o/image/upload/v1742913595/Suoi%20Tien%20Vinfast/lqtpfqfjoshxj0oodwld.webp",
     name: "VinFast Minio Green",
     price: "269",
     link: "minio-green",
