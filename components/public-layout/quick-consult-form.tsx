@@ -3,7 +3,7 @@
 import Swal from "sweetalert2";
 import { ImSpinner3 } from "react-icons/im";
 import { useQuery } from "@tanstack/react-query";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { getAllCarsNameVsSlug } from "@/queries/car.query";
 import NextImage from "../next-image";
 import { createQuickConsult } from "@/actions/quick-consult.actions";
@@ -72,6 +72,13 @@ const QuickConsultForm = () => {
     setLoading(false);
   };
 
+  useEffect(() => {
+    const el = document.getElementById("need-scroll-to");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []); // chỉ chạy khi component mount
+
   return (
     <form
       className="bg-white relative rounded-md space-y-3 border shadow-md"
@@ -85,7 +92,7 @@ const QuickConsultForm = () => {
       </div>
 
       <div className="p-8 pt-4 space-y-6">
-        <div>
+        <div id="need-scroll-to">
           <h5 className="text-center text-primary font-bold text-3xl mb-3">
             Đăng ký nhận báo giá
           </h5>
