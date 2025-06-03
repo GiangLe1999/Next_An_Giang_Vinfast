@@ -84,7 +84,10 @@ const QuickConsultForm = () => {
       className="bg-white relative rounded-md space-y-3 border shadow-md"
       onSubmit={submitHandler}
     >
-      <div className="w-full aspect-[2.3] relative rounded-t-md overflow-hidden">
+      <div
+        className="w-full aspect-[2.3] relative rounded-t-md overflow-hidden"
+        id="need-scroll-to"
+      >
         <NextImage
           src="/images/home/popup-banner.webp"
           alt="Home Popup banner"
@@ -92,7 +95,7 @@ const QuickConsultForm = () => {
       </div>
 
       <div className="p-8 pt-4 space-y-6">
-        <div id="need-scroll-to">
+        <div>
           <h5 className="text-center text-primary font-bold text-3xl mb-3">
             Đăng ký nhận báo giá
           </h5>
