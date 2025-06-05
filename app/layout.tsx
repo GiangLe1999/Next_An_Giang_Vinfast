@@ -4,6 +4,8 @@ import Providers from "@/components/contexts/providers";
 import { Mulish } from "next/font/google";
 import { pageConstants } from "@/data/constants";
 import Script from "next/script";
+import JsonLd from "@/components/jsonld";
+import { orgSchema } from "@/lib/orgSchema";
 
 const mulish = Mulish({
   subsets: ["latin", "vietnamese"],
@@ -23,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <JsonLd data={orgSchema} />
+      </head>
       <body className={`${mulish.className} antialiased`}>
         {/* Google Tag Manager */}
         <Script
