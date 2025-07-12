@@ -19,7 +19,7 @@ const titleClasses = "text-primary uppercase font-bold text-2xl mb-3";
 const infos = [
   {
     title: "Địa chỉ",
-    content: "2699 Trần Hưng Đạo, P. Mỹ Thạch, Thành phố Long Xuyên, An Giang",
+    content: "2699 Trần Hưng Đạo, P. Mỹ Thạnh, Thành phố Long Xuyên, An Giang",
   },
   {
     title: "Số điện thoại",
